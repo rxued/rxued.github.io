@@ -1,0 +1,1072 @@
+@charset "utf-8";
+
+/*瑞祥UI组件1.0.0版本*/
+
+
+/*全局样式S*/
+
+body {
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+span,
+i,
+p,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:focus {
+	outline: none;
+}
+
+a img {
+	display: block;
+}
+
+li {
+	list-style: none;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+.fl {
+	display: inline;
+	float: left;
+}
+
+.fr {
+	display: inline;
+	float: right;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+input,
+select,
+textarea {
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #ccc;
+	background: none;
+	outline: none;
+	resize: none;
+	box-sizing: border-box;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+input[type=text] {
+	padding: 0 8px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+select {
+	padding: 6px 8px;
+	height: 30px;
+	line-height: 30px;
+}
+
+p {
+	line-height: 18px;
+}
+
+textarea{
+	overflow: auto;
+}
+
+/*全局样式E*/
+
+
+/*全局样式2开始*/
+
+/*间距S*/
+.padd5 {
+	padding: 5px;
+}
+
+.padd10 {
+	padding: 10px;
+}
+
+.padd15 {
+	padding: 15px;
+}
+
+.padd20 {
+	padding: 20px;
+}
+
+.padd25 {
+	padding: 25px;
+}
+
+.padd30 {
+	padding: 30px;
+}
+
+.padd35 {
+	padding: 35px;
+}
+
+.padd40 {
+	padding: 40px;
+}
+
+.padd45 {
+	padding: 45px;
+}
+
+.padd50 {
+	padding: 50px;
+}
+
+.padd55 {
+	padding: 55px;
+}
+
+.padd60 {
+	padding: 60px;
+}
+
+.paddt5 {
+	padding-top: 5px;
+}
+
+.paddt10 {
+	padding-top: 10px;
+}
+
+.paddt15 {
+	padding-top: 15px;
+}
+
+.paddt20 {
+	padding-top: 20px;
+}
+
+.paddt25 {
+	padding-top: 25px;
+}
+
+.paddt30 {
+	padding-top: 30px;
+}
+
+.paddt35 {
+	padding-top: 35px;
+}
+
+.paddt40 {
+	padding-top: 40px;
+}
+
+.paddt45 {
+	padding-top: 45px;
+}
+
+.paddt50 {
+	padding-top: 50px;
+}
+
+.paddt55 {
+	padding-top: 55px;
+}
+
+.paddt60 {
+	padding-top: 60px;
+}
+
+.paddr5 {
+	padding-right: 5px;
+}
+
+.paddr10 {
+	padding-right: 10px;
+}
+
+.paddr15 {
+	padding-right: 15px;
+}
+
+.paddr20 {
+	padding-right: 20px;
+}
+
+.paddr25 {
+	padding-right: 25px;
+}
+
+.paddr30 {
+	padding-right: 30px;
+}
+
+.paddr35 {
+	padding-right: 35px;
+}
+
+.paddr40 {
+	padding-right: 40px;
+}
+
+.paddr45 {
+	padding-right: 45px;
+}
+
+.paddr50 {
+	padding-right: 50px;
+}
+
+.paddr55 {
+	padding-right: 55px;
+}
+
+.paddr60 {
+	padding-right: 60px;
+}
+
+.paddb5 {
+	padding-bottom: 5px;
+}
+
+.paddb10 {
+	padding-bottom: 10px;
+}
+
+.paddb15 {
+	padding-bottom: 15px;
+}
+
+.paddb20 {
+	padding-bottom: 20px;
+}
+
+.paddb25 {
+	padding-bottom: 25px;
+}
+
+.paddb30 {
+	padding-bottom: 30px;
+}
+
+.paddb35 {
+	padding-bottom: 35px;
+}
+
+.paddb40 {
+	padding-bottom: 40px;
+}
+
+.paddb45 {
+	padding-bottom: 45px;
+}
+
+.paddb50 {
+	padding-bottom: 50px;
+}
+
+.paddb55 {
+	padding-bottom: 55px;
+}
+
+.paddb60 {
+	padding-bottom: 60px;
+}
+
+.paddl5 {
+	padding-left: 5px;
+}
+
+.paddl10 {
+	padding-left: 10px;
+}
+
+.paddl15 {
+	padding-left: 15px;
+}
+
+.paddl20 {
+	padding-left: 20px;
+}
+
+.paddl25 {
+	padding-left: 25px;
+}
+
+.paddl30 {
+	padding-left: 30px;
+}
+
+.paddl35 {
+	padding-left: 35px;
+}
+
+.paddl40 {
+	padding-left: 40px;
+}
+
+.paddl45 {
+	padding-left: 45px;
+}
+
+.paddl50 {
+	padding-left: 50px;
+}
+
+.paddl55 {
+	padding-left: 55px;
+}
+
+.paddl60 {
+	padding-left: 60px;
+}
+
+.paddl-none {
+	padding-left: 0;
+}
+
+.margin5 {
+	margin: 5px;
+}
+
+.margin10 {
+	margin: 10px;
+}
+
+.margin15 {
+	margin: 15px;
+}
+
+.margin20 {
+	margin: 20px;
+}
+
+.margin25 {
+	margin: 25px;
+}
+
+.margin30 {
+	margin: 30px;
+}
+
+.margin35 {
+	margin: 35px;
+}
+
+.margin40 {
+	margin: 40px;
+}
+
+.margin45 {
+	margin: 45px;
+}
+
+.margin50 {
+	margin: 50px;
+}
+
+.margin55 {
+	margin: 55px;
+}
+
+.margin60 {
+	margin: 60px;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt-4 {
+	margin-top: -4px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt25 {
+	margin-top: 25px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.mt35 {
+	margin-top: 35px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.mt45 {
+	margin-top: 45px;
+}
+
+.mt50 {
+	margin-top: 50px;
+}
+
+.mt55 {
+	margin-top: 55px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
+.ml4 {
+	margin-left: 4px;
+}
+
+.ml5 {
+	margin-left: 5px;
+}
+
+.ml8 {
+	margin-left: 8px;
+}
+
+.ml10 {
+	margin-left: 10px;
+}
+
+.ml15 {
+	margin-left: 15px;
+}
+
+.ml20 {
+	margin-left: 20px;
+}
+
+.ml25 {
+	margin-left: 25px;
+}
+
+.ml30 {
+	margin-left: 30px;
+}
+
+.ml35 {
+	margin-left: 35px;
+}
+
+.ml40 {
+	margin-left: 40px;
+}
+
+.ml45 {
+	margin-left: 45px;
+}
+
+.ml50 {
+	margin-left: 50px;
+}
+
+.ml55 {
+	margin-left: 55px;
+}
+
+.ml60 {
+	margin-left: 60px;
+}
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mb15 {
+	margin-bottom: 15px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mb25 {
+	margin-bottom: 25px;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mb135 {
+	margin-bottom: 35px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mb45 {
+	margin-bottom: 45px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+.mb55 {
+	margin-bottom: 55px;
+}
+
+.mb60 {
+	margin-bottom: 60px;
+}
+
+.mr5 {
+	margin-right: 5px;
+}
+
+.mr10 {
+	margin-right: 10px;
+}
+
+.mr15 {
+	margin-right: 15px;
+}
+
+.mr20 {
+	margin-right: 20px;
+}
+
+.mr25 {
+	margin-right: 25px;
+}
+
+.mr30 {
+	margin-right: 30px;
+}
+
+.mr35 {
+	margin-right: 35px;
+}
+
+.mr40 {
+	margin-right: 40px;
+}
+
+.mr45 {
+	margin-right: 45px;
+}
+
+.mr50 {
+	margin-right: 50px;
+}
+
+.mr55 {
+	margin-right: 55px;
+}
+
+.mr60 {
+	margin-right: 60px;
+}
+
+
+/*间距E*/
+
+
+/*显示隐藏S*/
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.visibility {
+	visibility: hidden;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+
+/*显示隐藏E*/
+
+.center {
+	text-align: center;
+}
+
+.col-white {
+	color: #fff;
+}
+
+.col-blue {
+	color: #08c;
+}
+
+.fz14{
+	font-size: 14px;
+}
+
+.fz16{
+	font-size: 16px;
+}
+
+.fz18{
+	font-size: 18px;
+}
+
+.lh22{
+	line-height: 22px;
+}
+
+.auto {
+	margin: 0 auto;
+}
+
+.border {
+	border: 1px solid #dfe1e8;
+}
+
+.inline {
+	display: inline-block;
+	*display: inline;
+}
+
+.abso {
+	position: absolute;
+}
+
+.rela {
+	position: relative;
+}
+
+.border-normal {
+	border: 1px solid #ccc;
+}
+
+.border-tbNone {
+	border-bottom: none;
+	border-top: none;
+}
+
+.border-lrNone {
+	border-left: none;
+	border-right: none;
+}
+
+.border-tNone {
+	border-top: none;
+}
+
+.border-rNone {
+	border-right: none;
+}
+
+.border-bNone {
+	border-bottom: none;
+}
+
+.border-lNone {
+	border-left: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.col-md-12 {
+	width: 100%;
+}
+
+.col-md-11 {
+	width: 91.66666667%;
+}
+
+.col-md-10 {
+	width: 83.33333333%;
+}
+
+.col-md-9 {
+	width: 75%;
+}
+
+.col-md-8 {
+	width: 66.66666667%;
+}
+
+.col-md-7 {
+	width: 58.33333333%;
+}
+
+.col-md-6 {
+	width: 50%;
+}
+
+.col-md-5 {
+	width: 41.66666667%;
+}
+
+.col-md-4 {
+	width: 33.33333333%;
+}
+
+.col-md-3 {
+	width: 25%;
+}
+
+.col-md-2 {
+	width: 16.66666667%;
+}
+
+.col-md-1 {
+	width: 8.33333333%;
+}
+
+.ellipsis{
+	overflow: hidden; 	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/*全局样式2结束*/
+
+
+/*表单样式S*/
+
+.width80 {
+	width: 80px;
+}
+
+.width100 {
+	width: 100px;
+}
+
+.width120 {
+	width: 120px;
+}
+
+.width180 {
+	width: 180px;
+}
+
+.width210 {
+	width: 210px;
+}
+
+.form-control:focus {
+	border: 1px solid #46a1fe;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.uiText-failBorder .form-control {
+	border: 1px solid #ff3333;
+}
+.uiText-failBorder .form-control:focus{
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0px 0 8px rgba(255, 51, 51, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0px 0 8px rgba(255, 51, 51, .6);
+}
+
+.uiText-warnBorder .form-control {
+	border: 1px solid #ff9933;
+}
+
+.uiText-warnBorder .form-control:focus{
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .075), 0px 0 8px rgba(255, 153, 51, .6);
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .075), 0px 0 8px rgba(255, 153, 51, .6);
+}
+
+.uiHas-textIcon .form-control {
+	padding-right: 28px;
+}
+
+.uiText-selfAuto{
+	display: table;
+}
+.uiText-selfAuto .form-controlDiv {
+	margin: 0 29px;
+}
+.uiText-selfAuto .form-control{
+	display: table-cell;
+}
+
+/*.uiText-selfAuto select{
+	display: table-cell;
+}*/
+
+.uiText-selfL .abso {
+	right: 0;
+	top: 0;
+}
+.uiText-selfL .form-controlDiv{
+	margin-right: 29px;
+}
+
+.uiText-cont label {
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+.uiText-div{
+	display: table-cell;
+	width: 1%;
+	vertical-align: middle;
+}
+
+.uiTxt-fail {
+	color: #ff3333;
+}
+
+.uiBg-warn {
+	background: #ff9933;
+}
+
+.uiBg-fail {
+	background: #ff5c5c;
+}
+
+.uiBg-adopt {
+	background: #33cc66;
+}
+
+.uiTxt-warn {
+	color: #fbc450;
+}
+
+.uiTxt-normal {
+	color: #46a1fe;
+}
+
+.uiText-box {
+	position: relative;
+	width: 208px;
+}
+
+.uiText-adoptIcon {
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/ico/iconMain.png) -22px 0 no-repeat;
+}
+
+.uiText-failIcon {
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/ico/iconMain.png) -45px 0 no-repeat;
+}
+
+.uiText-warnIcon {
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/ico/iconMain.png) -70px 0 no-repeat;
+}
+
+.uiText-searchIcon {
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/ico/iconMain.png) 0 0 no-repeat;
+}
+
+.uiText-timeIcon {
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/ico/iconMain.png) -93px 0 no-repeat;
+	cursor: pointer;
+}
+
+.uiText-reduceIcon1 {
+	display: table-cell;
+	width: 29px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-right: none;
+	background: url(../images/ico/iconMain.png) -225px 0 no-repeat;
+	cursor: pointer;
+}
+
+.uiText-plusIcon1 {
+	display: table-cell;
+	width: 29px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-left: none;
+	background: url(../images/ico/iconMain.png) -263px 0 no-repeat;
+	cursor: pointer;
+}
+
+.uiText-reduceIcon2 {
+	display: block;
+	width: 29px;
+	height: 15px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-bottom: none;
+	background: url(../images/ico/iconMain.png) -305px 0 no-repeat;
+	cursor: pointer;
+}
+
+.uiText-plusIcon2 {
+	display: block;
+	width: 29px;
+	height: 15px;
+	border: 1px solid #ccc;
+	border-left: none;
+	background: url(../images/ico/iconMain.png) -339px 0 no-repeat;
+	cursor: pointer;
+}
+
+.uiText-commonIcon {
+	padding: 6px 8px;
+	display: table-cell;
+	width: 1%;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #f4f4f4;
+	white-space: nowrap;
+}
+
+.uiText-borderl-none {
+	border-left: none;
+}
+
+.uiText-borderr-none {
+	border-right: none;
+}
+
+.uiText-helpIcon {
+	margin: 7px 0 0 8px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/ico/iconMain.png) -120px 0 no-repeat;
+	cursor: pointer;
+}
+
+.uiText-passLow {
+	margin-right: 1px;
+	width: 19px;
+	height: 8px;
+	background: url(../images/ico/iconMain.png) -373px 0 no-repeat;
+}
+
+.uiText-pass1 {
+	margin-right: 1px;
+	width: 20px;
+	height: 8px;
+	background: url(../images/ico/iconMain.png) -395px 0 no-repeat;
+}
+
+.uiText-pass2 {
+	margin-right: 1px;
+	width: 19px;
+	height: 8px;
+	background: url(../images/ico/iconMain.png) -419px 0 no-repeat;
+}
+
+.uiText-passIn {
+	margin-right: 1px;
+	width: 20px;
+	height: 8px;
+	background: url(../images/ico/iconMain.png) -440px 0 no-repeat;
+}
+
+.uiText-passHigh {
+	margin-right: 1px;
+	width: 19px;
+	height: 8px;
+	background: url(../images/ico/iconMain.png) -464px 0 no-repeat;
+}
+
+.uiText-textarea textarea {
+	padding: 8px;
+	width: 100%;
+}
+
+
+/*表单样式E*/
+
+
+/*按钮样式S*/
+
+.uiBtn-normal {
+	display: block;
+	width: 48px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 3px;
+	background: #0099ff;
+	color: #fff;
+}
+
+
+/*按钮样式E*/

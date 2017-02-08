@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>UED ui</title>
+		<!--保证IE浏览器以最高版本运行-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--规定比例为100%-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<!--全局样式-->
+		<link rel="stylesheet" href="css/rxui1.0.0.css" type="text/css" />
+	</head>
+
+	<body>
+		<!--form表单S-->
+		<div class="width80 margin10">
+			<input type="text" class="form-control" placeholder="请输入文字" />
+		</div>
+
+		<div class="width100 margin10 uiText-failBorder">
+			<input type="text" class="form-control" placeholder="请输入文字" />
+		</div>
+
+		<div class="width120 margin10 uiText-warnBorder">
+			<input type="text" class="form-control" placeholder="请输入文字" />
+		</div>
+
+		<div class="width180 margin10">
+			<input type="text" class="form-control" placeholder="请输入文字" />
+		</div>
+
+		<div class="width210 margin10">
+			<input type="text" class="form-control" placeholder="请输入文字" />
+		</div>
+
+		<div class="width210 margin10 uiHas-textIcon">
+			<div class="rela">
+				<input type="text" class="form-control" />
+				<i class="uiText-adoptIcon"></i>
+			</div>
+		</div>
+		<div class="col-md-3 margin10 uiHas-textIcon">
+			<div class="rela">
+				<input type="text" class="form-control" />
+				<i class="uiText-failIcon"></i>
+			</div>
+		</div>
+		<div class="col-md-4 margin10 uiHas-textIcon">
+			<div class="rela">
+				<input type="text" class="form-control" />
+				<i class="uiText-warnIcon"></i>
+			</div>
+		</div>
+		<div class="col-md-6 margin10 uiHas-textIcon">
+			<div class="rela">
+				<input type="text" class="form-control" />
+				<i class="uiText-searchIcon"></i>
+			</div>
+		</div>
+		<div class="col-md-6 margin10 uiHas-textIcon">
+			<div class="rela">
+				<input type="text" class="form-control" />
+				<i class="uiText-timeIcon"></i>
+			</div>
+		</div>
+
+		<select class="col-md-6 margin10">
+			<option>请选择</option>
+			<option>选项一</option>
+			<option>选项二</option>
+			<option>选项三</option>
+			<option>选项四</option>
+			<option>选项五</option>
+		</select>
+
+		<div class="margin10 clearfix uiText-cont">
+			<label class="fl">内容：</label>
+			<div class="fl col-md-6">
+				<input type="text" class="form-control" />
+			</div>
+		</div>
+
+		<div class="margin10 clearfix uiText-cont">
+			<label class="fl">内容：</label>
+			<div class="fl form-controlDiv col-md-6">
+				<input type="text" class="form-control" />
+			</div>
+			<i class="fl uiText-helpIcon"></i>
+		</div>
+
+		<div class="margin10 clearfix uiText-cont">
+			<div class="fl col-md-6">
+				<input type="text" class="form-control" />
+			</div>
+			<label class="fl ml4">月</label>
+		</div>
+
+		<div class="margin10 clearfix uiText-cont">
+			<label class="fl">内容：</label>
+			<div class="fl col-md-6">
+				<input type="text" class="form-control" />
+				<p class="uiTxt-fail">请输入数字和字母的组合</p>
+			</div>
+		</div>
+
+		<div class="margin10 clearfix uiText-cont">
+			<label class="fl">内容：</label>
+			<div class="fl col-md-8">
+				<input type="text" class="form-control" />
+			</div>
+			<div class="fl ml8 mt10">
+				<i class="fl uiText-passLow"></i>
+				<i class="fl uiText-pass1"></i>
+				<i class="fl uiText-pass2"></i>
+				<span class="fl ml8 mt-4">弱</span>
+			</div>
+			<div class="fl ml8 mt10">
+				<i class="fl uiText-passLow"></i>
+				<i class="fl uiText-passIn"></i>
+				<i class="fl uiText-pass2"></i>
+				<span class="fl ml8 mt-4">中</span>
+			</div>
+			<div class="fl ml8 mt10">
+				<i class="fl uiText-passLow"></i>
+				<i class="fl uiText-passIn"></i>
+				<i class="fl uiText-passHigh"></i>
+				<span class="fl ml8 mt-4">强</span>
+			</div>
+		</div>
+
+		<div class="margin10 clearfix uiText-cont">
+			<label class="fl">内容：</label>
+			<div class="fl">
+				<div class="uiText-textarea col-md-6">
+					<textarea class="form-control"></textarea>
+				</div>
+				<!--<div class="clearfix mt10">
+					<span class="fl"></span>
+					<a href="javascript:;" class="uiBtn-normal fr">按钮</a>
+				</div>-->
+			</div>
+		</div>
+		
+		<div class="width120 margin10 uiText-selfAuto">
+			<span class="uiText-reduceIcon1"></span>
+			<input type="text" class="form-control center" value="123" />
+			<span class="uiText-plusIcon1"></span>
+		</div>
+
+		<div class="width120 margin10 uiText-selfAuto">
+			<input type="text" class="form-control" value="123" />
+			<div class="uiText-div">
+				<span class="uiText-reduceIcon2"></span>
+				<span class="uiText-plusIcon2"></span>
+			</div>
+		</div>
+
+		<div class="col-md-5 margin10 uiText-selfAuto">
+			<div class="uiText-commonIcon uiText-borderr-none">￥</div>
+			<input type="text" class="form-control" />
+			<div class="uiText-commonIcon uiText-borderl-none">.00</div>
+		</div>
+
+		<div class="col-md-7 margin10 uiText-selfAuto">
+			<span class="uiText-commonIcon uiText-borderr-none">@</span>			
+			<input type="text" class="form-control" />
+		</div>
+		
+		<div class="margin10 uiText-selfAuto col-md-7">
+			<div class="uiText-div">
+				<select>
+					<option>自定义</option>
+				</select>
+			</div>
+			<input type="text" class="form-control uiText-borderl-none" />		
+		</div>
+		<!--form表单E-->
+		
+		<!--单选多选S-->
+		<label><input type="radio" name="a"/>单选1</label>
+		<label><input type="radio" name="a"/>单选2</label>
+		<!--单选多选E-->
+		
+		<!--返回顶部S-->
+		<a href="javascript:;" class="return-top"></a>
+		<!--返回顶部E-->
+		<!--jquery统一版本为1.11.3-->
+		<script src="js/jquery.1.11.3.js" type="text/javascript" charset="UTF-8"></script>
+		<!--placeholder-->
+		<script src="js/jquery.placeholder.1.3.min.js" type="text/javascript" charset="UTF-8"></script>
+		<script>
+			$(function() {
+				//回到顶部
+				//				$(window).scroll(function() {
+				//					if($(window).scrollTop() >= $(".row").offset().top) {
+				//						$(".return-top").show();
+				//
+				//					} else {
+				//						$(".return-top").hide();
+				//					}
+				//				});
+				//
+				//				$(".return-top").click(function() {
+				//					$(window).scrollTop(0);
+				//				})
+
+				//input正常、错误、警示边框效果
+				//				uiText($(".ui-text-normal"));
+				//				uiText($(".ui-text-fail"));
+				//				uiText($(".ui-text-warn"));
+				//
+				//				function uiText(obj) {
+				//					if(obj.hasClass('ui-text-normal')) {
+				//						obj.focus(function() {
+				//							$(this).addClass('uiText-normal');
+				//						});
+				//						obj.blur(function() {
+				//							$(this).removeClass('uiText-normal');
+				//						});
+				//					}else if(obj.hasClass('ui-text-fail')){
+				//						obj.focus(function() {
+				//							$(this).addClass('uiText-fail');
+				//						});
+				//						obj.blur(function() {
+				//							$(this).removeClass('uiText-fail');
+				//						});
+				//					}else if(obj.hasClass('ui-text-warn')){
+				//						obj.focus(function() {
+				//							$(this).addClass('uiText-warn');
+				//						});
+				//						obj.blur(function() {
+				//							$(this).removeClass('uiText-warn');
+				//						});
+				//					}
+				//				}
+
+			})
+		</script>
+
+	</body>
+
+</html>
