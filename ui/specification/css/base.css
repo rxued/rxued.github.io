@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p,th,td{margin:0;padding:0;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+a{ text-decoration:none;}
+a:focus{outline:none;}
+li{ list-style:none;}
+i{ font-style:normal;}
+a img{ display:block; border:none;}
+.fl{ display:inline; float:left;}
+.fr{ display:inline; float:right;}
+.clearfix:after{ display:block; content:""; clear:both;}
+.clearfix{ zoom:1;}
+input,select { border:none 0; background:none; font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;}
+textarea, input, select { outline:none; resize: none; /*appearance:none; -moz-appearance:none; -webkit-appearance:none;*/}
+table { table-layout:fixed; border-collapse:collapse;}
+body{ font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif; color:#333;}
+input{ letter-spacing:1px;}
+::-webkit-input-placeholder{ font-size:14px;}

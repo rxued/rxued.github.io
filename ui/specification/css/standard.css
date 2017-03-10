@@ -1,0 +1,169 @@
+@charset "utf-8";
+/*头部S*/
+
+.text-center{
+	text-align: center;
+}
+.col-white{
+	color: #fff;
+}
+.col-blue{
+	color: #08c;
+}
+.fontSize50{
+	font-size: 50px;
+	line-height: 66px;
+}
+.fontSize32{
+	font-size: 32px;
+}
+.fontSize22{
+	font-size: 22px;
+	line-height: 34px;
+}
+.fontSize26{
+	font-size: 26px;
+}
+.fontSize30{
+	font-size: 30px;
+}
+.fontSize24{
+	font-size: 24px;
+}
+/*宽度百分之50%*/
+.width-half{
+	width: 50%;
+}
+/*宽度百分之100%*/
+.width-whole{
+	width: 100%;
+}
+.width-third{
+	width: 33%;
+}
+.auto{
+	margin: 0 auto;
+}
+.padd60{
+	padding: 60px;
+}
+.mt5{
+	margin-top: 5px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt15{
+	margin-top: 15px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mt25{
+	margin-top: 25px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt35{
+	margin-top: 35px;
+}
+.mt40{
+	margin-top: 40px;
+}
+.mt45{
+	margin-top: 45px;
+}
+.mt50{
+	margin-top: 50px;
+}
+.mt55{
+	margin-top: 55px;
+}
+.margin60{
+	margin: 60px;
+}
+.ml5{
+	margin-left: 5px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.ml15{
+	margin-left: 15px;
+}
+.ml20{
+	margin-left: 20px;
+}
+.mb5{
+	margin-bottom: 5px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.mb15{
+	margin-bottom: 15px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.mr5{
+	margin-right: 5px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.mr15{
+	margin-right: 15px;
+}
+.mr20{
+	margin-right: 20px;
+}
+.border{
+	border: 1px solid #dfe1e8;
+}
+.block{
+	display: block;
+}
+.inline{
+	display: inline-block;
+	*display: inline;
+}
+.bgCol{
+	background: #f7f7f9;
+}
+#head{
+	padding: 50px;
+	background: #2a3440;
+}
+/*头部E*/
+/*目录S*/
+.catalog{
+	padding: 30px;
+	background: #dfe1e8;
+}
+.catalogDiv{
+	color: #08c;
+}
+.catalogDiv ul li{
+	margin: 10px 0;
+}
+.catalogDiv a{
+	color: #08c;
+}
+.catalogDiv a:hover{
+	text-decoration: underline;
+}
+#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9,#section10,#section11{
+	border-bottom: 1px solid #dfe1e8;
+}
+.return-top{
+	position: fixed;
+	bottom: 100px;
+	right: 10px;
+	display: none;
+	width: 40px;
+	height: 42px;
+	background: url(../images/ico/top.png) no-repeat;
+}
+/*目录E*/
