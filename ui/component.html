@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>UI组件</title>
+		<link rel="stylesheet" href="css/rxui1.0.0.css" />
+		<link rel="stylesheet" href="css/frame.css" />
+		<link rel="stylesheet" href="css/mend-yanshi.css" />
+		
+		
+		<link rel="stylesheet" href="js/SyntaxHighlighter/styles/shCore.css" />
+		<link rel="stylesheet" href="js/SyntaxHighlighter/styles/shThemeEclipse.css" />
+	</head>
+	<body>
+	<body class="logo-c000000 bar-cffffff nav-black nav-vertical" data-class="nav-vertical">
+		<div id="main_header" class="header-fixed j_outerHeight">
+	        <h1 id="logo" class="j_leftnav"><a href="javascript:;"><i></i><span>瑞祥UI</span></a></h1>
+	        <!--顶部导航 开始-->
+	        <div id="topnav" class="clearfix">
+	            <ul class="fl">
+	                <li>
+	                    <a href="javascript:;" data-rippleria class="setup_nav setupbtn rippleria-dark">
+	                        <i></i>
+	                    </a>
+	                </li>
+	                <li class="dropdown">
+	                    <a href="javascript:;" data-rippleria class="setup_layout setupbtn rippleria-dark">
+	                        <i></i>
+	                    </a>
+	                    <div class="dropdown-menu">
+	                        <i class="dropdown-adorn"></i>
+	                        <div class="panel-heading">用户选项</div>
+	                        <div class="list-group">
+	                            <div class="list-group-item">
+	                                <p>菜单样式</p>
+	                                <div class="radio-group">
+	                                    <label class="setup-layout-lable uiRadio12" data-direction="left">
+	                                        <input type="radio" name="direction" class="uiRadio12-input" checked="checked" />左侧
+	                                    </label>
+	                                    <label class="setup-layout-lable uiRadio12" data-direction="top">
+	                                        <input type="radio" name="direction" class="uiRadio12-input" />上面
+	                                    </label>
+	                                </div>
+	                            </div>
+	                            <div class="list-group-item" id="j_fixed_all">
+	                                <p>导航样式</p>
+	                                <div class="radio-group fixed-check" id="j-fixed-header" data-check="true"><i></i>固定头部</div>
+	                                <div class="radio-group fixed-check" id="j-fixed-nav" data-check="true"><i></i>固定导航菜单</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </li>
+	                <li class="dropdown">
+	                    <a href="javascript:;" data-rippleria class="setup_skin setupbtn rippleria-dark">
+	                        <i></i>
+	                    </a>
+	                    <div class="dropdown-menu">
+	                        <i class="dropdown-adorn"></i>
+	                        <div class="panel-heading">颜色应用</div>
+	                        <div class="panel-body">
+	                            <div class="row clearfix">
+	                                <div class="col-md-4 col-item-header relative fl">
+	                                    <span class="skin-item logo-bg-c000000 active"></span>
+	                                    <span class="skin-item logo-bg-c009688"></span>
+	                                    <span class="skin-item logo-bg-c8bc34a"></span>
+	                                    <span class="skin-item logo-bg-c00bcd4"></span>
+	                                    <span class="skin-item logo-bg-cffca28"></span>
+	                                    <span class="skin-item logo-bg-cf44336"></span>
+	                                </div>
+	                                <div class="col-md-4 col-item-nav relative fl">
+	                                    <span class="skin-item bar-bg-cffffff"></span>
+	                                    <span class="skin-item bar-bg-c009688"></span>
+	                                    <span class="skin-item bar-bg-c8bc34a"></span>
+	                                    <span class="skin-item bar-bg-c00bcd4"></span>
+	                                    <span class="skin-item bar-bg-cffca28"></span>
+	                                    <span class="skin-item bar-bg-cf44336"></span>
+	                                </div>
+	                                <div class="col-md-4 col-item-bar relative fl">
+	                                    <span class="skin-item header-bg-c000000"></span>
+	                                    <span class="skin-item header-bg-c009688"></span>
+	                                    <span class="skin-item header-bg-c8bc34a"></span>
+	                                    <span class="skin-item header-bg-c00bcd4"></span>
+	                                    <span class="skin-item header-bg-cffca28"></span>
+	                                    <span class="skin-item header-bg-cf44336"></span>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </li>
+	            </ul>
+	            <div class="exit-div"><a href="javascript:;"><i></i><span>退出</span></a></div>
+	            <div class="user-div"><a href="javascript:;"><i></i><span>用户名</span></a></div>
+	        </div>
+	        <!--顶部导航 结束-->
+    	</div>
+		<div id="main_box">
+        <!--主导航 开始-->
+        <div id="nav" class="j_leftnav nav-fixed">
+            <div class="nav-wrapper">
+                <div class="nav-wrapper-content">
+                    <ul class="nav-ul clearfix">
+                        <li>
+							<a href="specification/index.html" data-rippleria class="rippleria-dark">
+								<em class="small-icon-logo small-icon-num1"></em><strong>规范</strong>
+							</a>
+						</li>
+						<li>
+							<a href="globalStyle.html" data-rippleria class="rippleria-dark">
+								<em class="small-icon-logo small-icon-num2"></em><strong>全局样式</strong>
+							</a>
+						</li>
+						<li class="active">
+							<a href="component.html" data-rippleria class="rippleria-dark">
+								<em class="small-icon-logo small-icon-num3"></em><strong>组件</strong>
+							</a>
+						</li>
+						 <li>
+								<a href="javascript:;" data-rippleria class="rippleria-dark"><em class="small-icon-logo small-icon-num4"></em><strong>示例页面</strong><i class="icon-down"></i></a>
+								<ul class="sub-2-nav">
+									<li>
+										<a href="javascript:;" data-rippleria class="rippleria-dark"><em class="icon-circle"></em><strong>列表页</strong></a>
+									</li>
+								</ul>
+								<i class="icon-down"></i>
+							</li>
+                    	</ul>
+                </div>
+            </div>
+        </div>
+        <!--主导航 结束-->
+        <!--内容区 开始-->
+        <div id="main_content">
+            <div class="wrapper AccordingDiv">
+            	<div  id="ysTitle" class="pt5">
+	            	<ul class="clearfix uiTab1 pl20" id="tablist">
+						<li class="uiTab1-active"><a href="#list1">按钮</a></li>
+						<li><a  href="#list2">输入框、选择框</a></li>
+						<li><a  href="#list3">文本框组件</a></li>
+						<li><a  href="#list4">图片上传，单选多选</a></li>
+						<li><a  href="#list5">表格</a></li>
+						<li><a  href="#list6">对话框</a></li>
+						<li><a  href="#list7">tab切换</a></li>
+						<li><a  href="#list8">进度条、通知</a></li>
+						<li><a  href="#list9">分页</a></li>
+					</ul>
+            	</div>
+            	<div class="yswarp pt20">
+				<!---按钮 开始--->			
+				<div class="pa20 ysinner" id="list1">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							按钮
+					</h2>
+					<div class="explain pb5">
+						按钮分为大中小3个规格，分别为small、normal、large ; 颜色分为：灰色、蓝色、绿色、红色、橙色、白色 ; 状态分为：禁用及未禁用。
+					</div>
+					<div class="ysbox">
+						<h3 class="ystitle">实例:</h3>
+						<div class="mb10">
+							<input type="button" value="按钮" class="uiBtn-small uiBtn-gray" />
+							<input type="button" value="按钮" class="uiBtn-normal uiBtn-gray" />
+							<input type="button" value="按钮" class="uiBtn-large uiBtn-gray" />
+						</div>
+						
+						<div class="mb10">
+							<input type="button" value="灰色按钮" class="uiBtn-normal uiBtn-gray" />
+							<input type="button" value="蓝色按钮" class="uiBtn-normal uiBtn-blue" />
+							<input type="button" value="绿色按钮" class="uiBtn-normal uiBtn-green" />
+							<input type="button" value="红色按钮" class="uiBtn-normal uiBtn-red" />
+							<input type="button" value="橙色按钮" class="uiBtn-normal uiBtn-orange" />
+							<input type="button" value="白色按钮" class="uiBtn-normal uiBtn-white" />
+						</div>
+						
+						<div class="mb10">
+							<input type="button" value="灰色禁用" disabled="disabled" class="uiBtn-normal uiBtn-gray-no" />
+							<input type="button" value="蓝色禁用" disabled="disabled" class="uiBtn-normal uiBtn-blue-no" />
+							<input type="button" value="绿色禁用" disabled="disabled" class="uiBtn-normal uiBtn-green-no" />
+							<input type="button" value="红色禁用" disabled="disabled" class="uiBtn-normal uiBtn-red-no" />
+							<input type="button" value="橙色禁用" disabled="disabled" class="uiBtn-normal uiBtn-orange-no" />
+							<input type="button" value="白色禁用" disabled="disabled" class="uiBtn-normal uiBtn-white-no" />
+						</div>
+						
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<div class="mb10">
+								<input type="button" value="按钮" class="uiBtn-small uiBtn-gray" />
+								<input type="button" value="按钮" class="uiBtn-normal uiBtn-gray" />
+								<input type="button" value="按钮" class="uiBtn-large uiBtn-gray" />
+							</div>
+							<div class="mb10">
+								<input type="button" value="灰色按钮" class="uiBtn-normal uiBtn-gray" />
+								<input type="button" value="蓝色按钮" class="uiBtn-normal uiBtn-blue" />
+								<input type="button" value="绿色按钮" class="uiBtn-normal uiBtn-green" />
+								<input type="button" value="红色按钮" class="uiBtn-normal uiBtn-red" />
+								<input type="button" value="橙色按钮" class="uiBtn-normal uiBtn-orange" />
+								<input type="button" value="白色按钮" class="uiBtn-normal uiBtn-white" />
+							</div>
+							<div class="mb10">
+								<input type="button" value="灰色禁用" disabled="disabled" class="uiBtn-normal uiBtn-gray-no" />
+								<input type="button" value="蓝色禁用" disabled="disabled" class="uiBtn-normal uiBtn-blue-no" />
+								<input type="button" value="绿色禁用" disabled="disabled" class="uiBtn-normal uiBtn-green-no" />
+								<input type="button" value="红色禁用" disabled="disabled" class="uiBtn-normal uiBtn-red-no" />
+								<input type="button" value="橙色禁用" disabled="disabled" class="uiBtn-normal uiBtn-orange-no" />
+								<input type="button" value="白色禁用" disabled="disabled" class="uiBtn-normal uiBtn-white-no" />
+							</div>
+						</pre>	
+					</div>
+				</div>	
+				<!---按钮 结束--->
+				
+				<!---文本输入框、文本选择框 开始--->			
+				<div class="pa20 ysinner" id="list2">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							文本输入框、文本选择框
+					</h2>
+					<div class="explain pb5">
+						文本输入框及文本选择框的宽度尽量使用内容宽度（80、100、120、160、180、210、250）
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<div class="mb10">
+							<input class="width160"  type="text" placeholder="默认" />
+							<input class="form-control width160" type="text" placeholder="focus有边框高亮" />
+							<div class="width160  uiText-failBorder dis-il-block">
+								<input type="text" class="form-control col-md-12" placeholder="发生错误文本框" >
+							</div>
+							<div class="width160  uiText-warnBorder dis-il-block">
+								<input type="text" class="form-control  col-md-12" placeholder="需要警告文本框" >
+							</div>
+						</div>
+						<div class="mb10">
+							<select class="width160">
+								<option>选项一</option>
+								<option>选项二</option>
+								<option>选项三</option>
+							</select>
+							<select class="width250">
+								<option>选项一</option>
+								<option>选项二</option>
+								<option>选项三</option>
+							</select>
+						</div>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<div class="mb10">
+								<input class="width160"  type="text" placeholder="默认" />
+								<input class="form-control width160" type="text" placeholder="focus有边框高亮" />
+								<div class="width160  uiText-failBorder dis-il-block">
+									<input type="text" class="form-control col-md-12" placeholder="发生错误文本框" >
+								</div>
+								<div class="width160  uiText-warnBorder dis-il-block">
+									<input type="text" class="form-control  col-md-12" placeholder="需要警告文本框" >
+								</div>
+							</div>
+							<div class="mb10">
+								<select class="width160">
+									<option>选项一</option>
+									<option>选项二</option>
+									<option>选项三</option>
+								</select>
+								<select class="width250">
+									<option>选项一</option>
+									<option>选项二</option>
+									<option>选项三</option>
+								</select>
+							</div>
+						</pre>	
+					</div>
+				</div>	
+				<!---文本框结束--->
+				
+				<!---文本框组件 开始--->			
+				<div class="pa20 ysinner" id="list3">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							文本框组件
+					</h2>
+					<div class="explain pb5">
+						文本输入框及文本选择框的宽度尽量使用内容宽度（80、100、120、160、180、210、250）
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<div class="clearfix uiHas-textIcon width250 ma10">
+							<input type="text" class="form-control width250">
+							<i class="uiText-adoptIcon bgIcon"></i>
+						</div>
+						<div class="clearfix uiHas-textIcon width250 ma10">
+							<input type="text" class="form-control width250">
+							<i class="uiText-failIcon bgIcon"></i>
+						</div>
+						<div class="clearfix uiHas-textIcon width250 ma10">
+							<input type="text" class="form-control width250">
+							<i class="uiText-warnIcon bgIcon"></i>
+						</div>
+						<div class="clearfix uiHas-textIcon width250 ma10">
+							<input type="text" class="form-control width250">
+							<i class="uiText-searchIcon bgIcon"></i>
+						</div>
+						<div class="clearfix uiHas-textIcon width250 ma10">
+							<input type="text" class="form-control width250">
+							<i class="uiText-timeIcon bgIcon"></i>
+						</div>
+						<div class="width120 ma10 uiText-selfAuto">
+							<span class="uiText-reduceIcon1 bgIcon"></span>
+							<input type="text" class="form-control  noradius" value="123">
+							<span class="uiText-plusIcon1 bgIcon"></span>
+						</div>
+						<div class="width120 ma10 uiText-selfAuto">
+							<input type="text" class="form-control norbradius" value="123">
+							<div class="uiText-div">
+								<span class="uiText-reduceIcon2 bgIcon"></span>
+								<span class="uiText-plusIcon2 bgIcon"></span>
+							</div>
+						</div>
+						<div class="width120 ma10 uiText-selfAuto">
+							<div class="uiText-commonIcon uiText-commonIcon-left">￥</div>
+							<input type="text" class="form-control noradius">
+							<div class="uiText-commonIcon uiText-commonIcon-right">.00</div>
+						</div>
+						<div class="width120 ma10 uiText-selfAuto">
+							<span class="uiText-commonIcon uiText-commonIcon-left">@</span>
+							<input type="text" class="form-control nolbradius">
+						</div>
+						<div class="ma10 uiText-selfAuto width180">
+							<div class="uiText-div relative">
+								<p class="uiDropdown-toggle">自定义<em class="bgIcon"></em></p>
+								<ul class="uiDropdown-menu">
+									<li><a href="javascript">菜单一</a></li>	
+									<li><a href="javascript">菜单二</a></li>	
+									<li><a href="javascript">菜单三</a></li>	
+								</ul>
+							</div>
+							<input type="text" placeholder="请输入关键字" class="form-control nolbradius">
+						</div>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<div class="clearfix uiHas-textIcon width250 ma10">
+								<input type="text" class="form-control width250">
+								<i class="uiText-adoptIcon bgIcon"></i>
+							</div>
+							<div class="clearfix uiHas-textIcon width250 ma10">
+								<input type="text" class="form-control width250">
+								<i class="uiText-failIcon bgIcon"></i>
+							</div>
+							<div class="clearfix uiHas-textIcon width250 ma10">
+								<input type="text" class="form-control width250">
+								<i class="uiText-warnIcon bgIcon"></i>
+							</div>
+							<div class="clearfix uiHas-textIcon width250 ma10">
+								<input type="text" class="form-control width250">
+								<i class="uiText-searchIcon bgIcon"></i>
+							</div>
+							<div class="clearfix uiHas-textIcon width250 ma10">
+								<input type="text" class="form-control width250">
+								<i class="uiText-timeIcon bgIcon"></i>
+							</div>
+							<div class="width120 ma10 uiText-selfAuto">
+								<span class="uiText-reduceIcon1 bgIcon"></span>
+								<input type="text" class="form-control  noradius" value="123">
+								<span class="uiText-plusIcon1 bgIcon"></span>
+							</div>
+							<div class="width120 ma10 uiText-selfAuto">
+								<input type="text" class="form-control norbradius" value="123">
+								<div class="uiText-div">
+									<span class="uiText-reduceIcon2 bgIcon"></span>
+									<span class="uiText-plusIcon2 bgIcon"></span>
+								</div>
+							</div>
+							<div class="width120 ma10 uiText-selfAuto">
+								<div class="uiText-commonIcon uiText-commonIcon-left">￥</div>
+								<input type="text" class="form-control noradius">
+								<div class="uiText-commonIcon uiText-commonIcon-right">.00</div>
+							</div>
+							<div class="width120 ma10 uiText-selfAuto">
+								<span class="uiText-commonIcon uiText-commonIcon-left">@</span>
+								<input type="text" class="form-control nolbradius">
+							</div>
+							<div class="ma10 uiText-selfAuto width180">
+								<div class="uiText-div relative">
+									<p class="uiDropdown-toggle">自定义<em class="bgIcon"></em></p>
+									<ul class="uiDropdown-menu">
+										<li><a href="javascript">菜单一</a></li>	
+										<li><a href="javascript">菜单二</a></li>	
+										<li><a href="javascript">菜单三</a></li>	
+									</ul>
+								</div>
+								<input type="text" placeholder="请输入关键字" class="form-control nolbradius">
+							</div>
+						</pre>	
+					</div>
+				</div>	
+				<!---文本框组件 结束--->
+				
+				
+				<!---图片上传，单选多选 开始--->			
+				<div class="pa20 ysinner" id="list4">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							图片上传，单选多选
+					</h2>
+					<div class="explain pb5">
+						
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<div class="clearfix mb10">
+							<div class="fl uiImgUpload uiImgUpload-gblock mr10" style="width: 50px;height: 50px;">
+								<a href="javascript:">
+									<input type="file" value="" class="file">
+									<em class="bgIcon file-ico"></em>
+								</a>
+							</div>
+							<div class="fl uiImgUpload uiImgUpload-bblock" style="width: 50px;height: 50px;">
+								<a href="javascript:">
+									<input type="file" value="" class="file">
+									<em class="bgIcon file-ico"></em>
+								</a>
+							</div>
+						</div>
+						
+						<div class="mb10">
+							<label class="uiRadio12"><input type="radio" name="a" class="uiRadio12-input"/>单选1</label>
+							<label class="uiRadio12"><input type="radio" name="a" class="uiRadio12-input"/>单选2</label>
+							<label class="uiRadio12"><input type="checkbox" class="uiRadio12-input"/>单选1</label>
+							<label class="uiRadio12"><input type="checkbox" class="uiRadio12-input"/>单选2</label>
+						</div>
+						<div class="mb10">
+							<label class="uiRadio14"><input type="radio" name="b" class="uiRadio14-input"/>单选1</label>
+							<label class="uiRadio14"><input type="radio" name="b" class="uiRadio14-input"/>单选2</label>
+							<label class="uiRadio14"><input type="checkbox" class="uiRadio14-input"/>单选1</label>
+							<label class="uiRadio14"><input type="checkbox" class="uiRadio14-input"/>单选2</label>
+						</div>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<div class="clearfix mb10">
+								<div class="fl uiImgUpload uiImgUpload-gblock mr10" style="width: 50px;height: 50px;">
+									<a href="javascript:">
+										<input type="file" value="" class="file">
+										<em class="bgIcon file-ico"></em>
+									</a>
+								</div>
+								<div class="fl uiImgUpload uiImgUpload-bblock" style="width: 50px;height: 50px;">
+									<a href="javascript:">
+										<input type="file" value="" class="file">
+										<em class="bgIcon file-ico"></em>
+									</a>
+								</div>
+							</div>
+							<div class="mb10">
+								<label class="uiRadio12"><input type="radio" name="a" class="uiRadio12-input"/>单选1</label>
+								<label class="uiRadio12"><input type="radio" name="a" class="uiRadio12-input"/>单选2</label>
+								<label class="uiRadio12"><input type="checkbox" class="uiRadio12-input"/>单选1</label>
+								<label class="uiRadio12"><input type="checkbox" class="uiRadio12-input"/>单选2</label>
+							</div>
+							<div class="mb10">
+								<label class="uiRadio14"><input type="radio" name="b" class="uiRadio14-input"/>单选1</label>
+								<label class="uiRadio14"><input type="radio" name="b" class="uiRadio14-input"/>单选2</label>
+								<label class="uiRadio14"><input type="checkbox" class="uiRadio14-input"/>单选1</label>
+								<label class="uiRadio14"><input type="checkbox" class="uiRadio14-input"/>单选2</label>
+							</div>
+						</pre>	
+					</div>
+				</div>	
+				<!---图片上传，单选多选 结束--->
+				
+				<!---table表格 开始--->			
+				<div class="pa20 ysinner" id="list5">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							table表格
+					</h2>
+					<div class="explain pb5">
+						
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<table class="mt20 uiTable">
+							<tbody>
+								<tr>
+									<th>序号</th>
+									<th>任务编号</th>
+									<th>执行人</th>
+									<th>连级名称</th>
+									<th>任务名称</th>
+									<th>预计得分</th>
+									<th>开始时间</th>
+									<th>结束时间</th>
+									<th>操作</th>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Ant-Dlise-1</td>
+									<td>周慧文</td>
+									<td>UE/UX</td>
+									<td>网页界面设计</td>
+									<td>0</td>
+									<td>01-15</td>
+									<td>01-15</td>
+									<td>
+										<input type="button" value="按 钮" class="uiBtn-blue uiBtn-small">
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Ant-Dlise-1</td>
+									<td>周慧文</td>
+									<td>UE/UX</td>
+									<td>网页界面设计</td>
+									<td>0</td>
+									<td>01-15</td>
+									<td>01-15</td>
+									<td>
+										<input type="button" value="按 钮" class="uiBtn-blue uiBtn-small">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="mt20 uiTableLeft">
+							<tbody>
+								<tr>
+									<th>序号</th>
+									<th>任务编号</th>
+									<th>执行人</th>
+									<th>连级名称</th>
+									<th>任务名称</th>
+									<th>预计得分</th>
+									<th>开始时间</th>
+									<th>结束时间</th>
+									<th>操作</th>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Ant-Dlise-1</td>
+									<td>周慧文</td>
+									<td>UE/UX</td>
+									<td>网页界面设计</td>
+									<td>0</td>
+									<td>01-15</td>
+									<td>01-15</td>
+									<td>
+										<input type="button" value="按 钮" class="uiBtn-blue uiBtn-small">
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Ant-Dlise-1</td>
+									<td>周慧文</td>
+									<td>UE/UX</td>
+									<td>网页界面设计</td>
+									<td>0</td>
+									<td>01-15</td>
+									<td>01-15</td>
+									<td>
+										<input type="button" value="按 钮" class="uiBtn-blue uiBtn-small">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="mt20 uiTableRight">
+							<tbody>
+								<tr>
+									<th>序号</th>
+									<th>任务编号</th>
+									<th>执行人</th>
+									<th>连级名称</th>
+									<th>任务名称</th>
+									<th>预计得分</th>
+									<th>开始时间</th>
+									<th>结束时间</th>
+									<th>操作</th>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Ant-Dlise-1</td>
+									<td>周慧文</td>
+									<td>UE/UX</td>
+									<td>网页界面设计</td>
+									<td>0</td>
+									<td>01-15</td>
+									<td>01-15</td>
+									<td>
+										<input type="button" value="按 钮" class="uiBtn-blue uiBtn-small">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							
+						</pre>	
+					</div>
+				</div>	
+				<!---table表格 结束--->
+				
+				<!---对话组件 开始--->			
+				<div class="pa20 ysinner" id="list6">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							对话组件
+					</h2>
+					<div class="explain pb5">
+						
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<div class="relative uiTalkGray uiTalk34  mb10 mt10">
+							<i class="uiTalk-icon uiTalk-icon-left"></i>
+							<div class="uiTalk-iframe">天天都需要天天都需要天天都需要天天都需要天天都需要天天都需要天天都需要</div>
+						</div>
+						<div class="relative uiTalkGray uiTalk30 mb10">
+							<i class="uiTalk-icon uiTalk-icon-left"></i>
+							<div class="uiTalk-iframe">天天都需要</div>
+						</div>
+						<div class="relative clearfix uiTalkBlue uiTalk34 mb10">
+							<i class="uiTalk-icon uiTalk-icon-right"></i>
+							<div class="uiTalk-iframe fr">天天都需要</div>
+						</div>
+						<div class="relative clearfix uiTalkBlue uiTalk30 mb10">
+							<i class="uiTalk-icon uiTalk-icon-right"></i>
+							<div class="uiTalk-iframe fr">天天都需要</div>
+						</div>
+						<div class="star_scorePs1  clearfix mb20">
+				            <div class="dis_il_block star_score fl">
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				            </div>
+				            <p class="fl ml10">您的评分：<span class="fenshu"></span>分</p>
+							<div class="attitude fl ml10"></div>
+				        </div>
+				        <div class="star_scorePs2 clearfix mb20">
+				            <div class="dis_il_block star_score fl">
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				            </div>
+				            <p class="fl ml10">您的评分：<span class="fenshu"></span>分</p>
+							<div class="attitude fl ml10"></div>
+				        </div>
+				        <div class="star_scorePs3 clearfix mb20">
+				            <div class="dis_il_block star_score fl">
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				                <a href="javascript:void(0)"></a>
+				                <a class="right" href="javascript:void(0)"></a>
+				            </div>
+				            <p class="fl ml10">您的评分：<span class="fenshu"></span>分</p>
+							<div class="attitude fl ml10"></div>
+				        </div>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							
+						</pre>	
+					</div>
+				</div>	
+				<!---对话组件 结束--->
+				
+				<!---tab切换组件 开始--->			
+				<div class="pa20 ysinner"  id="list7">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							tab切换组件
+					</h2>
+					<div class="explain pb5">
+						
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<ul class="clearfix uiTab1">
+							<li class="uiTab1-active"><a href="javascript:">选中项</a></li>
+							<li><a href="javascript:">选中项一</a></li>
+							<li><a href="javascript:">选中项二</a></li>
+							<li><a href="javascript:">选中项三</a></li>
+						</ul>
+						<ul class="clearfix uiTab2 mt20">
+							<li class="uiTab2-active"><a href="javascript:">选中项</a></li>
+							<li><a href="javascript:">选中项一</a></li>
+							<li><a href="javascript:">选中项二</a></li>
+							<li><a href="javascript:">选中项三</a></li>
+						</ul>
+						<ul class="clearfix uiTab3 mt20">
+							<li class="uiTab3-active"><a href="javascript:">选中项</a></li>
+							<li><a href="javascript:">选中项一</a></li>
+							<li><a href="javascript:">选中项二</a></li>
+							<li><a href="javascript:">选中项三</a></li>
+						</ul>
+						<ul class="clearfix uiTab4 mt20">
+							<li class="uiTab4-active"><a href="javascript:">选中项</a></li>
+							<li><a href="javascript:">选中项一</a></li>
+							<li><a href="javascript:">选中项二</a></li>
+							<li class="border-rNone"><a href="javascript:">选中项三</a></li>
+						</ul>
+						<ul class="clearfix uiTab5 mt20">
+							<li class="fl uiTab5-active " style="z-index: 3;">
+								选中项
+								<i class="uiTab-i"></i>
+							</li>
+							<li class="fl " style="z-index: 2;">
+								选中项一
+								<i></i>
+							</li>
+							<li class="fl" style="z-index: 1;">
+								选中项二
+								<i></i>
+							</li>
+						</ul>
+						<ul class="clearfix uiTab6 mt20">
+							<li class="fl uiTab6-active">
+								<i class="fl uiTab-i1"></i>
+								<div class="fl uiTab-type">选中项</div>
+								<em class="fl uiTab-i2"></em>
+							</li>
+							<li class="fl">
+								<i class="fl"></i>
+								<div class="fl">选中项</div>
+								<em class="fl"></em>
+							</li>
+							<li class="fl">
+								<i class="fl"></i>
+								<div class="fl">选中项</div>
+								<em class="fl"></em>
+							</li>
+						</ul>
+						<ul class="clearfix uiTab7 mt20">
+							<li class="fl uiTab7-active uifirst">选中项</li>
+							<li class="fl">选中项一</li>
+							<li class="fl">选中项二</li>
+							<li class="fl uilast">选中项三</li>
+						</ul>
+						<ul class="clearfix uiTab8 mt20 mb20">
+							<li class="fl uiTab8-active">选中项</li>
+							<li class="fl">选中项一</li>
+							<li class="fl">选中项二</li>
+							<li class="fl">选中项三</li>
+						</ul>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<ul class="clearfix uiTab1">
+								<li class="uiTab1-active"><a href="javascript:">选中项</a></li>
+								<li><a href="javascript:">选中项一</a></li>
+								<li><a href="javascript:">选中项二</a></li>
+								<li><a href="javascript:">选中项三</a></li>
+							</ul>
+							<ul class="clearfix uiTab2 mt20">
+								<li class="uiTab2-active"><a href="javascript:">选中项</a></li>
+								<li><a href="javascript:">选中项一</a></li>
+								<li><a href="javascript:">选中项二</a></li>
+								<li><a href="javascript:">选中项三</a></li>
+							</ul>
+							<ul class="clearfix uiTab3 mt20">
+								<li class="uiTab3-active"><a href="javascript:">选中项</a></li>
+								<li><a href="javascript:">选中项一</a></li>
+								<li><a href="javascript:">选中项二</a></li>
+								<li><a href="javascript:">选中项三</a></li>
+							</ul>
+							<ul class="clearfix uiTab4 mt20">
+								<li class="uiTab4-active"><a href="javascript:">选中项</a></li>
+								<li><a href="javascript:">选中项一</a></li>
+								<li><a href="javascript:">选中项二</a></li>
+								<li class="border-rNone"><a href="javascript:">选中项三</a></li>
+							</ul>
+							<!--js辅助算层级-->
+							<ul class="clearfix uiTab5 mt20">
+								<li class="fl uiTab5-active">
+									选中项
+									<i class="uiTab-i"></i>
+								</li>
+								<li class="fl">
+									选中项一
+									<i ></i>
+								</li>
+								<li class="fl">
+									选中项二
+									<i ></i>
+								</li>
+							</ul>
+							<ul class="clearfix uiTab6 mt20">
+								<li class="fl uiTab6-active">
+									<i class="fl uiTab-i1"></i>
+									<div class="fl uiTab-type">选中项</div>
+									<em class="fl uiTab-i2"></em>
+								</li>
+								<li class="fl">
+									<i class="fl"></i>
+									<div class="fl">选中项</div>
+									<em class="fl"></em>
+								</li>
+								<li class="fl">
+									<i class="fl"></i>
+									<div class="fl">选中项</div>
+									<em class="fl"></em>
+								</li>
+							</ul>
+							<ul class="clearfix uiTab7 mt20">
+								<li class="fl uiTab7-active uifirst">选中项</li>
+								<li class="fl">选中项一</li>
+								<li class="fl">选中项二</li>
+								<li class="fl uilast">选中项三</li>
+							</ul>
+							<ul class="clearfix uiTab8 mt20 mb20">
+								<li class="fl uiTab8-active">选中项</li>
+								<li class="fl">选中项一</li>
+								<li class="fl">选中项二</li>
+								<li class="fl">选中项三</li>
+							</ul>
+						</pre>	
+					</div>
+				</div>	
+				<!---tab切换组件 结束--->
+				
+				<!---进度条及通知类提示  开始--->			
+				<div class="pa20 ysinner" id="list8">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							进度条及通知类提示
+					</h2>
+					<div class="explain pb5">
+						
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<div class="uiBar mt20">
+							<span class="uiBar-hor bgRed" style="width: 50%;" ></span>
+				            <span class="uiBar-num">50%</span>
+						</div>
+						<div class="uiBar mt20">
+							<span style="width: 60%;" class="uiBar-hor bgBlue"></span>
+				            <span class="uiBar-num">60%</span>
+						</div>
+						<div class="uiBar mt20 mb20">
+							<span style="width: 80%;" class="uiBar-hor bgGreen"></span>
+				            <span class="uiBar-num">80%</span>
+						</div>
+						<span class="uiPromt1-into bgBlue">6</span>
+						<span class="uiPromt1-fail bgRed">6</span>
+						<span class="uiPromt1-warn bgGreen">6</span>
+						<span class="uiPromt1-success bgOrange">6</span>
+						<span class="uiPromt1-ccc bgGray">6</span>
+						<br/>
+						<br/>
+						<span class="uiPromt2-into bgBlue">6</span>
+						<span class="uiPromt2-fail bgRed">6</span>
+						<span class="uiPromt2-warn bgGreen">6</span>
+						<span class="uiPromt2-success bgOrange">6</span>
+						<span class="uiPromt2-ccc bgGray">6</span>
+						<br/>
+						<br/>
+						<span class="uiPromt3-into bgBlue"></span>
+						<span class="uiPromt3-fail bgRed"></span>
+						<span class="uiPromt3-warn bgGreen"></span>
+						<span class="uiPromt3-success bgOrange"></span>
+						<span class="uiPromt3-ccc bgGray"></span>
+						<br/>
+						<br/>
+						<span class="uiPromt4-into bgBlue">6</span>
+						<span class="uiPromt4-fail bgRed">6</span>
+						<span class="uiPromt4-warn bgGreen">6</span>
+						<span class="uiPromt4-success bgOrange">6</span>
+						<span class="uiPromt4-ccc bgGray">6</span>
+						<br/>
+						<br/>	
+						<span class="uiPromt5-into bgBlue">99+</span>
+						<span class="uiPromt5-fail bgRed">99+</span>
+						<span class="uiPromt5-warn bgGreen">99+</span>
+						<span class="uiPromt5-success bgOrange">99+</span>
+						<span class="uiPromt5-ccc bgGray">99+</span>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<div class="uiBar mt20">
+								<span class="uiBar-hor bgRed" style="width: 50%;" ></span>
+					            <span class="uiBar-num">50%</span>
+							</div>
+							<div class="uiBar mt20">
+								<span style="width: 60%;" class="uiBar-hor bgBlue"></span>
+					            <span class="uiBar-num">60%</span>
+							</div>
+							<div class="uiBar mt20 mb20">
+								<span style="width: 80%;" class="uiBar-hor bgGreen"></span>
+					            <span class="uiBar-num">80%</span>
+							</div>
+							<span class="uiPromt1-into bgBlue">6</span>
+							<span class="uiPromt1-fail bgRed">6</span>
+							<span class="uiPromt1-warn bgGreen">6</span>
+							<span class="uiPromt1-success bgOrange">6</span>
+							<span class="uiPromt1-ccc bgGray">6</span>
+							<br/>
+							<br/>
+							<span class="uiPromt2-into bgBlue">6</span>
+							<span class="uiPromt2-fail bgRed">6</span>
+							<span class="uiPromt2-warn bgGreen">6</span>
+							<span class="uiPromt2-success bgOrange">6</span>
+							<span class="uiPromt2-ccc bgGray">6</span>
+							<br/>
+							<br/>
+							<span class="uiPromt3-into bgBlue"></span>
+							<span class="uiPromt3-fail bgRed"></span>
+							<span class="uiPromt3-warn bgGreen"></span>
+							<span class="uiPromt3-success bgOrange"></span>
+							<span class="uiPromt3-ccc bgGray"></span>
+							<br/>
+							<br/>
+							<span class="uiPromt4-into bgBlue">6</span>
+							<span class="uiPromt4-fail bgRed">6</span>
+							<span class="uiPromt4-warn bgGreen">6</span>
+							<span class="uiPromt4-success bgOrange">6</span>
+							<span class="uiPromt4-ccc bgGray">6</span>
+							<br/>
+							<br/>	
+							<span class="uiPromt5-into bgBlue">99+</span>
+							<span class="uiPromt5-fail bgRed">99+</span>
+							<span class="uiPromt5-warn bgGreen">99+</span>
+							<span class="uiPromt5-success bgOrange">99+</span>
+							<span class="uiPromt5-ccc bgGray">99+</span>
+						</pre>	
+					</div>
+				</div>	
+				<!---进度条及通知类提示  结束--->
+				
+				<!---翻页  开始--->			
+				<div class="pa20 ysinner" id="list9">
+					<h2 class="uiTitle1">
+							<i class="uiTitle-icon"></i>
+							翻页
+					</h2>
+					<div class="explain pb5">
+						
+					</div>
+					<div class="ysbox wbk">
+						<h3 class="ystitle">实例:</h3>
+						<div class="uiPage1 tx-right mb10">
+							<a href="javascript:;" class="ui-prev">&lt;</a>
+							<span class="uiPage1-active">1</span>
+							<a href="javascript:;" class=" uiPage1-page ">2</a>
+							<a href="javascript:;" class=" uiPage1-page">3</a>
+							<span class="uiPage1-span ">...</span>
+							<a href="javascript:;" class=" uiPage1-page">50</a>
+							<a href="javascript:;" class="ui-next mr10">&gt;</a>
+							<span class="uiPage-text">跳至</span>
+							<div class="uiPage-value">
+								<input type="text" class="form-control col-md-12">
+							</div>
+							<span class="uiPage-text">页</span>
+							<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+						</div>
+						<div class="uiPage1  tx-right mb10">
+							<a href="javascript:;" class="ui-prev ">上一页</a>
+							<span class="uiPage1-active ">1</span>
+							<a href="javascript:;" class="uiPage1-page ">2</a>
+							<a href="javascript:;" class="uiPage1-page ">3</a>
+							<span class="uiPage1-span ">...</span>
+							<a href="javascript:;" class="uiPage1-page ">50</a>
+							<a href="javascript:;" class="ui-next mr10">下一页</a>
+							<span class="uiPage-text ">跳至</span>
+							<div class="uiPage-value ">
+								<input type="text" class="form-control col-md-12">
+							</div>
+							<span class="uiPage-text ">页</span>
+							<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+						</div>
+						<div class=" tx-right mb10">
+							<a href="javascript:;" class="ui-prev ">&lt;</a>
+							<span class="uiPage1-active">1</span>
+							<a href="javascript:;" class="uiPage1-page ">2</a>
+							<a href="javascript:;" class="uiPage1-page ">3</a>
+							<span class="uiPage1-span ">...</span>
+							<a href="javascript:;" class="uiPage1-page ">50</a>
+							<a href="javascript:;" class="ui-next  mr10">&gt;</a>
+							<span class="uiPage-text  ">跳至</span>
+							<div class="uiPage-value ">
+								<input type="text" class="form-control col-md-12">
+							</div>
+							<span class="uiPage-text">页</span>
+							<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+						</div>
+						<div class="tx-right mb10">
+							<a href="javascript:;" class="ui-prev">上一页</a>
+							<span class="uiPage1-active">1</span>
+							<a href="javascript:;" class="uiPage1-page">2</a>
+							<a href="javascript:;" class="uiPage1-page">3</a>
+							<span class="uiPage1-span">...</span>
+							<a href="javascript:;" class="uiPage1-page">50</a>
+							<a href="javascript:;" class="ui-next mr10">下一页</a>
+							<span class="uiPage-text">跳至</span>
+							<div class="uiPage-value">
+								<input type="text" class="form-control col-md-12">
+							</div>
+							<span class="uiPage-text">页</span>
+							<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+						</div>
+					</div>
+					<div class="codebox">
+						<pre class="brush: html">
+							<div class="uiPage1 tx-right mb10">
+								<a href="javascript:;" class="ui-prev">&lt;</a>
+								<span class="uiPage1-active">1</span>
+								<a href="javascript:;" class=" uiPage1-page ">2</a>
+								<a href="javascript:;" class=" uiPage1-page">3</a>
+								<span class="uiPage1-span ">...</span>
+								<a href="javascript:;" class=" uiPage1-page">50</a>
+								<a href="javascript:;" class="ui-next mr10">&gt;</a>
+								<span class="uiPage-text">跳至</span>
+								<div class="uiPage-value">
+									<input type="text" class="form-control col-md-12">
+								</div>
+								<span class="uiPage-text">页</span>
+								<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+							</div>
+							<div class="uiPage1  tx-right mb10">
+								<a href="javascript:;" class="ui-prev ">上一页</a>
+								<span class="uiPage1-active ">1</span>
+								<a href="javascript:;" class="uiPage1-page ">2</a>
+								<a href="javascript:;" class="uiPage1-page ">3</a>
+								<span class="uiPage1-span ">...</span>
+								<a href="javascript:;" class="uiPage1-page ">50</a>
+								<a href="javascript:;" class="ui-next mr10">下一页</a>
+								<span class="uiPage-text ">跳至</span>
+								<div class="uiPage-value ">
+									<input type="text" class="form-control col-md-12">
+								</div>
+								<span class="uiPage-text ">页</span>
+								<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+							</div>
+							<div class=" tx-right mb10">
+								<a href="javascript:;" class="ui-prev ">&lt;</a>
+								<span class="uiPage1-active">1</span>
+								<a href="javascript:;" class="uiPage1-page ">2</a>
+								<a href="javascript:;" class="uiPage1-page ">3</a>
+								<span class="uiPage1-span ">...</span>
+								<a href="javascript:;" class="uiPage1-page ">50</a>
+								<a href="javascript:;" class="ui-next  mr10">&gt;</a>
+								<span class="uiPage-text  ">跳至</span>
+								<div class="uiPage-value ">
+									<input type="text" class="form-control col-md-12">
+								</div>
+								<span class="uiPage-text">页</span>
+								<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+							</div>
+							<div class="tx-right mb10">
+								<a href="javascript:;" class="ui-prev">上一页</a>
+								<span class="uiPage1-active">1</span>
+								<a href="javascript:;" class="uiPage1-page">2</a>
+								<a href="javascript:;" class="uiPage1-page">3</a>
+								<span class="uiPage1-span">...</span>
+								<a href="javascript:;" class="uiPage1-page">50</a>
+								<a href="javascript:;" class="ui-next mr10">下一页</a>
+								<span class="uiPage-text">跳至</span>
+								<div class="uiPage-value">
+									<input type="text" class="form-control col-md-12">
+								</div>
+								<span class="uiPage-text">页</span>
+								<input type="button" value="确 定" class="uiBtn-blue uiBtn-small">
+							</div>
+						</pre>	
+					</div>
+				</div>	
+				<!---翻页  结束--->
+                </div>	
+			</div>
+        </div>
+        <!--内容区 结束-->
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.rippleria.min.js" ></script>
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script type="text/javascript" src="js/scroll.js" ></script>
+    
+ 	<script type="text/javascript" src="js/SyntaxHighlighter/src/shCore.js" ></script>
+	<script type="text/javascript" src="js/SyntaxHighlighter/scripts/shBrushCSharp.js" ></script>
+	<script type="text/javascript" src="js/SyntaxHighlighter/scripts/shBrushCss.js" ></script>
+	<script type="text/javascript" src="js/SyntaxHighlighter/scripts/shBrushXml.js" ></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'js/SyntaxHighlighter/scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+	<script>
+		$(function(){
+			$("#tablist li").click(function(){
+				$(this).addClass("uiTab1-active").siblings().removeClass("uiTab1-active")
+			});
+			var scrollBox = $(".ysinner");
+			$(window).scroll(function(){
+				changeTab()
+			});
+			$(window).load(function(){
+				changeTab()
+			});
+			$(window).resize(function(){
+				changeTab()
+			});
+			
+			
+			function changeTab(){
+				scrollBox.each(function(index){
+		            if($(window).scrollTop()>$(this).offset().top-50){
+		                //console.log($(this).index())
+		                $("#tablist li").eq($(this).index()).addClass("uiTab1-active").siblings().removeClass("uiTab1-active")
+		            }
+		        })
+			}
+		})
+	</script>
+	</body>
+</html>
