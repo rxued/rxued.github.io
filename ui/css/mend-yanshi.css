@@ -6,13 +6,13 @@
 .codebox{    background-color: #f7f7f9; padding: 10px 0;
     border: 1px solid #e1e1e8; border-top: none;    border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;}
-#colbox .col-md-1 ,#colbox .col-md-2,#colbox .col-md-3 ,#colbox .col-md-4,#colbox .col-md-5 ,#colbox .col-md-6,#colbox .col-md-7 ,#colbox .col-md-8,#colbox .col-md-9 ,#colbox .col-md-10,#colbox .col-md-11 ,#colbox .col-md-12{
+.yscolmdbox .col-md-1 ,.yscolmdbox .col-md-2,.yscolmdbox .col-md-3 ,.yscolmdbox .col-md-4,.yscolmdbox .col-md-5 ,.yscolmdbox .col-md-6,.yscolmdbox .col-md-7 ,.yscolmdbox .col-md-8,.yscolmdbox .col-md-9 ,.yscolmdbox .col-md-10,.yscolmdbox .col-md-11 ,.yscolmdbox .col-md-12{
 	border:2px solid #ccc;
 	padding: 5px 0;
 	text-align: center;
 	border-left:none ;
 }
-#colbox  .first{border-left:2px solid #ccc;}
+.yscolmdbox  .first{border-left:2px solid #ccc;}
 .wbk .col-md-12 { text-align: left;}
 .wbk .uiPage-value  .col-md-12{ text-align: center;}
 #ysTitle{ position: fixed; top: 40px; width: 100%; background: #fff; z-index: 999;}
