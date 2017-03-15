@@ -107,7 +107,9 @@ select {
 textarea {
 	overflow: auto;
 	line-height: 20px;
-	padding: 4px 8px
+	padding: 4px 8px;
+	border-radius: 3px;
+	vertical-align: middle;
 }
 
 label {
@@ -421,6 +423,8 @@ td {
 	padding: 8px 10px;
 	text-align: right;
 }
+.search-box input { vertical-align: middle;}
+.uiHas-textIcon{ display: inline-block; vertical-align: middle;}
 /*内置宽度 结束*/
 
 
@@ -447,9 +451,9 @@ td {
 .uiText-warnBorder .form-control:focus {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,153,51,.6)
 }
-.uiHas-textIcon{ position: relative;}
+.uiHas-textIcon{ position: relative; }
 .uiHas-textIcon .form-control {
-	padding-right: 28px
+	padding-right: 28px; width: 100%;
 }
 
 .uiText-selfAuto {
