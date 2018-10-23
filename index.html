@@ -1,28 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <!--公共、组件样式表-->
-    <link rel="stylesheet" href="css/rxuiv1.0.0.css">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/main.css" />
+		
+	</head>
+	<body>
+		
+		<!--<div class="content navbg">
+			<div class="warp navwarp">
+				<h1>CV99</h1>
+				<ul class="navlist">
+					<li><a href="">鞋包饰品</a></li>
+					<li><a href="">女装</a></li>
+					<li><a href="">男装</a></li>
+					<li><a href="">家装家纺</a></li>
+					<li><a href="">食品生鲜</a></li>
+					<li><a href="">手机数码</a></li>
+					<li><a href="">百货</a></li>
+					<li><a href="">家电汽车</a></li>
+					<li><a href="">内衣</a></li>
+					<li><a href="">运动户外</a></li>
+					<li><a href="">美妆</a></li>
+				</ul>
+			</div>
+		</div>-->
+		<div class="content searchbg">
+			<div class="warp clearfix">
+				<p class="tip">每日不定时更新淘宝、天猫最新优惠商品</p>
+				<!--<div class="search">
+					<span>全部</span>
+				</div>-->
+				<div class="pagination fr">
+					<a href="javascript:" class="prevpage">上一页</a>
+					<a href="javascript:" class="nextpage">下一页<span id="pagesee"></span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="warp">
+			<ul id="itembox" class="itemlist clearfix" style="width: 1200px;">
+				<!--<li>
+					<a href="http://s.click.taobao.com/t?e=m%3D2%26s%3D77T%2F%2FNYNVWNw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0A1HisnHHt7lwj6Ad6kDUZ2bNcpTP6MKtm0s00HWnLDA71Qe8sG6%2BobOnBHoS%2BdEml9EeTtntI44hla2gak2AfYTnooPMBxkKShm%2ByhLxUN8otYzDcQ4SzJrgjAxE6YN4pXCByReWxzyQnrRGSrx5kha%2BjboJn07tw%3D%3D&scm=1007.19011.115273.0_8209&pvid=29c284fd-34c0-4e0d-82bf-f559fc96f353&app_pvid=0bb6e3c915401012088313085e36d3&ptl=floorId:8209;pvid:29c284fd-34c0-4e0d-82bf-f559fc96f353;app_pvid:0bb6e3c915401012088313085e36d3&union_lens=lensId:0b14e50f_0d10_166952f7cf6_0c30
+">
+						<img class="item-pic" src="http://gw.alicdn.com/bao/uploaded/i2/409405727/O1CN011sB0jiL46Cuy0Zr_!!409405727.jpg">
+						<p class="itemname">专柜同款imis爱美丽女士内衣 可爱小熊圆领套头加厚长袖套装</p>
+						<p class="itemdes"><span class="pt fl">平台：<span class="pr10">天猫</span></span><span class="fr">店铺：<span>爱美丽官方旗舰店</span></span></p>
+						<div class="item-prices">
+							<div class="price">
+		                        <span class="yang">¥</span>
+		                        <span class="J_actPrice">
+		                                499
+		                        </span>
+		                    </div>
+						</div>
+					</a>
+				</li>-->
+				
+			</ul>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(function(){
+				var page = 1;
+				var size = 40;
+				var itemlength = 0;
+				
+				$(".prevpage").click(function(){
+					if(page>1){
+						page-=1;
+						loaditem();
+					}
+				});
+				$(".nextpage").click(function(){
+					if(page<=itemlength/size){
+						page+=1;
+						loaditem();
+					}
+				});
+				
+				loaditem();
+				function loaditem(){
+					var html="";
+				$.ajax({
+				    url:'data/item.json',
+				    type:'GET', //GET
 
-    <!-- 模块级别 页面上可以出现多个 -->
-    <link rel="stylesheet" href="css/mend-header-footer.css">
-    <link rel="stylesheet" href="css/mend-msg.css">
 
-
-    <!-- 页面级别样式表 理论上一个页面只写一个 -->
-    <link rel="stylesheet" href="css/page-index.css">
-
-    <!-- 其他插件样式表 -->
-    <link rel="stylesheet" href="css/Plug-layer.css">
-</head>
-
-
-<body>
-
-<div>
-    <a href="https://rxued.github.io/ui/component.html">首页</a>
-</div>
-</body>
+    success:function(data){
+       
+       
+       $("#pagesee").html(page+'/'+Math.ceil(data.item.length/size))
+       itemlength =data.item.length;
+       
+        
+        for(var i=(page-1)*size;i<(page*size);i++)
+        {
+        	 console.log(data.item[i].mingcheng);
+        	html+='<li>'
+        		+'<a target="_blank" href="'+data.item[i].lianjie+'">'
+        		+'<img class="item-pic" src="'+data.item[i].tupian+'">'
+        		+'</a>'
+        		+'<p class="itemname"><a target="_blank" href="'+data.item[i].lianjie+'">'+data.item[i].mingcheng+'</a></p>'
+        		+'<p class="itemdes"><span class="pt fl">平台：<span class="pr10">'+data.item[i].pingtai+'</span></span><a target="_blank" href="'+data.item[i].quelj+'" class="fr">领劵地址</a></p>'
+        		+'<div class="item-prices">'
+					+'<div class="price">'
+                       +' <span class="yang">劵后价¥</span>'
+                        +'<span class="J_actPrice">'+data.item[i].qhjiage+'</span>'
+                    +'</div>'
+                    +'<a target="_blank" href="'+data.item[i].lianjie+'" class="item-link">抢!</a>'
+				+'</div>'
+        		
+        		+'</li>'
+        }
+        console.log(html);
+        $("#itembox").html(html)
+       
+    }
+   
+})
+				}
+				
+				
+			})	
+		</script>
+	</body>
 </html>
