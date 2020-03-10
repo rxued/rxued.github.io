@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{ margin: 0; padding: 0;}
+    canvas {
+        display: block;
+        margin: 0 auto;
+        /* width: 1200px;
+        height: 1682px; */
+    }
+    </style>
+  
+</head>
+<body>
+    
+<!-- <canvas id="myCanvas" width="1200" height="1682"></canvas>
+<canvas id="myCanvas2" width="1200" height="1682">    
+您的浏览器不支持 HTML5 canvas 标签。</canvas> -->
+
+<script>
+
+var imagesArry=['images/z123.jpg','images/z1234.jpg','images/z12345.jpg'];
+var ojson = 
+{   
+    "name": "teacher",
+    "computer": {
+        "CPU": "intel7",
+        "disk":"512G"
+    },
+    "texts": [
+        {
+            "name": "北京瑞祥佳艺建筑装饰工程有限公司",
+            "x": 224,
+            "y": 317
+        },
+        {
+            "name": "李四",
+            "x": 19,
+            "y": 30
+        }
+    ]
+}
+
+function creatCanvas(imgsrc,drawtext,drawimg){
+    var oCanvas = document.createElement("canvas");
+    oCanvas.setAttribute("width", "1200");
+    oCanvas.setAttribute("height", "1682");
+    var ctx=oCanvas.getContext("2d");
+    var img=new Image()
+    img.src=imgsrc;
+    img.onload = function() {
+        ctx.drawImage(img,0,0);
+        if(drawtext){
+            ctx.font="22px microsoft yahei";
+            for(var j = 0; j<drawtext.texts.length;j++)
+            {
+                ctx.fillText(drawtext.texts[j].name,drawtext.texts[j].x,drawtext.texts[j].y);
+            } 
+        }
+       
+        var zimg = new Image();
+        zimg.src ="images/zimg.png";
+        zimg.onload = function() {
+            ctx.drawImage(zimg,800,1200);
+        }
+       
+    };
+    document.body.appendChild(oCanvas);
+};
+
+
+for(var i = 0 ; i< imagesArry.length ; i++)
+{
+    if(i==0){
+        creatCanvas(imagesArry[i],ojson);
+    }
+    else{
+        creatCanvas(imagesArry[i]);
+    }
+}
+
+
+// var c=document.getElementById("myCanvas");
+// var ctx=c.getContext("2d");
+// var img=new Image()
+// img.src="images/z123.jpg"
+// img.onload = function() {
+// 	ctx.drawImage(img,0,0);
+//     ctx.font="22px Arial"; 
+//     ctx.fillText("北京瑞祥佳艺建筑装饰工程有限公司",224,317);
+// }
+  
+
+
+
+
+// var c2=document.getElementById("myCanvas2");
+// var ctx2=c2.getContext("2d");
+// var img2=new Image()
+// img2.src="images/z123.jpg"
+// img2.onload = function() {
+// 	ctx2.drawImage(img,0,0);
+//     ctx2.font="22px microsoft yahei"; 
+//     ctx2.fillText("Hello World",223,320);
+// }
+</script>
+</body>
+</html>
