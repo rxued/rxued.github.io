@@ -1,0 +1,199 @@
+body,h1,p,ul,li,p{
+	padding: 0;
+	margin: 0;
+}
+li{list-style: none;}
+a {
+	text-decoration: none;
+}
+body{
+	background: #f2f2f2;
+	padding-top: 40px;
+}
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.warp{
+	width: 1190px;
+	margin: 0 auto;
+}
+.pr10{
+	padding-right: 10px;
+}
+.searchbg{    background-color: rgba(250,250,250,.95);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#f2fafafa', EndColorStr='#f2fafafa');
+    border-color: #ccc;
+    border-bottom: 2px solid rgba(0,0,0,.06);
+    background-clip: content-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    }
+   .navbg {
+    	background: #fff;
+    border-color: #ccc;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+  .navwarp{
+  	height: 25px;
+  	padding: 8px 0;
+  }
+  h1{float: left;    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    width: 70px;
+    /*text-align: center;*/
+    }
+  .navlist{
+  	height: 25px;
+  	line-height: 25px;
+  	float: left;
+    padding-left: 10px;
+    border-left: solid 1px #dcdcdc
+  	
+  }
+  .navlist li{
+  	float: left;
+  }
+  .navlist li a {
+  	    display: block;
+    position: relative;
+    padding: 0 10px;
+    text-align: center;
+    color: #666;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  .navlist li a:hover,.navlist li a.active{
+  	background-color: #e61414;
+    color: #fff;
+  }
+
+.tip {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #e61411;
+    float: left;
+}
+.search{
+	float: right;
+}
+
+.item-pic{
+	display: block;
+	    width: 288px;
+    height: 288px;
+    margin-bottom: 10px;
+}
+.itemname{
+	 height: 26px;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 26px;
+}
+.itemname a {color: #333;}
+.itemdes{
+	 height: 22px;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    display: block;
+    color: #999;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+.itemdes a {color: #999;}
+.itemlist li {
+	    width: 288px;
+    height: 400px;
+    float: left;
+    margin: 11px 10px 11px 0;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+.itemlist li a {
+	    position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+        white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis
+}
+.itemlist li .pt{
+	font-weight: 400;
+    color: #e61414
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.item-prices{
+	background-color: #e61414;
+	position: relative;
+}
+.price{
+	 color: #fff;
+	 padding-left: 5px;
+}
+.yang{
+	font-size: 16px;
+}
+.J_actPrice{
+	font-size: 40px;
+}
+.itemlist li .item-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 100%;
+    padding-left: 10px;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    color: #e61414;
+    background: url(../img/qiangbg.png) no-repeat;
+}
+.pagination{
+	padding-top: 5px;
+}
+.pagination a{
+	 background: #e61414;
+	 color: #fff;
+	 height: 29px;
+	 line-height: 29px;
+	 float: left;
+	 font-size: 12px;
+	 padding: 0 10px;
+	 margin-left: 5px;
+}
+.pagination #pagesee { padding-left: 5px;}
