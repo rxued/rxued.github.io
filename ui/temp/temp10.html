@@ -1,0 +1,2507 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>项目模板</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/rxui1.0.2.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/frame.min.css"  type="text/css"/>
+    <!--三栏布局样式表 -->
+    <link rel="stylesheet" href="css/page-threecolumn.css" type="text/css"/>
+    <link rel="stylesheet" href="css/commonNew.css" type="text/css"/>
+    <link rel="stylesheet" href="css/page-project.css" type="text/css"/>
+</head>
+
+<body class="logo-c000000 bar-cffffff nav-black nav-vertical" data-class="nav-vertical">
+<div id="main_header" class="header-fixed j_outerHeight">
+    <h1 id="logo" class="j_leftnav"><a href="javascript:;"><i></i><span>瑞祥UI</span></a></h1>
+    <!--顶部导航 开始-->
+    <div id="topnav" class="clearfix">
+        <ul class="fl">
+            <li>
+                <a href="javascript:;" data-rippleria class="setup_nav setupbtn rippleria-dark">
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="exit-div"><a href="javascript:;"><i></i><span>退出</span></a></div> -->
+        <div class="user-div"><a href="javascript:;"><i></i><span class="mr10">地区</span><span class="mr5">用户名</span>-<span class="ml5">01011000</span></a></div>
+        <div class="eventDiv fr"><i class="fl"></i><span class="fl ml5">通知</span><span class="fl ml5">0</span></div>
+    </div>
+    <!--顶部导航 结束-->
+</div>
+<div id="main_box">
+    <!--主导航 开始-->
+    <div id="nav" class="j_leftnav nav-fixed">
+        <div class="nav-wrapper">
+            <div class="nav-wrapper-content">
+                <ul class="nav-ul clearfix">
+                    <li class="active">
+                        <a href="javascript:;" data-rippleria class="rippleria-dark"><i class="nav-icon">示</i><strong>示例页面</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--主导航 结束-->
+    <!--内容区 开始-->
+    <div id="main_content">
+        <div class="wrapper clearfix pt10 pl10 pr10 relative">
+            <div class="tc-left pr10 fl">
+                <div class="mb5 j_outerHeight">
+                    <ul class="clearfix uiTab1">
+                        <li class="col-md-4 uiTab1-active"><a href="javascript:">项目</a></li>
+                    </ul>
+                </div>
+                <div class="daily_title j_outerHeight">
+                    <ul class="clearfix">
+                        <li class="title_cur">全</li>
+                        <li>S</li>
+                        <li>Z</li>
+                        <li>Z</li>
+                        <li>J</li>
+                        <li>R</li>
+                        <li class="dailyLi-fr">L</li>
+                    </ul>
+                </div>
+                <div class="contentbox">
+                    <!-- 搜索 -->
+                    <div class="dailyftSearch dailyftSearch1 clearfix hide">
+                        <div class="fl uiHas-textIcon">
+                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" >
+                            <i class="uiText-searchIcon bgIcon"></i>
+                        </div>
+                    </div>
+                    <!-- 日期筛选 -->
+                    <div class="dailyftSearch hide dailyftSearch2">
+                        <div class="uiHas-textIcon clearfix">
+                            <input type="text" class="width100 fl ml10" placeholder="开始时间">
+                            <span class="plr5 fl lh28">至</span>
+                            <input type="text" class="width100 fl endTime" placeholder="结束时间">
+                        </div>
+                    </div>
+                    <!-- 搜索加选择 -->
+                    <div class="dailyftSearch dailyftSearch3 hide">
+                        <div class="uiHas-textIcon clearfix">
+                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" >
+                            <i class="uiText-searchIcon bgIcon"></i>
+                        </div>
+                        <div class="clearfix mt5 pl5">
+                            <select class="fl mr2 width60">
+                                <option>一级</option>
+                            </select>
+                            <select class="fl mr2 width60">
+                                <option>二级</option>
+                            </select>
+                            <select class="fl mr2 width60">
+                                <option>名称</option>
+                            </select>
+                            <select class="fl width60">
+                                <option>规格</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class=" uiTable j_outerHeight table-np">
+                        <thead>
+                        <tr>
+                            <th width="28%">
+                                <!-- 搜索 -->
+                                <span class="serial_number">
+                                    编号
+                                    <i class="bgIcon"></i>
+                                </span>
+                            </th>
+                            <th width="17%">经理</th>
+                            <th width="11%">管</th>
+                            <th width="11%">业</th>
+                            <th width="18%">
+                                <select class="theadselect" title="筛选项目阶段">
+                                    <option value="0">阶段</option>
+                                    <option value="1">审计</option>
+                                    <option value="2">准备</option>
+                                    <option value="3">在施</option>
+                                    <option value="4">竣工</option>
+                                    <option value="5">完工</option>
+                                    <option value="6">历史</option>
+                                </select>
+                            </th>
+                            <th>回访</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="scroll-content">
+                        <table class="uiTable pointertable table-np" id="tab1">
+                            <tbody>
+                            <tr class="tractive">
+                                <td width="28%">1510063G</td>
+                                <td width="17%">郑方凯</td>
+                                <td width="11%"><span class="cRed">工期</span></td>
+                                <td width="11%"><span class="cOrange">异常</span></td>
+                                <td width="18%">在施</td>
+                                <td><span class="cRed">-71</span></td>
+                            </tr>
+                            <tr>
+                                <td>3006033G</td>
+                                <td>吴爱武</td>
+                                <td><span class="cRed">款工</span></td>
+                                <td><span class="cOrange">异常</span></td>
+                                <td>在施</td>
+                                <td><span class="cRed">-26</span></td>
+                            </tr>
+                            <tr>
+                                <td>0706032G</td>
+                                <td>王红艳</td>
+                                <td><span class="cRed">款工</span></td>
+                                <td><span class="cOrange">异常</span></td>
+                                <td>在施</td>
+                                <td><span class="cRed">-26</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="j_outerHeight clearfix tj_bottom">
+                        <p class="col-md-3" title="全部">0</p>
+                        <p class="col-md-3 cGreen" title="正常">0</p>
+                        <p class="col-md-3 cOrange" title="异常">0</p>
+                        <p class="col-md-3 cRed" title="问题">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tc-center fl">
+                <div class="clearfix">
+                    <ul class="clearfix uiTab9 j_uiTab9">
+                        <li class="uiTab9-active">状态</li>
+                        <li>项目</li>
+                        <li>工程</li>
+                        <li class="uiTab-stage">在施</li>
+                        <li>监控</li>
+                        <li>巡检</li>
+                        <li>安</li>
+                        <li>工序</li>
+                    </ul>
+                </div>
+
+                <div id="j-tc-center-content" >
+                    <!-- 状态-->
+                    <div class="uiTab9Con">
+                        <div class="uiTab9Top pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">状态</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <strong class="fz14 cGreen">正常</strong>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cGreen fz14"><strong title="当前阶段" id="periodtxt1">在施</strong></span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uiTab9Center pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">款项</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">材料</span>
+                                        <span class="cRed pr8">未完</span>
+                                    </p>
+                                    <span class="circlemark circlemark-green">正</span>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">现场</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">客服</span>
+                                        <span class="cRed">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">巡检</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">客服</span>
+                                        <span class="cRed">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">材料</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">材料</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <span class="circlemark circlemark-green">正</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>开工后5天内没有材料配送订单的为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">工序</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">工程经理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">项目经理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <span class="circlemark circlemark-lightRed">未</span>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">工期</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cGreen">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cGreen">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+                                        <span class="cGreen pr8">--</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center" style="display: none;">
+                                            <i></i>
+                                            <p>延期率大于20%为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">监控</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed" title="摄像头异常数">0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+
+                                        <span class="cRed" title="摄像头异常数">0</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center" style="display: none;">
+                                            <i></i>
+                                            <p>延期率大于20%为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor handle-clickDiv">
+                                <p class="analyItemTit tx-center">处理</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">当前阶段</span><strong>
+                                        <span class="cGreen fz14" title="当前阶段">在施</span>
+                                    </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--项目-->
+                    <div class="uiTab9Con dis-none">
+                        <div class="uiTab9Top pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">状态</p>
+                                <div class="analyItemCon clearfix">
+
+                                    <span class="circlemark circlemark-green">优</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uiTab9Center pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">项目</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">编号</span> <span>BJ16096</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">名称</span> <span class="c666666" title="睿鸣（北京）传媒科技有限公司办公装饰工程">睿鸣（北京</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">单号</span> <span>12-191961</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">类型</span>
+                                        <span>办公</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">总金额</span> <span>83,712元</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">二维码</span>
+                                        <span class="dis-il-block two-wei"><img width="25" height="25" src="https://api.dcwzg.com:9191/actionapi/KGManage/GetProjectQRByRwdId?rwdId=12-191961&amp;width=150&amp;height=150"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">甲方</p>
+                                <div class="analyItemCon">
+                                    <span class="cBlue deatailBtn_three">
+                                        详情
+                                        <strong class="Arrow">∨</strong>
+                                    </span>
+                                    <div class="mt10 clearfix">
+                                        <p class="col-md-4">
+                                            <span class="cLightGray">地区</span>
+                                            <span>北京</span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            <span class="cLightGray">公司</span>
+                                            <span title="睿鸣（北京）传媒科技有限公司">睿鸣（北京）传</span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            <span class="cLightGray">甲方地址</span>
+                                            <span title="北京市朝阳区花家地南里">北京市朝阳区花</span>
+                                        </p>
+                                    </div>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">工程地址</span>
+                                        <span title="北京市朝阳区望京SOHO220301">北京市朝阳区望</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">甲方姓名</span>
+                                        <span title="余伟">余伟</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">甲方电话</span>
+                                        <span>****</span>
+                                    </p>
+                                    <div class="hide kuanxiangDetail_three div_kehuMsg">
+                                        <p class="col-md-4"><span class="cLightGray pr8">年龄</span><span class="spanText">20岁-30岁</span></p>
+                                        <p class="col-md-4"><span class="cLightGray pr8">性格</span><span class="spanText"></span></p>
+                                        <p class="col-md-4"><span class="cLightGray pr8">注重</span><span class="spanText">价格</span></p>
+                                        <p class="col-md-4"><span class="cLightGray pr8">类型</span><span class="spanText">办公</span></p>
+                                        <p class="col-md-4"><span class="cLightGray pr8">面积</span><span class="spanText">0.00</span></p>
+                                        <p class="col-md-4"><span class="cLightGray pr8">身份</span><span class="spanText">老板</span></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">日期</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">签订日期</span>
+                                        <span>2016-12-09</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">开工日期</span>
+                                        <span>2016-12-10</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">工期</span>
+                                        <span>15</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor build-clickDiv">
+                                <p class="analyItemTit tx-center">楼盘</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">施工时间</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">材料防火等级</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">材料环保等级</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">保护材料</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">围挡</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">消防维保</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">空调维保</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">物业要求</span><span></span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">&nbsp;</span><span></span>
+                                    </p>
+                                    <p class="col-md-4 hide">
+                                        <span class="cLightGray">负责人电话</span><span></span>
+                                    </p>
+                                    <p class="col-md-4 hide">
+                                        <span class="cLightGray">面积</span><span></span>
+                                    </p>
+                                    <p class="col-md-4 hide">
+                                        <span class="cLightGray">保修期</span><span></span>
+                                    </p>
+                                    <p class="col-md-4 hide">
+                                        <span class="cLightGray">消防维保公司</span><span></span>
+                                    </p>
+                                    <p class="col-md-4 hide">
+                                        <span class="cLightGray">空调维保公司</span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">设计师</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">姓名</span>
+                                        <span>王阿龙</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">电话</span>
+                                        <span>18911254442</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">配合</span>
+                                        <span>暂无</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">合同</p>
+                                <div class="analyItemCon clearfix">
+
+                                    <p class="col-md-4">
+                                        <span class="cBlue">合同</span>
+                                        <span class="cBlue">暂无</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cBlue">报价</span>
+                                        <span class="cBlue">2</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cBlue">其他</span>
+                                        <span class="cBlue">3</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cBlue">分项</span>
+                                        <span class="cBlue">0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cBlue">现场照片</span>
+                                        <span class="cBlue">0</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">图纸</p>
+                                <div class="analyItemCon clearfix">
+                                    <p class="col-md-4">
+                                        <span class="cBlue">效果图</span>
+                                        <span class="cBlue">14</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cBlue">图纸</span>
+                                        <span class="cBlue">5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor baoJia-clickDiv">
+                                <p class="analyItemTit tx-center">报价</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">多报</span>
+                                        <span data-totalmoney="0.0">0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">少报</span>
+                                        <span data-totalmoney="0.0">0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray">临时</span>
+                                        <span>0</span>
+                                    </p>
+                                    <p class="col-md-4" title="装饰合同额/面积">
+                                        <span class="cLightGray">单方报价</span>
+                                        <span>299元/㎡</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">回款</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">款期1</span>
+                                        <span>首期款</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">金额</span>
+                                        <span>41856.0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">比例</span>
+                                        <span>50.0</span>
+                                    </p>
+
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">款期2</span>
+                                        <span>中期款</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">金额</span>
+                                        <span>33484.8</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">比例</span>
+                                        <span>40.0</span>
+                                    </p>
+
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">款期3</span>
+                                        <span>尾款</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">金额</span>
+                                        <span>8371.2</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">比例</span>
+                                        <span>10.0</span>
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--工程-->
+                    <div class="uiTab9Con dis-none">
+                        <div class="uiTab9Top pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">状态</p>
+                                <div class="analyItemCon clearfix">
+                                    <p class="fl col-md-4"><span class="pr8">&nbsp</span></p>
+                                    <p class="fl col-md-4"><strong class="cGreen fz14">在施</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uiTab9Center pr10">
+                            <div class="analyItem anItemBor analyItem-visited shenJi-clickDiv">
+                                <p class="analyItemTit tx-center">审计</p>
+                                <div class="analyItemCon">
+
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">审计</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">客服</span>
+                                        <span class="cGreen pr8">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+
+                                        <span class="cRed pr8">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+                                        <span class="cRed pr8">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">材料</span>
+                                        <span class="cRed pr8">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">设计师</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">经理</span>
+                                        <span class="cRed pr8">未完</span>
+                                    </p>
+                                    <span class="circlemark circlemark-green">正</span>
+
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center" >
+                                            <i></i>
+                                            <p>48个小时内未完成发包为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor analyItem-visited zhunBei-clickDiv">
+                                <p class="analyItemTit tx-center">准备</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+
+
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">客服</span>
+                                        <span class="cRed">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cGreen">完成</span>
+                                    </p>
+
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">经理</span>
+                                        <span class="cRed">--</span>
+                                    </p>
+
+                                    <span class="circlemark circlemark-green">正</span>
+
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>项目经理、监理7天内没有上传完成开工准备为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor analyItem-current kuanXiang-clickDiv">
+                                <p class="analyItemTit tx-center">款项</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">材料</span>
+                                        <span class="cRed pr8">未完</span>
+                                    </p>
+                                    <i class="projectCtrolSet hide" lkw-settype="gc_set_sj" data-module="4"></i>
+
+
+                                    <span class="circlemark circlemark-green">完</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>开工后首期款未回款的为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem analyItem-current">
+                                <p class="analyItemTit tx-center">现场</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed" title="摄像头异常数">0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">客服</span>
+                                        <span class="cRed">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cRed" title="摄像头异常数">0</span>
+                                    </p>
+                                    <i class="projectCtrolSet hide" lkw-settype="gc_set_sj" data-module="5"></i>
+                                    <span class="circlemark circlemark-lightRed">--</span>
+                                </div>
+                            </div>
+                            <div class="analyItem analyItem-current">
+                                <p class="analyItemTit tx-center">巡检</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">客服</span>
+                                        <span class="cRed">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <i class="projectCtrolSet hide" lkw-settype="gc_set_sj" data-module="6"></i>
+
+
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>监理巡检完成率小于50%，或者项目经理有未完成巡检为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem analyItem-current">
+                                <p class="analyItemTit tx-center">材料</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">材料</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <i class="projectCtrolSet hide" lkw-settype="gc_set_sj" data-module="7"></i>
+
+                                    <span class="circlemark circlemark-green">正</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>开工后5天内没有材料配送订单的为异常</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="analyItem analyItem-current">
+                                <p class="analyItemTit tx-center">工序</p>
+                                <div class="analyItemCon">
+
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">工程经理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">项目经理</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <span class="circlemark circlemark-lightRed">未</span>
+                                </div>
+                            </div>
+                            <div class="analyItem analyItem-current">
+                                <p class="analyItemTit tx-center">工期</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cGreen">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cGreen">--</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+                                        <span class="cGreen pr8">--</span>
+                                    </p>
+
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>延期率大于20%为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">竣工</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+                                        <span class="cGreen pr8">完成</span>
+                                    </p>
+                                    <span class="circlemark circlemark-green">完</span>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">完工</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">监理</span>
+                                        <span class="cRed">未完</span>
+
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">外人</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">财务</span>
+                                        <span class="cRed">未完</span>
+                                    </p>
+                                    <span class="circlemark circlemark-lightRed">未</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--在施-->
+                    <div class="uiTab9Con dis-none">
+                        <div class="uiTab9Top pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">状态</p>
+                                <div class="analyItemCon">
+                                    <p class="fl col-md-4"><span class="pr8">&nbsp</span></p>
+                                    <p class="fl col-md-4"><strong class="cGreen fz14">在施</strong></p>
+                                    <p class="col-md-4">
+                                        <span class="cGreen fz14" title="进入该阶段的日期">--</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uiTab9Center pr10">
+                            <div class="analyItem anItemBor jingLi-clickDiv">
+                                <p class="analyItemTit tx-center">经理</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4 lh28">
+                                        <span class="cRed  pr8">超期</span>
+                                        <span class="cRed ">617天</span>
+                                    </p>
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">款项</span>
+                                        <span class="cGreen  pr8">
+                            完成
+                        </span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>工期延期率大于20%为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">外人</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">施工完成</span>
+                                        <span class="cRed">未</span>
+                                    </p>
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">巡检</span>
+                                        <span class="cGreen">0</span>
+                                    </p>
+                                    <p class="col-md-4 lh28">
+                                        <span class="cLightGray pr8">工序</span>
+                                        <span class="cRed">0</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>项目经理巡检完成率小于50%为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">监理</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">工序</span>
+                                        <span class="cRed">0</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">巡检</span>
+                                        <span class="cRed">30</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">安全</span>
+                                        <span class="cRed">4</span>
+                                    </p>
+                                    <span class="circlemark circlemark-yellow">异</span>
+                                    <div class="fixedTrangle">
+                                        <a href="javascript:" class="fixedtips"></a>
+                                        <div class="fixedtipscon pt10 pb10 tx-center">
+                                            <i></i>
+                                            <p>监理巡检完成率小于50%为异常</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">申请竣工</p>
+                                <div class="analyItemCon">
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">工序完成率</span>
+                                        <span class="cRed">0%</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">回款率</span>
+                                        <span class="cRed">0%</span>
+                                    </p>
+                                    <p class="col-md-4">
+                                        <span class="cLightGray pr8">申请竣工</span>
+                                        <span class="cRed">未申请</span>
+                                    </p>
+                                    <span class="circlemark circlemark-lightRed">未</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--监控-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="pr8 cLightGray">摄像头</span><span>0</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="pr8 cLightGray">照片总数</span><span>1035</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="pr8 cLightGray">今日已拍</span><span>0</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 巡检-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4"><span class="cLightGray pr8">未巡</span><span class="cRed fw700">0</span></p>
+                                <p class="col-md-4"><span class="cLightGray pr8">实巡</span><span class="cGreen fw700">0</span></p>
+                                <p class="col-md-4"><span class="cLightGray pr8">完成度</span><span class="cGreen fw700">0%</span></p>
+
+                            </div>
+                        </div>
+                        <div class="analyItem analyItem-current">
+                            <p class="analyItemTit tx-center">本次</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-8"><span class="cLightGray pr8">应巡时间</span> 2018-09-04 至 2018-09-10</p>
+                                <p class="col-md-4"><span class="cLightGray pr8">完成状态</span><span class="cRed">否</span></p>
+                                <span class="circlemark circlemark-purple">待</span>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">2</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-8"><span class="cLightGray pr8">应巡时间</span> 2018-08-28 至 2018-09-03</p>
+                                <p class="col-md-4"><span class="cLightGray pr8">完成状态</span><span class="cRed">否</span></p>
+                                <span class="circlemark circlemark-lightRed">未</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--安全巡检-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4"><span class="cLightGray pr8">未巡</span><span class="cRed fw700">5</span></p>
+                                <p class="col-md-4"><span class="cLightGray pr8">实巡</span><span class="cGreen fw700">0</span></p>
+                                <p class="col-md-4"><span class="cLightGray pr8">完成度</span><span class="cGreen fw700">0%</span></p>
+
+                            </div>
+                        </div>
+                        <div class="analyItem analyItem-current">
+                            <p class="analyItemTit tx-center">本次</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-8"><span class="cLightGray pr8">应巡时间</span> 2018-09-04 至 2018-09-10</p>
+                                <p class="col-md-4"><span class="cLightGray pr8">完成状态</span><span class="cRed">否</span></p>
+                                <span class="circlemark circlemark-purple">待</span>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">2</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-8"><span class="cLightGray pr8">应巡时间</span> 2018-08-28 至 2018-09-03</p>
+                                <p class="col-md-4"><span class="cLightGray pr8">完成状态</span><span class="cRed">否</span></p>
+                                <span class="circlemark circlemark-lightRed">未</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--工序-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">1</p>
+                            <div class="analyItemCon">
+                                <p>
+                                    <span class="cLightGray pr8">工序名称</span>
+                                    <b class="fz14">开关安装</b>
+                                </p>
+                                <div class="clearfix">
+                                    <p class="cBlue pointer fl">
+                                        <span class="pr8">1</span>
+                                        <span>开关面板</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">2</p>
+                            <div class="analyItemCon">
+                                <p>
+                                    <span class="cLightGray pr8">工序名称</span>
+                                    <b class="fz14">找平基层</b>
+                                </p>
+                                <div class="clearfix">
+                                    <p class="cBlue pointer fl procedureItem">
+                                        <span class="pr8">1</span>
+                                        <span>水泥砂浆找平层</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tc-right">
+                <div class="tc-righttop-tab j-tc-righttop-tab">
+                    <ul class="RTtab clearfix fr">
+                        <li class="RTtab-active list-btn">
+                            <a href="JavaScript:;">列表</a><span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tc-right-top clearfix">
+                    <div class="fl needdealt">
+                        <ul>
+                            <li class="bgRed">待办一</li>
+                            <li class="bgOrange">待办二</li>
+                            <li class="bgGreen">待办三</li>
+                        </ul>
+                    </div>
+                    <!-- 待办弹窗S -->
+                    <div class="tc-taskDiv">
+                        <div class="clearfix">
+                            <p class="fl">• 标题长度自行调整...</p>
+                            <i class="fr rig_close">×</i>
+                        </div>
+                    </div>
+                    <!-- 待办弹窗E -->
+                    <div class="visitbox thinScroll">
+                        <div class="visit" id="j-visit">
+                            <div class="visi-list tx-left">
+                                <div class="visi-listtop">
+                                    <span class="visi-name">营</span>
+                                    <span class="visi-date">07-19 14:55</span>
+                                </div>
+                                <p class="visi-listtxt">
+                                    主案设计师系统静态页面已经制作完毕，已经交付开发。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="tc-right-bottom pa10 relative">
+                    <div class="tc-right-bottom-left relative">
+                        <ul class="topdaily">
+                            <li>
+                                <a class="topdailybtn" href="javascript:">预留</a>
+                            </li>
+                            <li>
+                                <a class="topdailybtn" href="javascript:">预留</a>
+                            </li>
+                            <li>
+                                <a class="topdailybtn" href="javascript:">预留</a>
+                            </li>
+                        </ul>
+                        <div class="dailyrgt-botradio hide">
+                            <div class="mb10">
+                                <label class="uiRadio12 cGreen">
+                                    <input value="1" type="radio" name="a" class="uiRadio12-input">正常</label>
+                                <label class="uiRadio12 cOrange">
+                                    <input value="2" type="radio" name="a" class="uiRadio12-input">异常</label>
+                                <label class="uiRadio12 cRed">
+                                    <input value="3" type="radio" name="a" class="uiRadio12-input">问题</label>
+                            </div>
+                        </div>
+                        <div class="dailyrgt-divZi">
+                            <p class="tx-center">先解决业务问题，才有资格说管理。前两个因素完成之后，再反馈系统问题。</p>
+                        </div>
+                        <div class="visi-text-content hide">
+                            <textarea placeholder="请输入回访内容" class="hf-textarea mb10"></textarea>
+                            <input class="hf-submit" type="submit" value="提交" />
+                        </div>
+
+
+
+                    </div>
+                    <div class="EventpenaltyDiv">
+                        <a href="javascrpit:;" class="EventpenaltyBtn">预留</a>
+                    </div>
+                </div>
+                <!--处理弹框-->
+                <div class="layerRtb layerRtbPN handle-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            处理
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">项目</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">阶段</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">信息员</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综合</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-md-6 handle-left pb10">
+                                <h2 class="uiTitle2 mb10">
+                                    <i class="uiTitle-icon"></i>
+                                    处理
+                                </h2>
+                                <div class="pl10">
+                                    <ul class="clearfix handle-ul">
+                                        <li class="current">正常</li>
+                                        <li>辞退</li>
+                                        <li>奖励</li>
+                                        <li>处罚</li>
+                                        <li>观察</li>
+                                    </ul>
+                                    <textarea class="handle-textarea"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="handle-div"></div>
+                                <div class="tx-center pt10 pb10">
+                                    <input type="button" class="uiBtn-normal uiBtn-blue" value="提交">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--楼盘弹框-->
+                <div class="layerRtb layerRtbPN build-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            楼盘
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">施工时间</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-6"><span class="cLightGray pr8">施工时间</span><span></span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">材料要求</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-6"><span class="cLightGray pr8">材料防火等级</span><span></span></p>
+                                <p class="col-md-6"><span class="cLightGray pr8">材料环保等级</span><span></span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">保护要求</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-6"><span class="cLightGray pr8">保护材料</span><span></span></p>
+                                <p class="col-md-6"><span class="cLightGray pr8">围 挡</span><span></span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">消防维保</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-6"><span class="cLightGray pr8">消防维保</span><span></span></p>
+                                <p class="col-md-6"><span class="cLightGray pr8">消防维保公司</span><span></span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">空调维保</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-6"><span class="cLightGray pr8">空调维保</span><span></span></p>
+                                <p class="col-md-6"><span class="cLightGray pr8">空调维保公司</span><span></span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">物业要求</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-6"><span class="cLightGray pr8">物业要求</span><span></span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">物业信息</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4"><span class="cLightGray pr8">负责人电话</span><span></span></p>
+                                <p class="col-md-4"><span class="cLightGray pr8">面积</span><span></span></p>
+                                <p class="col-md-4"><span class="cLightGray pr8">保修期</span><span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer">
+
+                    </div>
+                </div>
+                <!--报价弹框-->
+                <div class="layerRtb layerRtbPN baoJia-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            报价
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">多报</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="c999 pr8">多报</span><span>1项</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="c999 pr10">总金额</span><span>1.0</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">少报</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="c999 pr8">多报</span><span>1项</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="c999 pr10">总金额</span><span>1.0</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">临时</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4 lh28">
+                                    <span class="c999 pr10">总共</span><span>0</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">0分</strong></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综评</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-9"><span class="cOrange pr8"></span></p>
+                                <p class="col-md-3"><span class="cLightGray pr8">统计</span><strong class="fz14 cGreen">0分</strong></p>
+                            </div>
+                        </div>
+                        <p class="tx-center pt10 pb10">
+                            <input type="button" value="确定" class="uiBtn-blue uiBtn-normal">
+                        </p>
+                    </div>
+                </div>
+                <!--工程的审计弹框-->
+                <div class="layerRtb layerRtbPN shenJi-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            审计
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">多报</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cRed">待分配</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cGreen">审核完成</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cGreen">总审完成</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">监理</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cGreen">汪正红已接单</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes active"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">客服</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="c999 pr8">APP</span><span class="cRed">未激活</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">外人</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cRed">未完成</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">财务</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">收款日期</span><span class="cGreen">已确认</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">材料</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">拆分</span>
+                                    <span class="cGreen">完</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">材料商</span>
+                                    <span class="cGreen">完</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">归类</span>
+                                    <span class="cRed">未</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">设计师</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">漏量漏项</span>
+                                    <span class="cGreen">无</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">设计师</span>
+                                    <span class="cGreen">--</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                        <input type="text" class="judge-span judge-yes"/>
+                                        <input type="text" class="judge-span judge-no active"/>
+                                    </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">经理</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">分配监理</span>
+                                    <span class="cGreen">汪正红</span>
+                                </p>
+                                <p class="col-md-4 lh28">
+                                    <span class="cLightGray pr8">打点</span>
+                                    <span class="cGreen">完成</span>
+                                </p>
+                                <p class="col-md-4 lh28">
+                                    <span class="cLightGray pr8">工序确认</span>
+                                    <span class="cRed">未完</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                        <input type="text" class="judge-span judge-yes"/>
+                                        <input type="text" class="judge-span judge-no active"/>
+                                    </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综评</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="clightGray pr8 fz14">应得</span>
+                                    <span class="fz14">8</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">实得</span>
+                                    <span class="fz14">4</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">差值</span>
+                                    <span class="fz14 cRed">4</span>
+                                </p>
+                                <a href="javascript:" class="circlemark  circlemark-lightRed">未</a>
+                            </div>
+                        </div>
+                        <p class="tx-center pt10 pb10">
+                            <input type="button" value="确定" class="uiBtn-blue uiBtn-normal">
+                        </p>
+                    </div>
+                </div>
+                <!--工程的准备弹框-->
+                <div class="layerRtb layerRtbPN zhunBei-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            准备
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">监理</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">开工准备</span>
+                                    <span class="cRed" title="未传数量">38</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">开工日期</span>
+                                    <span class="cGreen">1900-01-01</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">客服</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">放线</span>
+                                    <span class="cRed">-</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">临电</span>
+                                    <span class="cRed">-</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">团队</span>
+                                    <span class="cRed">-</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">摄像头</span>
+                                    <span class="cRed">-</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">平台</span>
+                                    <span class="cRed">-</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes active"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">外人</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">安全</span>
+                                    <span class="cRed" title="未传数量">10</span>
+                                </p>
+
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">文明</span>
+                                    <span class="cRed" title="未传数量">16</span>
+                                </p>
+
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">质量</span>
+                                    <span class="cRed" title="未传数量">11</span>
+                                </p>
+
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">摄像</span>
+                                    <span class="cRed" title="未传数量">1</span>
+                                </p>
+
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">经理</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">人员组织</span>
+                                    <span class="cRed">未完成</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">工艺</span>
+                                    <span class="cRed">未完成</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">施组</span>
+                                    <span class="cGreen">完成</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8">材料</span>
+                                    <span class="cRed">未完成</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">财务</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">收款日期</span><span class="cGreen">已确认</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">材料</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">拆分</span>
+                                    <span class="cGreen">完</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">材料商</span>
+                                    <span class="cGreen">完</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">归类</span>
+                                    <span class="cRed">未</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">设计师</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">漏量漏项</span>
+                                    <span class="cGreen">无</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">设计师</span>
+                                    <span class="cGreen">--</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                        <input type="text" class="judge-span judge-yes"/>
+                                        <input type="text" class="judge-span judge-no active"/>
+                                    </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">经理</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">分配监理</span>
+                                    <span class="cGreen">汪正红</span>
+                                </p>
+                                <p class="col-md-4 lh28">
+                                    <span class="cLightGray pr8">打点</span>
+                                    <span class="cGreen">完成</span>
+                                </p>
+                                <p class="col-md-4 lh28">
+                                    <span class="cLightGray pr8">工序确认</span>
+                                    <span class="cRed">未完</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                        <input type="text" class="judge-span judge-yes"/>
+                                        <input type="text" class="judge-span judge-no active"/>
+                                    </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综评</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="clightGray pr8 fz14">应得</span>
+                                    <span class="fz14">8</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">实得</span>
+                                    <span class="fz14">4</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">差值</span>
+                                    <span class="fz14 cRed">4</span>
+                                </p>
+                                <a href="javascript:" class="circlemark  circlemark-lightRed">未</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--工程的款项弹框-->
+                <div class="layerRtb layerRtbPN kuanXiang-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            款项
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">监理</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8" title="未审">合同金额</span>
+                                    <span class="">2.00万</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray">回款</span>
+                                    <span class="">0.00万</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray">差额</span>
+                                    <span class="">2.00万</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">外人</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-3">
+                                    <span class="cLightGray pr8" title="未审">合同金额</span>
+                                    <span class="">2.00万</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray">回款</span>
+                                    <span class="">0.00万</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray">差额</span>
+                                    <span class="">2.00万</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray">发包金额</span>
+                                    <span class="">0.00万</span>
+                                </p>
+                                <p class="col-md-3">
+                                    <span class="cLightGray">发包毛利率</span>
+                                    <span class="">0%</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">财务</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-12" title="合同额+增项-减项">
+                                    <span class="cLightGray pr8">合同金额</span>
+                                    <span class="pr8">0.00万</span>
+                                </p>
+                                <p class="col-md-12" title="合同额+增项">
+                                    <span class="cLightGray pr8">当前回款</span>
+                                    <span class="pr8">0.00万</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">材料</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">是否结清</span>
+                                    <span class="cGreen">是</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no active"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综评</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="clightGray pr8 fz14">应得</span>
+                                    <span class="fz14">4</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">实得</span>
+                                    <span class="fz14">2</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">差值</span>
+                                    <span class="fz14 cRed">2</span>
+                                </p>
+                                <a href="javascript:" class="circlemark  circlemark-lightRed">未</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--在施的经理弹框-->
+                <div class="layerRtb layerRtbPN jingLi-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            经理
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">工期</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">开工日期</span>
+                                    <span>2016-12-13</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">工期</span>
+                                    <span>15</span>+<span class="cRed" title="延期天数">2</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8">超期</span>
+                                    <span>617</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">款项</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="cLightGray pr8" title="未审">合同金额</span>
+                                    <span class="">8.37万</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray">回款</span>
+                                    <span class="">8.37万</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <span class="cLightGray">差额</span>
+                                    <span class="">0.00万</span>
+                                </p>
+                                <span class="judge-div judge-divFour">
+                                    <input type="text" class="judge-span judge-yes"/>
+                                    <input type="text" class="judge-span judge-no"/>
+                                </span>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综评</p>
+                            <div class="analyItemCon">
+                                <p class="col-md-4">
+                                    <span class="clightGray pr8 fz14">应得</span>
+                                    <span class="fz14">1</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">实得</span>
+                                    <span class="fz14">0</span>
+                                </p>
+                                <p class="col-md-4 fz16">
+                                    <span class="clightGray pr8 fz14">差值</span>
+                                    <span class="fz14 cRed">1</span>
+                                </p>
+                                <a href="javascript:" class="circlemark  circlemark-lightRed">未</a>
+                            </div>
+                        </div>
+                        <p class="tx-center pt10 pb10">
+                            <input type="button" value="确定" class="uiBtn-blue uiBtn-normal">
+                        </p>
+                    </div>
+                </div>
+                <!--四栏弹框-->
+                <div class="layerRtb-right xiangmu-alert">
+                    <div class="clearfix layerRtb-right-head pb10 plr10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            四栏弹框
+                        </h2>
+                        <i class="fr rig_close"></i>
+                    </div>
+                    <div class="layerRtb-right-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">详情</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-right-footer">
+
+                    </div>
+                </div>
+            </div>
+            <!--右侧列表弹框-->
+            <div class="layerRtb-big pa10">
+                <div class="tab-div clearfix pb10 relative">
+                    <ul class="uiTab3 fl">
+                        <li class="uiTab3-active"><a href="javascript:">拉黑</a></li>
+                        <li><a href="javascript:">冷藏</a></li>
+                        <li><a href="javascript:">黑名单</a></li>
+                    </ul>
+                    <div class="fr ">
+                        <input type="button" class="uiBtn-normal uiBtn-blue fl selectWeek-btn" value="周">
+                        <input type="text" class="fl width120 ml5" placeholder="月份"/>
+                        <input type="button" class="uiBtn-normal uiBtn-blue fl ml5 layerRtb-return" value="返回"/>
+                    </div>
+                </div>
+
+                <div class="topTable-div relative">
+                    <div class="dailyftSearch dailyftSearch1 clearfix hide">
+                        <div class="fl uiHas-textIcon">
+                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" id="contract_no">
+                            <i class="uiText-searchIcon bgIcon"></i>
+                        </div>
+                    </div>
+                    <table class="uiTable">
+                        <thead>
+                        <tr>
+                            <th width="6%">编号</th>
+                            <th width="8%">
+                                <span class="serial_number">
+                                    客户姓名
+                                    <i class="bgIcon "></i>
+                                </span>
+                            </th>
+                            <th width="8%">客户电话</th>
+                            <th width="13%">业务</th>
+                            <th width="10%">金额</th>
+                            <th width="10%">
+                                <div class="thSortBox2 clearfix">
+                                    <span class="fl">预约时间</span>
+                                    <div class="thSort">
+                                        <a href="javascript:;" class="thSortA thSortAt">
+                                            <i class="thSortI thSort-up"></i>
+                                        </a>
+                                        <a href="javascript:;" class="thSortA thSortAb current">
+                                            <i class="thSortI thSort-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th width="8%">
+                                <select class="theadselect">
+                                    <option>地区</option>
+                                    <option>北京</option>
+                                    <option>南京</option>
+                                    <option>合肥</option>
+                                    <option>武汉</option>
+                                </select>
+                            </th>
+                            <th width="6%">
+                                <div class="thSortBox2 clearfix">
+                                    <span class="fl">面积</span>
+                                    <div class="thSort">
+                                        <a href="javascript:;" class="thSortA thSortAt">
+                                            <i class="thSortI thSort-up"></i>
+                                        </a>
+                                        <a href="javascript:;" class="thSortA thSortAb">
+                                            <i class="thSortI thSort-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th width="10%">
+                                <select class="theadselect">
+                                    <option value="">客户申请类型</option>
+                                    <option value="1">底部栏</option>
+                                    <option value="2">右侧栏</option>
+                                    <option value="3">红包</option>
+                                    <option value="4">设计师列表</option>
+                                    <option value="5">设计师详情</option>
+                                    <option value="6">业务商城</option>
+                                    <option value="7">手机站</option>
+                                </select>
+                            </th>
+                            <th width="16%">备注</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>合计</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>6500</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="centerTable-div">
+                    <table class="uiTable">
+                        <tbody>
+                        <tr>
+                            <td width="6%">1</td>
+                            <td width="8%">111</td>
+                            <td width="8%">15566778899</td>
+                            <td width="13%" title="其他-手术室">其他-手术室</td>
+                            <td width="10%">1500</td>
+                            <td width="10%">2018-08-06 13:48:29</td>
+                            <td width="8%">北京</td>
+                            <td width="6%">170.00㎡</td>
+                            <td width="10%">商城</td>
+                            <td width="16%"></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>qq</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>600</td>
+                            <td>2018-08-06 13:42:25</td>
+                            <td>北京</td>
+                            <td>160.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td>
+                                <input type="button" class="uiBtn-small uiBtn-red" value="删除">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red delCustomerBtn" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red delCustomerBtn" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red delCustomerBtn" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red delCustomerBtn" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red delCustomerBtn" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red delCustomerBtn" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41:18</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                            <td><input type="button" class="uiBtn-small uiBtn-red" value="删除"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!--内容区 结束-->
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/rxuedv2.0.min.js"></script>
+    <script type="text/javascript" src="js/frame.min.js"></script>
+    <!-- 三段式公用js-->
+    <script type="text/javascript" src="js/page-threecolumn.js"></script>
+    <!--  项目js-->
+    <script type="text/javascript" src="js/page-project.js"></script>
+</div>
+</body>
+
+</html>

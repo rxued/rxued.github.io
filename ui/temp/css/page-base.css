@@ -1,0 +1,12 @@
+.circlemark_box{ width:25px; height:56px; top:50%; margin-top:-28px; right:10px; position:absolute}
+.circlemark_box .circlemark,.circlemark_box .circlemark2  {width: 25px;height: 25px; line-height: 23px;text-align: center; font-size: 14px;font-weight: 700;position:static; display:block; margin-top:0 }
+.circlemark_box .circlemark{ margin-bottom:5px;}
+
+.title-choice{cursor:pointer;border:none;background:none;color:#999;margin-right:10px;border:1px solid #ddd;padding:2px 8px;line-height:20px;border-radius:3px;}
+.title-choice.current{color:#f33;border:1px solid #f33;}
+
+.tc-right-bottom-left{overflow: hidden;}
+.addout-alert{position: absolute;  top: 0; left: 150%; width: 100%; height: 100%; background: #fff;  z-index:2;}
+.addout-right{margin-left:105px;}
+.addout-number,.addout-buildname,.out-addresss{width:100%;}
+.out-reason{width: 100%; height: 70px; padding: 4px 8px;}

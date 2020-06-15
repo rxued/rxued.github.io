@@ -1,0 +1,834 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>匹配模板</title>
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/rxui1.0.2.min.css" />
+    <link rel="stylesheet" href="css/frame.min.css" />
+    <!--三栏布局样式表 -->
+    <link rel="stylesheet" href="css/page-threecolumn.css" />
+
+    <link href="css/page-templateStyle.css" rel="stylesheet" /><!--个模板页面样式-->
+    <link rel="stylesheet" href="css/commonNew.css" type="text/css"/>
+</head>
+
+
+<body class="logo-c000000 bar-cffffff nav-black nav-vertical" data-class="nav-vertical">
+    <div id="main_header" class="header-fixed j_outerHeight">
+        <h1 id="logo" class="j_leftnav">
+            <a href="javascript:;">
+                <i></i>
+                <span>瑞祥UI</span>
+            </a>
+        </h1>
+        <!--顶部导航 开始-->
+        <div id="topnav" class="clearfix">
+            <ul class="fl">
+                <li>
+                    <a href="javascript:;" data-rippleria class="setup_nav setupbtn rippleria-dark">
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="exit-div">
+                <a href="javascript:;">
+                    <i></i>
+                    <span>退出</span>
+                </a>
+            </div>
+            <div class="user-div">
+                <a href="javascript:;">
+                    <i></i>
+                    <span>用户名</span>
+                </a>
+            </div>
+        </div>
+        <!--顶部导航 结束-->
+    </div>
+    <div id="main_box">
+        <!--主导航 开始-->
+        <div id="nav" class="j_leftnav nav-fixed">
+            <div class="nav-wrapper">
+                <div class="nav-wrapper-content">
+                    <ul class="nav-ul clearfix">
+                        <li class="active">
+                            <a href="javascript:;" data-rippleria class="rippleria-dark"><i class="nav-icon">示</i><strong>示例页面</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--主导航 结束-->
+        <!--内容区 开始-->
+        <div id="main_content">
+            <div class="wrapper clearfix pt10 pl10 pr10">
+                <div class="tc-left pr10 fl">
+                    <ul class="clearfix uiTab1 mb5 j_outerHeight">
+                        <li class="col-md-4 uiTab1-active"><a href="javascript:">匹配</a></li>
+                    </ul>
+                    <div class="daily_title j_outerHeight">
+                        <ul class="clearfix">
+                            <li class="title_cur">全</li>
+                        </ul>
+                    </div>
+                    <div class="contentbox">
+                        <div class="dailyftSearch clearfix hide">
+                            <div class="fl uiHas-textIcon">
+                                <input type="text" class="col-md-12" placeholder="项目编号/工程名称" id="contract_no">
+                                <i class="uiText-searchIcon bgIcon"></i>
+                            </div>
+                        </div>
+                        <table class=" uiTable j_outerHeight ">
+                            <thead>
+                                <tr>
+                                    <th width="28%">
+                                        <span class="serial_number">
+                                            编号
+
+                                        </span>
+                                    </th>
+                                    <th width="30%">管状</th>
+                                    <th width="22%" title="本级回访">业状</th>
+                                    <th title="本级回访">剩余</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="scroll-content">
+                            <table class="uiTable pointertable" id="tab1">
+                                <tbody>
+                                    <tr class="tractive">
+                                        <td width="28%">1</td>
+                                        <td width="30%"><span class="cRed">周期</span></td>
+                                        <td width="22%"><span class="cOrange">异常</span></td>
+                                        <td><span class="cRed">-25</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="28%">2</td>
+                                        <td><span class="cRed">周期</span></td>
+                                        <td><span class="cOrange">异常</span></td>
+                                        <td><span class="cRed">-21</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="28%">3</td>
+                                        <td><span class="cRed">周期</span></td>
+                                        <td><span class="cOrange">异常</span></td>
+                                        <td><span class="cRed">-12</span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="j_outerHeight clearfix tj_bottom">
+                            <p class="col-md-3 cDeepGray" title="全部">0</p>
+                            <p class="col-md-3 cGreen" title="正常">0</p>
+                            <p class="col-md-3 cOrange" title="异常">0</p>
+                            <p class="col-md-3 cRed" title="问题">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc-center fl">
+                    <div class="defaultblock">
+                        <ul class="clearfix uiTab9 j_uiTab9">
+                            <li class="uiTab9-active">状态</li>
+                            <li>匹配</li>
+                        </ul>
+                        <div id="j-tc-center-content" class="pr10">
+                            <div class="uiTab9Con">
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">状态</p>
+                                    <div class="analyItemCon">
+                                        <a href="javascript:" class="circlemark-green circlemark">优</a>
+                                    </div>
+                                </div>
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">使命</p>
+                                    <div class="analyItemCon">
+                                        预留
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">状态</p>
+                                    <div class="analyItemCon">
+                                        <a href="javascript:" class="circlemark-green circlemark">优</a>
+                                    </div>
+                                </div>
+                                <div class="analyItem anItemBor jurisdiction-jurisdictionBtn" id="toPipei">
+                                    <p class="analyItemTit tx-center">账户</p>
+                                    <div class="analyItemCon">
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">编号</span>
+                                            <span class="c333">0001</span>
+                                        </p>
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">二维码</span>
+                                            <img class="iconlogin aaa" src="images/qrimg.jpg" alt="" style="margin-top: -25px;position: absolute;">
+                                        </p>
+                                        <p class="fl col-md-4" v-if="leftku">
+                                            <span class="cLightGray pr8">标识码</span>
+                                            <span>
+                                                <span class="c333">aff84tkgy493</span>
+                                            </span>
+                                        </p>
+                                        <p class="fl col-md-4" v-if="leftku">
+                                            <span class="cLightGray pr8">状态</span>
+                                            <span>
+                                                <span class="c333">已用</span>
+                                            </span>
+                                        </p>
+                                        <a href="javascript:" class="circlemark-green circlemark">优</a>
+                                    </div>
+                                </div>
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">人端</p>
+                                    <div class="analyItemCon">
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">卡号</span>
+                                            <span>
+                                                <span class="c333">0001</span>
+                                            </span>
+                                        </p>
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">手机号</span>
+                                            <span>
+                                                <span class="c333">18804631581</span>
+                                            </span>
+                                        </p>
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">状态</span>
+                                            <span>
+                                                <span class="c333">已用</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">记录</p>
+                                    <div class="analyItemCon">
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">编号</span>
+                                            <span>
+                                                <span class="c333">0001</span>
+                                            </span>
+                                        </p>
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">状态</span>
+                                            <span>
+                                                <span class="c333">已用</span>
+                                            </span>
+                                        </p>
+                                        <p class="fl col-md-4">
+                                            <span class="cLightGray pr8">记录</span>
+                                            <span>
+                                                <span class="c333">1人</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                            </div>
+                            <div class="uiTab9Con dis-none">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="newblock hide">
+                        <ul class="clearfix uiTab9">
+                            <li class="uiTab9-active">新增</li>
+                        </ul>
+                        <div class="">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">任务名</p>
+                                <div class="analyItemCon">
+                                    <input type="text" maxlength="5" class="width120" placeholder="请输入任务名称">
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">隶属</p>
+                                <div class="analyItemCon">
+                                    <select class="width100">
+                                        <option value="-1">选择师</option>
+                                        <option value="2">商务</option>
+                                        <option value="3">主案</option>
+                                        <option value="4">工程</option>
+                                        <option value="5">家具</option>
+                                        <option value="6">教育</option>
+                                        <option value="7">集团投资</option>
+                                        <option value="8">大院投资</option>
+                                    </select>
+                                    <select class="ml10 width100">
+                                        <option value="-1">选择团</option>
+                                    </select>
+                                    <select class="ml10 width100">
+                                        <option value="-1">选择营</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">周期</p>
+                                <div class="analyItemCon">
+                                    <div class="clearfix cycle">
+                                        <p class="p-checked">日任务</p>
+                                        <p class="p-checked ml10">周任务</p>
+                                        <p class="p-checked ml10">月任务</p>
+                                    </div>
+                                    <div class="p-checked-show">
+                                        <input type="time" class="width100">
+                                    </div>
+                                    <div class="p-checked-show hide">
+                                        <select class="width100">
+                                            <option value="0">请选择</option>
+                                            <option value="1">每周一</option>
+                                            <option value="2">每周二</option>
+                                            <option value="3">每周三</option>
+                                            <option value="4">每周四</option>
+                                            <option value="5">每周五</option>
+                                            <option value="6">每周六</option>
+                                            <option value="7">每周日</option>
+                                        </select>
+                                        <input type="time" class="width100">
+                                    </div>
+                                    <div class="p-checked-show hide">
+                                        <select class="width100">
+                                            <option value="0">请选择</option>
+                                            <option value="1">每月1日</option>
+                                            <option value="2">每月2日</option>
+                                            <option value="3">每月3日</option>
+                                            <option value="4">每月4日</option>
+                                            <option value="5">每月5日</option>
+                                            <option value="6">每月6日</option>
+                                            <option value="7">每月7日</option>
+                                            <option value="8">每月8日</option>
+                                            <option value="9">每月9日</option>
+                                            <option value="10">每月10日</option>
+                                            <option value="11">每月11日</option>
+                                            <option value="12">每月12日</option>
+                                            <option value="13">每月13日</option>
+                                            <option value="14">每月14日</option>
+                                            <option value="15">每月15日</option>
+                                            <option value="16">每月16日</option>
+                                            <option value="17">每月17日</option>
+                                            <option value="18">每月18日</option>
+                                            <option value="19">每月19日</option>
+                                            <option value="20">每月20日</option>
+                                            <option value="21">每月21日</option>
+                                            <option value="22">每月22日</option>
+                                            <option value="23">每月23日</option>
+                                            <option value="24">每月24日</option>
+                                            <option value="25">每月25日</option>
+                                            <option value="26">每月26日</option>
+                                            <option value="27">每月27日</option>
+                                            <option value="28">每月28日</option>
+
+                                        </select>
+                                        <input type="time" class="width100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tx-center pt20 pb20">
+                                <input type="button" value="提交" class="uiBtn-blue uiBtn-normal width120 ">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tc-right">
+                    <div class="tc-righttop-tab j-tc-righttop-tab"></div>
+                    <div class="tc-right-top clearfix">
+                        <div class="fl needdealt">
+                            <ul>
+                                <li class="bgRed">待办一</li>
+                                <li class="bgOrange">待办二</li>
+                                <li class="bgGreen">待办三</li>
+                            </ul>
+                        </div>
+                        <div class="visitbox thinScroll">
+                            <div class="visit" id="j-visit">
+                                <div class="visi-list tx-left">
+                                    <div class="visi-listtop">
+                                        <span class="visi-name">营</span>
+                                        <span class="visi-date">07-19 14:55</span>
+                                    </div>
+                                    <p class="visi-listtxt">
+                                        主案设计师系统静态页面已经制作完毕，已经交付开发。
+                                    </p>
+                                </div>
+                                <div class="visi-list tx-right">
+                                    <div class="visi-listtop">
+                                        <span class="visi-date">07-19 15:55</span>
+                                        <span class="visi-name">团</span>
+                                    </div>
+                                    <p class="visi-listtxt cBlue">
+                                        今日新增任务：3个，均有必须近期前端制作；
+                                        <br>在执行任务：5个，均为正常状态；
+                                        <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-right-bottom pa10 relative">
+                        <div class="tc-right-bottom-left relative">
+                            <ul class="topdaily">
+                                <li>
+                                    <a class="topdailybtn" href="javascript:">预留</a>
+                                </li>
+                                <li>
+                                    <a class="topdailybtn" href="javascript:">预留</a>
+                                </li>
+                                <li>
+                                    <a class="topdailybtn" href="javascript:">预留</a>
+                                </li>
+                            </ul>
+                            <div class="dailyrgt-botradio hide">
+                                <div class="mb10">
+                                    <label class="uiRadio12 cGreen">
+                                        <input value="1" type="radio" name="a" class="uiRadio12-input">正常</label>
+                                    <label class="uiRadio12 cOrange">
+                                        <input value="2" type="radio" name="a" class="uiRadio12-input">异常</label>
+                                    <label class="uiRadio12 cRed">
+                                        <input value="3" type="radio" name="a" class="uiRadio12-input">问题</label>
+                                </div>
+                            </div>
+                            <div class="dailyrgt-divZi">
+                                <p class="tx-center">先解决业务问题，才有资格说管理。前两个因素完成之后，再反馈系统问题。</p>
+                            </div>
+                            <div class="visi-text-content hide">
+                                <textarea placeholder="请输入回访内容" class="hf-textarea mb10"></textarea>
+                                <input class="hf-submit" type="submit" value="提交" />
+                            </div>
+                            <!--水印 开始-->
+                            <input class="uiBtn-green uiBtn-normal watermark" type="button" value="水印" />
+                            <div class="watermarktext hide">
+                                <textarea placeholder="请填写水印内容" class="mb10"></textarea>
+                                <div class="tx-center">
+                                    <input type="button" value="提交" class="uiBtn-blue uiBtn-normal width120 watermark-submit">
+                                </div>
+                            </div>
+                            <!--水印 结束-->
+                        </div>
+                        <div class="EventpenaltyDiv">
+                            <a href="javascrpit:;" class="EventpenaltyBtn">预留</a>
+                            <a href="javascrpit:;" class="EventpenaltyBtn">预留</a>
+                        </div>
+                    </div>
+
+
+                    <div class="layerRtb layerRtbPN layerRtb-threecolumn " id="pipei">
+                        <div class="clearfix pb10 pr10">
+                            <h2 class="uiTitle2 fl">
+                                <i class="uiTitle-icon"></i>
+                                匹配
+                            </h2>
+                            <i class="fr rig_close">×</i>
+                        </div>
+                        <div class="plr10 thinScroll" id="pipeimain">
+                            <div class="analyItem" id="aaa">
+                                <p class="analyItemTit tx-center">库端</p>
+                                <div class="analyItemCon">
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">编号</span>
+                                        <span class=" pr8">0001</span>
+                                    </div>
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">标识码</span>
+                                        <span class=" pr8">187e6ae1c3f6</span>
+                                    </div>
+                                    <div class="col-md-6 posa">
+                                        <span class="cLightGray pr8">二维码</span>
+                                        <img src="images/qrimg.jpg" alt="" class="iconlogin aaa" style="margin-top: -25px;position: absolute;top: 43px;">
+
+                                    </div>
+                                    <div class="checkedContent">
+                                        <span class="judge-div judge-divFour">
+				                            <input type="text"  value="" class="judge-span judge-yes">
+				                            <input type="text"  value="" class="judge-span judge-no">
+				                        </span>
+                                    </div>
+                                    <div class="diamonds_div cGreen tx-fb fz14">
+                                        <span>1</span>分</div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">人端</p>
+                                <div class="analyItemCon">
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">工号</span>
+                                        <span class=" pr8">02802002</span>
+                                    </div>
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">姓名</span>
+                                        <span class=" pr8">杜芯梦</span>
+                                    </div>
+                                    <div class="col-md- posa">
+                                        <span class="cLightGray pr8">手机号</span>
+                                        <span class=" pr8">17721883207</span>
+                                    </div>
+                                    <div class="checkedContent">
+                                        <span class="judge-div judge-divFour">
+                                            <input type="text"  value="" class="judge-span judge-yes">
+                                            <input type="text"  value="" class="judge-span judge-no">
+                                        </span>
+                                    </div>
+                                    <div class="diamonds_div cGreen tx-fb fz14"><span>1</span>分</div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">匹配</p>
+                                <div class="analyItemCon">
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">编号</span>
+                                        <span class=" pr8">0001</span>
+                                    </div>
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">标识码</span>
+                                        <span class=" pr8">187e6ae1c3f6</span>
+                                    </div>
+                                    <div class="col-md-6 posa">
+                                        <span class="cLightGray pr8">二维码</span>
+                                        <img src="images/qrimg.jpg" alt="" class="iconlogin aaa" style="margin-top: -20px; position: absolute; top: 40px;">
+                                    </div>
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">工号</span>
+                                        <span class="pr8">02802002</span>
+                                    </div>
+                                    <div class="col-md-3 posa">
+                                        <span class="cLightGray pr8">姓名</span>
+                                        <span class=" pr8">杜芯梦</span>
+                                    </div>
+                                    <div class="col-md-6 posa">
+                                        <span class="cLightGray pr8">手机号</span>
+                                        <span class=" pr8">17721883207</span>
+                                    </div>
+                                    <div class="col-md-4 posa " style="top: 50%; margin-top: 0px; right: 10px; position: absolute; text-align: right; font-weight: bold;">
+
+                                    </div>
+                                    <div class="checkedContent">
+                                        <span class="judge-div judge-divFour">
+                                            <input type="text"  value="" class="judge-span judge-yes">
+                                            <input type="text"  value="" class="judge-span judge-no">
+                                        </span>
+                                    </div>
+                                    <div class="diamonds_div cGreen tx-fb fz14"><span>1</span>分</div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">入口</p>
+                                <div class="analyItemCon s_jiaMiGou">
+                                    <p class="fl col-md-3">
+                                        <span class="cLightGray pr8">二维码登录</span>
+                                        <img src="images/qr.png" alt="" class="iconlogin" style="width: 20px; height: 20px;top: 26px;">
+                                    </p>
+                                    <p class="fl col-md-3">
+                                        <span class="cLightGray pr8">手机号和密码登录</span>
+                                        <img src="images/密码.png" alt="" class="iconlogin" style="width: 20px; height: 20px;top: 26px;">
+                                    </p>
+                                    <p class="fl col-md-3">
+                                        <span class="cLightGray pr8">手机号和验证码登录</span>
+                                        <img src="images/操作-短信.png" alt="" class="iconlogin" style="width: 20px; height: 20px;top: 26px;">
+                                    </p>
+                                    <p class="fl col-md-3 posa">
+
+                                    </p>
+                                    <div class="checkedContent">
+                                        <span class="judge-div judge-divFour">
+                                            <input type="text"  value="" class="judge-span judge-yes">
+                                            <input type="text"  value="" class="judge-span judge-no">
+                                        </span>
+                                    </div>
+                                    <div class="diamonds_div cGreen tx-fb fz14"><span>1</span>分</div>
+                                </div>
+                            </div>
+                            <div  class="analyItem">
+                                <p class="analyItemTit tx-center">解绑</p>
+                                <div class="analyItemCon s_jiaMiGou">
+                                    <p class="fl col-md-8">
+                                        <div class="el-switch is-checked">
+                                            <ul class="clearfix">
+                                                <li class="fl">
+                                                    <span id="jiebangtext">解绑</span>
+                                                </li>
+                                                <li class="fl" style="margin:0 10px">
+                                                    <label class="el-switch">
+                                                        <input type="checkbox" name="switch" checked id="jiebang">
+                                                        <span class="el-switch-style"></span>
+                                                    </label>
+                                                </li>
+                                                <li class="fl">
+                                                    <span id="bangdingtext">绑定</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </p>
+                                    <p class="fl col-md-4 posa">
+
+                                    </p>
+                                    <div class="checkedContent">
+                                        <span class="judge-div judge-divFour">
+                                            <input type="text" value="" class="judge-span judge-yes">
+                                            <input type="text"  value="" class="judge-span judge-no">
+                                        </span>
+                                    </div>
+                                    <div class="diamonds_div cGreen tx-fb fz14">
+                                        <span>1</span>分
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="layerRtb-footer pa10" id="zh">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">综合</p>
+                                <div class="analyItemCon">
+                                    <div class="col-md-8 posa">
+                                        <span class="cLightGray pr8">问题</span>
+                                        <span class=" pr8" id="wenti"> </span>
+                                    </div>
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8">总计</span>
+                                        <span>
+                                            <span class="c333 cGreen" id="zongfen">5分</span>
+                                        </span>
+                                    </p>
+                                    <a href="javascript:" class="circlemark-green circlemark">优</a>
+                                </div>
+                            </div>
+                            <div  class="tx-center mt20">
+                                <div class="dis-il-block">
+                                    <input type="button" value="确定" class="uiBtn-normal uiBtn-blue">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--内容区 结束-->
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/rxuedv2.0.min.js"></script>
+    <script type="text/javascript" src="js/frame.min.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script>
+        $(function () {
+            $('#toPipei').on('click', function () {
+                $(this).addClass('anItemBor-active');
+                $('#pipei').show().animate({
+                    left: 0
+                })
+                $("#pipeimain").height($(window).height() - $("#pipeimain").offset().top - $('#zh').height()-20);
+                console.log($(window).height(), $("#aaa").offset(), $('#zh').height())
+            });
+
+            $(".checkedContent .icon").on('click', function () {
+                var zonghe = '';
+                $(this).addClass('active').siblings().removeClass('active')
+                $(".checkedContent .icon.dui.active").each(function (index) {
+                    $(this).parents(".analyItem").find(".diamonds_div span").text("1")
+                })
+                $(".checkedContent .icon.cuo.active").each(function (index) {
+                    $(this).parents(".analyItem").find(".diamonds_div span").text("0");
+                    zonghe += $(this).parents(".analyItem").find('.analyItemTit').text() + ',';
+                });
+                $('#zongfen').text($(".checkedContent .icon.dui.active").length + '分')
+                $('#wenti').text(zonghe.trims(','))
+                if ($(".checkedContent .icon.dui.active").length == 5) {
+                    $('.youcha').text('优')
+                } else {
+                    console.log("1111111")
+                    $('.youcha').html('差')
+                }
+            })
+            $('#bangdingtext').css({
+                color: '#09f'
+            })
+            $('#jiebangtext').css({
+                color: '#ccc'
+            })
+            $("#jiebang").on('click', function () {
+                if ($("#jiebang").is(":checked")) {
+                    // switch为true时的操作
+                    $('#bangdingtext').css({
+                        color: '#09f'
+                    })
+                    $('#jiebangtext').css({
+                        color: '#ccc'
+                    })
+                } else {
+                    // switch为false时的操作
+                    $('#bangdingtext').css({
+                        color: '#ccc'
+                    })
+                    $('#jiebangtext').css({
+                        color: '#09f'
+                    })
+                }
+            })
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".fixedtips").click(function () {
+                if ($(this).attr("data-fixedflag") == 0) {
+                    $(this).next(".fixedtipscon").show();
+                    $(this).attr("data-fixedflag", "1")
+                } else {
+                    $(this).next(".fixedtipscon").hide();
+                    $(this).attr("data-fixedflag", "0")
+                }
+            });
+            $(".serial_number").click(function () {
+                $(".dailyftSearch").show()
+            });
+            $(".uiText-searchIcon").click(function () {
+                $(this).parents(".dailyftSearch").hide()
+            });
+
+            $(".setup_nav").click();
+
+            //左侧JS
+            rxued.table.LChangeapart($("#tab1 tr"), "#fff", "#eee");
+            rxued.table.hoverChage($("#tab1 tr"), "#d1ecfe");
+            rxued.init.countH($(".scroll-content"), "15", function () {
+                $(".scroll-content").slimScroll({
+                    height: $(".scroll-content").eq(0).height(),
+                    borderRadius: "0px"
+                });
+            });
+            $(window).resize(function () {
+                rxued.init.countH($(".scroll-content"), "15", function () {
+                    $(".scroll-content").slimScroll({
+                        height: $(".scroll-content").eq(0).height(),
+                        borderRadius: "0px"
+                    });
+                    $(".scroll-content").parents(".slimScrollDiv").height($(".scroll-content").eq(
+                        0).height())
+                });
+            });
+            $(".scroll-content tr").click(function () {
+                $(this).addClass("tractive").siblings().removeClass("tractive");
+                $(".defaultblock").show();
+                $(".newblock").hide();
+            });
+            //中间JS
+
+            rxued.areaSwitch.Tab($('.j_uiTab9'), 'uiTab9-active', $('.uiTab9Con'), 'click');
+            var theight = $("body").height() - $("#topnav").height() - $(".j_uiTab9").outerHeight() - 11;
+            $("#j-tc-center-content").height(theight).slimScroll({
+                height: theight,
+                borderRadius: "0px"
+            });
+            $(window).resize(function () {
+                var theight = $("body").height() - $("#topnav").height() - $(".j_uiTab9").outerHeight() -
+                    11;
+                $("#j-tc-center-content").height(theight).slimScroll({
+                    height: theight,
+                    borderRadius: "0px"
+                });
+                $("#j-tc-center-content").parents(".slimScrollDiv").eq(0).height(theight)
+            });
+            //新增
+            $(".AddIcon").click(function () {
+                $(".defaultblock").hide();
+                $(".newblock").show();
+            })
+            rxued.areaSwitch.Tab($('.cycle'), 'p_checked_Active', $('.p-checked-show'), 'click');
+            //右侧JS
+            var rightHeight = $("body").height() - $("#topnav").outerHeight() - $(".j-tc-righttop-tab").outerHeight() -
+                $(".tc-right-bottom").outerHeight() - 10;
+            $(".tc-right-top").height(rightHeight);
+            // $("#j-visit").height(rightHeight).slimScroll({ height: rightHeight, borderRadius: "0px" ,start:"bottom"});
+            $(".tc-right-top").height(rightHeight);
+            $(".visitbox").css({
+                height: rightHeight,
+                overflowY: "auto"
+            });
+            $(".visitbox").scrollTop($("#j-visit")[0].scrollHeight);
+
+            $(window).resize(function () {
+                var rightHeight = $("body").height() - $("#topnav").outerHeight() - $(
+                    ".j-tc-righttop-tab").outerHeight() - $(".tc-right-bottom").outerHeight() - 10;
+                // $(".tc-right-top").height(rightHeight);
+                // $("#j-visit").height(rightHeight).slimScroll({ height: rightHeight, borderRadius: "0px" ,start:"bottom"});
+                // $("#j-visit").parents(".slimScrollDiv").eq(0).height(rightHeight)
+                $(".tc-right-top").height(rightHeight);
+                $(".visitbox").css({
+                    height: rightHeight,
+                    overflowY: "auto"
+                });
+                $(".visitbox").scrollTop($("#j-visit")[0].scrollHeight);
+
+            });
+            // $("#j-visit").slimScroll({ height: theight, borderRadius: "0px" });
+
+
+            $(".topdaily .topdailybtn").click(function () {
+
+                $(this).parents(".topdaily").find(".topdailybtn").removeClass("active");
+                $(this).addClass("active");
+                $(".dailyrgt-divZi").hide();
+                $(".visi-text-content").hide();
+                $(".dailyrgt-botradio").show();
+            });
+
+            $(".dailyrgt-botradio .uiRadio12").click(function () {
+                $(".dailyrgt-divZi").hide();
+                $(".dailyrgt-botradio").hide();
+                $(".visi-text-content").show();
+                $(".watermark").hide();
+            });
+
+            $(".hf-submit").click(function () {
+                $(".topdaily").find(".topdailybtn").removeClass("active");
+                $(".dailyrgt-divZi").show();
+                $(".visi-text-content").hide();
+                $(".dailyrgt-botradio").hide();
+                $(".watermark").show();
+            });
+            //水印
+            $(".watermark").click(function () {
+                $(this).hide();
+                $(".watermarktext").show();
+            });
+            $(".watermark-submit").click(function () {
+                $(".watermarktext").hide();
+                $(".watermark").show();
+            });
+
+            /*点击编辑弹框*/
+            $('.EditBtn').on('click', function () {
+                layer.open({
+                    type: 2,
+                    title: "编辑",
+                    area: ['800px', '510px'],
+                    content: 'threecolumn_renwu_jituan_fengongsi_edit.html',
+                    btn: ["提交"]
+                });
+            });
+			
+			//勾选
+            $(".judge-span").click(function(){
+            	$(this).addClass("active").siblings().removeClass("active");
+            });
+            
+            $(".rig_close").animate({})
+
+        })
+    </script>
+</body>
+
+</html>

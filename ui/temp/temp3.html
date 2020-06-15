@@ -1,0 +1,2063 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>基础</title>
+    <link rel="stylesheet" href="css/rxui1.0.2.min.css" />
+    <link rel="stylesheet" href="css/frame.min.css" />
+    <!--三栏布局样式表 -->
+    <link rel="stylesheet" href="css/page-threecolumn.css" />
+    <link href="css/page-templateStyle.css" rel="stylesheet" /><!--个模板页面样式-->
+	<link rel="stylesheet" href="css/commonNew.css" type="text/css"/>
+
+</head>
+<body class="logo-c000000 bar-cffffff nav-black nav-vertical" data-class="nav-vertical">
+	<div id="main_header" class="header-fixed j_outerHeight">
+	    <h1 id="logo" class="j_leftnav"><a href="javascript:;"><i></i><span>集团资源系统</span></a></h1>
+	    <!--顶部导航 开始-->
+	    <div id="topnav" class="clearfix">
+	        <ul class="fl">
+	            <li>
+	                <a href="javascript:;" data-rippleria class="setup_nav setupbtn rippleria-dark">
+	                    <i></i>
+	                </a>
+	            </li>
+	        </ul>
+	        <!-- <div class="exit-div"><a href="javascript:;"><i></i><span>退出</span></a></div> -->
+	        <div class="user-div"><a href="javascript:;"><i></i><span class="mr10">地区</span><span class="mr5">用户名</span>-<span class="ml5">01011000</span></a></div>
+	        <div class="eventDiv fr"><i class="fl"></i><span class="fl ml5">通知</span><span class="fl ml5">0</span></div>
+	    </div>
+	    <!--顶部导航 结束-->
+	</div>
+	<div id="main_box">
+	    <!--主导航 开始-->
+	    <div id="nav" class="j_leftnav nav-fixed">
+	        <div class="nav-wrapper">
+	            <div class="nav-wrapper-content">
+					<ul class="nav-ul clearfix">
+						<li class="active">
+							<a href="javascript:;" data-rippleria class="rippleria-dark"><i class="nav-icon">示</i><strong>示例页面</strong></a>
+						</li>
+					</ul>
+	            </div>
+	        </div>
+	    </div>
+	    <!--主导航 结束-->
+	    <!--内容区 开始-->
+	    <div id="main_content">
+	        <div class="wrapper clearfix pt10 pl10 pr10">
+	            <div class="tc-left pr10 fl">
+	                <div class="leftTab-3 mb5 j_outerHeight">
+                        <ul class="clearfix uiTab1 mb5 j_outerHeight">
+                            <li class="col-md-4 uiTab1-active"><a href="javascript:">基础</a></li>
+                        </ul>
+	                </div>
+
+	                <div class="daily_title j_outerHeight">
+	                    <ul class="clearfix">
+	                        <li class="title_cur"><a href="标准.html">全</a></li>
+	                    </ul>
+	                </div>
+	                <div class="contentbox over-hidden">
+	                    <!-- 搜索 -->
+	                    <div class="dailyftSearch dailyftSearch1 clearfix hide">
+	                        <div class="fl uiHas-textIcon">
+	                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" >
+	                            <i class="uiText-searchIcon bgIcon"></i>
+	                        </div>
+	                    </div>
+	                    <!-- 日期筛选 -->
+	                    <div class="dailyftSearch hide dailyftSearch2">
+	                        <div class="uiHas-textIcon clearfix">
+	                            <input type="text" class="width100 fl ml10" placeholder="开始时间">
+	                            <span class="plr5 fl lh28">至</span>
+	                            <input type="text" class="width100 fl endTime" placeholder="结束时间">
+	                        </div>
+	                    </div>
+	                    <!-- 搜索加选择 -->
+	                    <div class="dailyftSearch hide dailyftSearch3" style="display: block;">
+	                        <div class="clearfix ml5 mt4">
+	                            <input type="text" class="width100 fl">
+	                            <span class="plr5 fl lh28">至</span>
+	                            <input type="text" class="width100 fl endTime">
+	                            <span class="time-search" ng-click="selectBtn(0,0)">
+	                                <i class="bgIcon mt7"></i>
+	                            </span>
+	                        </div>
+	                        <div class="clearfix mt5 ml5 ">
+
+	                            <select class="fl mr2 width60">
+	                                <option value="0">等级</option>
+	                                <option value="1">尘埃</option>
+	                                <option value="2">星辰</option>
+	                            </select>
+	                            <select class="fl mr2 width60">
+	                                <option value="0">重要性</option>
+	                                <option value="1">优</option>
+	                                <option value="2">中</option>
+	                                <option value="3">差</option>
+	                            </select>
+	                            <select class="fl mr2 width60">
+	                                <option value="0">性质</option>
+	                                <option value="1">中介</option>
+	                                <option value="2">物业</option>
+	                                <option value="3">售楼</option>
+	                                <option value="4">招商</option>
+	                                <option value="5">其他</option>
+	                            </select>
+	                            <select class="fl mr2 width60">
+	                                <option value="0">问题类型</option>
+	                                <option title="两个月内给客户" value="1">正常</option>
+	                                <option title="两个月以上给客户，最后一次回访时间一个月内" value="2">异常</option>
+	                                <option title="其他（以上两项都不满足）" value="3">问题</option>
+	                                <option value="12">重点</option>
+	                                <option value="13">资料差</option>
+	                                <option value="14" title="回访周期超过10天">周期长</option>
+	                                <option value="15" title="信息员录入1-2月未给客户">公关差</option>
+	                                <option value="16" title="1-2个月给客户">维护差</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <table class=" uiTable j_outerHeight table-np ">
+	                        <thead>
+		                        <tr>
+		                            <th width="19%">
+		                                <select class="theadselect">
+		                                    <option>地区</option>
+		                                    <option>北京</option>
+		                                    <option>上海</option>
+		                                </select>
+		                            </th>
+		                            <th width="20%">
+		                                <select class="theadselect">
+		                                    <option>业务员</option>
+		                                </select>
+		                            </th>
+		                            <th width="18%">
+		                                <select class="theadselect">
+		                                    <option>管状</option>
+		                                    <option>全待</option>
+		                                    <option>访待</option>
+		                                    <option>信待</option>
+		                                </select>
+		                            </th>
+		                            <th width="18%">
+		                                <select class="theadselect">
+		                                    <option>业状</option>
+		                                    <option>未</option>
+		                                    <option>优</option>
+		                                    <option>中</option>
+		                                    <option>差</option>
+		                                </select>
+		                            </th>
+		                            <th>
+		                                <div class="thSortBox" style="display:inline;">
+		                                    <span id="sortBy" class="uiLink fl" ng-click="selectBtn(0,3)" style="margin-left:3px;">集访</span>
+		                                    <div class="thSort" style="padding-left:2px;">
+		                                        <a href="javascript:;" data-sort="2" class="thSortA thSortAt">
+		                                            <i class="thSortI thSort-up"></i>
+		                                        </a>
+		                                        <a href="javascript:;" data-sort="1" class="thSortA thSortAb current">
+		                                            <i class="thSortI thSort-down"></i>
+		                                        </a>
+		                                    </div>
+
+		                                </div>
+		                                <span class="serial_number_data"><i class="trCalendar" style="margin-left:0;"></i></span>
+		                            </th>
+		                        </tr>
+	                        </thead>
+	                    </table>
+	                    <div class="scroll-content">
+	                        <div class="information-box dis-none">
+	                            <i class="information-ico"></i>
+	                            <div class="information-con"><p>医疗咨询办公医疗咨询办公医疗咨询办公</p></div>
+	                        </div>
+	                        <table class="uiTable pointertable" id="tab1">
+                                <tbody>
+                                    <tr class="tractive">
+                                        <td width="19%">北京</td>
+                                        <td width="20%">李想</td>
+										<td width="18%"><span class="cPurple">全待</span></td>
+										<td width="18%"><span class="cGreen">优</span></td>
+										<td><span class="cRed">-80</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>上海</td>
+										<td>孟溪</td>
+										<td><span class="cPurple">访待</span></td>
+										<td><span class="cRed">未</span></td>
+										<td><span class="cRed">-20</span></td>
+                                    </tr>
+									<tr>
+										<td>济南</td>
+										<td>刘梦雪</td>
+										<td><span class="cPurple">访待</span></td>
+										<td><span class="cGreen">优</span></td>
+										<td><span class="cRed">-7</span></td>
+									</tr>
+									<tr>
+										<td>重庆</td>
+										<td>李酾</td>
+										<td><span class="cPurple">访待</span></td>
+										<td><span class="cRed">未</span></td>
+										<td>27</td>
+									</tr>
+                                </tbody>
+	                        </table>
+	                    </div>
+	                    <div class="j_outerHeight clearfix tj_bottom">
+	                        <p class="col-md-3" title="全部">1589</p>
+	                        <p class="col-md-3 cGreen" title="正常">514</p>
+	                        <p class="col-md-3 cOrange" title="异常">265</p>
+	                        <p class="col-md-3 cRed" title="问题">156</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="tc-center fl">
+	                <div class="clearfix">
+	                    <ul class="clearfix uiTab9 j_uiTab9">
+	                        <li class="uiTab9-active">状态</li>
+	                        <li>标准一</li>
+	                        <li>标准二</li>
+	                    </ul>
+	                </div>
+
+	                <div id="j-tc-center-content">
+	                    <!-- 状态-->
+	                    <div class="uiTab9Con">
+                            <div class="uiTab9Con-height pr10">
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">状态</p>
+                                    <div class="analyItemCon">
+
+                                    </div>
+                                </div>
+                                <!--标准一-->
+                                <div class="analyItem">
+                                    <p class="analyItemTit tx-center">标准一</p>
+                                    <div class="analyItemCon">
+                                        <p class="fl col-md-12 cRed">
+                                            <span class="pr8">3个问题</span>
+                                        </p>
+                                        <strong class="score-strong cGreen fz16">9</strong>
+                                        <a href="javascript:" class="circlemark circlemark-lightRed">差</a>
+                                        <div class="fixedTrangle">
+                                            <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+                                            <div class="fixedtipscon pt10 pb10">
+                                                <i></i>
+                                                <p>规则</p>
+                                                <p>直接拿“标准一”板块里的“状态”模块</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--标准二-->
+                                <div class="analyItem newSalesman">
+                                    <p class="analyItemTit tx-center">标准二</p>
+                                    <div class="analyItemCon">
+                                        <span class="circlemark circlemark-purple">待</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--处理-->
+                            <div class="pt1 pr10">
+                                <div class="analyItem anItemBor uiTab9Con-Handle">
+                                    <p class="analyItemTit tx-center">处理</p>
+                                    <div class="analyItemCon">
+                                        <p>弹框二模板，处理弹框</p>
+                                        <div class="fixedTrangle">
+                                            <a href="javascript:" class="circlemark FinalEvaluation circlemark-purple">待</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+	                        <div class="analyItem anItemBor">
+	                            <p class="analyItemTit tx-center">处理</p>
+	                            <div class="analyItemCon operate-clickDiv">
+
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- 标准一-->
+	                    <div class="uiTab9Con dis-none pr10">
+	                        <div class="analyItem">
+	                            <p class="analyItemTit tx-center">状态</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-12 cRed">
+	                                    <span class="pr8">3个问题</span>
+	                                </p>
+	                                <strong class="score-strong cGreen fz16">9</strong>
+	                                <a href="javascript:" class="circlemark circlemark-lightRed">差</a>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                    <div class="fixedtipscon pt10 pb10" style="display: none;">
+	                                        <i></i>
+	                                        <p>规则</p>
+											<p>1、<span class="cRed">3个问题</span>=资料（2个问题）+客户（1个问题）</p>
+	                                        <p>2、总分（9分）=资料（8分）+客户（1分）</p>
+	                                        <p>3、<span class="cRed">“差”</span>根据总分逻辑</p>
+
+
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem anItemBor">
+	                            <p class="analyItemTit tx-center">资料</p>
+	                            <div class="analyItemCon datum-clickDiv">
+	                                <p class="fl col-md-5"><span class="cLightGray pr8">姓名</span><span>占义泽</span></p>
+	                                <p class="fl col-md-5"><span class="cLightGray pr8">公司</span><span></span></p>
+	                                <p class="fl col-md-5"><span class="cLightGray pr8">性质</span><span>中介</span></p>
+	                                <p class="fl col-md-5"><span class="cLightGray pr8">性质</span><span></span></p>
+
+	                                <p class="fl col-md-11 cRed"><span class="cLightGray pr8 cRed">2个问题</span><span class="DataStr"></span></p>
+	                                <strong class="score-strong cGreen fz16">8</strong>
+	                                <a href="javascript:" class="circlemark circlemark-yellow">中</a>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem anItemBor">
+	                            <p class="analyItemTit tx-center">客户</p>
+	                            <div class="analyItemCon custom-clickDiv">
+	                                <p class="fl col-md-4">
+	                                    <span class="cLightGray pr8" title="信息员共计给的客户（不包括放弃）/放弃客户数">总量</span>
+	                                    <span title="信息员共计给的客户（不包括放弃）/放弃客户数">0/0</span>
+	                                </p>
+	                                <p class="fl col-md-4">
+	                                    <span class="cLightGray pr8" title="在跟踪的客户数量">跟踪</span>
+	                                    <span title="在跟踪的客户数量">0</span>
+	                                </p>
+	                                <p class="fl col-md-4">
+	                                    <span class="cLightGray pr8" title="最近一次给客户时间">客户</span>
+	                                    <span title="最近一次给客户时间"></span>
+	                                </p>
+	                                <p class="fl col-md-12 ellipsis cRed hide CustomerModule">
+	                                    <span class="cLightGray pr8 cRed">问题</span>
+	                                    <span></span>
+	                                </p>
+	                                <p class="fl col-md-11 cRed"><span class="cLightGray pr8 cRed">1个问题</span><span></span></p>
+	                                <strong class="score-strong cGreen fz16">1</strong>
+	                                <a href="javascript:" class="circlemark circlemark-lightRed">差</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- 标准二-->
+	                    <div class="uiTab9Con dis-none pr10">
+	                        <div class="analyItem">
+	                            <p class="analyItemTit tx-center">状态</p>
+	                            <div class="analyItemCon">
+                                    <span class="circlemark circlemark-purple">待</span>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem relative anItemBor">
+	                            <p class="analyItemTit tx-center">量管</p>
+	                            <div class="analyItemCon behavior-clickDiv">
+	                                <p class="col-md-4">
+	                                    <span class="cLightGray pr8">量房</span>
+	                                    <span>2</span>
+	                                </p>
+	                                <p class="col-md-4">
+	                                    <strong class="cRed fz18">297</strong>
+                                    </p>
+                                    <span class="circlemark circlemark-purple">待</span>
+	                            </div>
+	                        </div>
+
+
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="tc-right">
+	                <div class="tc-righttop-tab j-tc-righttop-tab">
+	                    <ul class="RTtab clearfix fr">
+	                        <li class="RTtab-active">
+	                            <a href="JavaScript:;">列表</a><span></span>
+	                        </li>
+	                    </ul>
+	                </div>
+	                <div class="tc-right-top clearfix">
+	                    <div class="fl needdealt">
+	                        <!--    <ul>
+	                                <li class="bgRed">待办一</li>
+	                                <li class="bgOrange">待办二</li>
+	                                <li class="bgGreen">待办三</li>
+	                            </ul>-->
+	                    </div>
+	                    <!-- 待办弹窗S -->
+	                    <div class="tc-taskDiv">
+	                        <div class="clearfix">
+	                            <p class="fl">• 标题长度自行调整...</p>
+	                            <i class="fr rig_close">×</i>
+	                        </div>
+	                    </div>
+	                    <!-- 待办弹窗E -->
+	                    <div class="visitbox thinScroll">
+	                        <div class="visit" id="j-visit">
+	                            <div class="visi-list tx-left">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-name">访</span>
+	                                    <span class="visi-date">07-19 14:55</span>
+	                                    <span class="visi-date">下次回访时间：11-24 11:02</span>
+	                                    <span class="visi-date">耗时：0s</span>
+	                                </div>
+	                                <p class="visi-listtxt">
+	                                    1、代理楼盘商业这一块，之前和公司同事合作过。目前在忙，加微信。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-left">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-name">访</span>
+	                                    <span class="visi-date">07-19 14:55</span>
+	                                    <span class="visi-date">下次回访时间：11-24 11:02</span>
+	                                    <span class="visi-date">耗时：0s</span>
+	                                </div>
+	                                <p class="visi-listtxt">
+	                                    1、代理楼盘商业这一块，之前和公司同事合作过。目前在忙，加微信。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-right">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+	                                </div>
+	                                <p class="visi-listtxt cBlue">
+	                                    今日新增任务：3个，均有必须近期前端制作；
+	                                    <br>在执行任务：5个，均为正常状态；
+	                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-left">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-name">访</span>
+	                                    <span class="visi-date">07-19 14:55</span>
+	                                    <span class="visi-date">下次回访时间：11-24 11:02</span>
+	                                    <span class="visi-date">耗时：0s</span>
+	                                </div>
+	                                <p class="visi-listtxt">
+	                                    1、代理楼盘商业这一块，之前和公司同事合作过。目前在忙，加微信。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-left">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-name">访</span>
+	                                    <span class="visi-date">07-19 14:55</span>
+	                                    <span class="visi-date">下次回访时间：11-24 11:02</span>
+	                                    <span class="visi-date">耗时：0s</span>
+	                                </div>
+	                                <p class="visi-listtxt">
+	                                    1、代理楼盘商业这一块，之前和公司同事合作过。目前在忙，加微信。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-right">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+	                                </div>
+	                                <p class="visi-listtxt cBlue">
+	                                    今日新增任务：3个，均有必须近期前端制作；
+	                                    <br>在执行任务：5个，均为正常状态；
+	                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-left">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-name">访</span>
+	                                    <span class="visi-date">07-19 14:55</span>
+	                                    <span class="visi-date">下次回访时间：11-24 11:02</span>
+	                                    <span class="visi-date">耗时：0s</span>
+	                                </div>
+	                                <p class="visi-listtxt">
+	                                    1、代理楼盘商业这一块，之前和公司同事合作过。目前在忙，加微信。
+	                                </p>
+	                            </div>
+	                            <div class="visi-list tx-left">
+	                                <div class="visi-listtop">
+	                                    <span class="visi-name">访</span>
+	                                    <span class="visi-date">07-19 14:55</span>
+	                                    <span class="visi-date">下次回访时间：11-24 11:02</span>
+	                                    <span class="visi-date">耗时：0s</span>
+	                                </div>
+	                                <p class="visi-listtxt">
+	                                    1、代理楼盘商业这一块，之前和公司同事合作过。目前在忙，加微信。
+	                                </p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="tc-right-bottom pa10 relative">
+	                    <div class="tc-right-bottom-left relative">
+	                        <ul class="topdaily">
+	                            <li>
+	                                <a class="topdailybtn" href="javascript:">正常</a>
+	                            </li>
+	                            <li>
+	                                <a class="topdailybtn" href="javascript:">异常</a>
+	                            </li>
+	                            <li>
+	                                <a class="topdailybtn" href="javascript:">问题</a>
+	                            </li>
+	                        </ul>
+	                        <ul class="topdaily2 clearfix hide" id="visittag1">
+	                            <li class="topdailybtn" title="信息员回访达标，信息员持有达标。"> <span>回持达标</span>  </li><li class="topdailybtn" title="信息员回访不达标，信息员持有不达标"> <span>回持差</span>  </li>
+	                            <li class="topdailybtn" title="信息员回访达标，持有不达标"> <span>回达持差</span>  </li><li class="topdailybtn" title="信息员回访不达标，持有达标。"> <span>回差持达</span>  </li>
+	                        </ul>
+	                        <div class="dailyrgt-botradio" >
+	                            <label class="uiRadio12 pb5 ellipsis" title="周期长：回访间隔超过7天，平均回访超过10天"><input value="42" data-value="周期长" type="radio" name="SignName" class="uiRadio12-input">周期长</label>
+	                            <label class="uiRadio12 pb5 ellipsis" title="无进展：敷衍一直说合作，就是不给客户，说没客户，没动作无进展；每次跟进内容无价值，合作伙伴情况、负责楼盘、手上资源无了解"><input value="43" data-value="无进展" type="radio" name="SignName" class="uiRadio12-input">无进展</label>
+	                            <label class="uiRadio12 pb5 ellipsis" title="质量差：合作伙伴不清楚，信息员做住宅的、提供客户不能接单的"><input value="44" data-value="质量差" type="radio" name="SignName" class="uiRadio12-input">质量差</label>
+	                            <label class="uiRadio12 pb5 ellipsis" title="虚假回访：未回访直接写内容，编造内容"><input value="45" data-value="虚假回访" type="radio" name="SignName" class="uiRadio12-input">虚假回访</label>
+	                            <label class="uiRadio12 pb5 ellipsis" title="公关差：顾问搞不定的：一听装修公司就挂，不合作，提点低"><input value="46" data-value="公关差" type="radio" name="SignName" class="uiRadio12-input">公关差</label>
+	                            <label class="uiRadio12 pb5 ellipsis" title="暂无资源：合作伙伴质量、项目、合作没问题，只不过是现阶段没有合适的资源能提供"><input value="110" data-value="暂无资源" type="radio" name="SignName" class="uiRadio12-input">暂无资源</label>
+	                            <label class="uiRadio12 pb5 ellipsis"><input value="0" type="radio" name="SignName" class="uiRadio12-input">正常跟进</label>
+	                        </div>
+	                        <div class="dailyrgt-divZi">
+
+	                        </div>
+	                        <div class="visi-text-content visi-text-content1 hide">
+	                            <textarea class="hf-textarea mb10" style="height: 140px;"></textarea>
+	                            <input class="hf-submit" type="submit" value="提交">
+	                        </div>
+
+
+	                    </div>
+	                    <div class="EventpenaltyDiv">
+	                        <a href="javascrpit:;" class="EventpenaltyBtn difficult-btn relative">百科大全<img src="images/pic/new.GIF" alt="" class="new-item"></a>
+	                        <a href="javascrpit:;" class="EventpenaltyBtn">评价标签</a>
+	                    </div>
+	                </div>
+	                <!--操作弹框-->
+	                <div class="layerRtb layerRtbPN operate-alert">
+	                    <div class="clearfix layerRtb-head pb10 pr10">
+	                        <p class="fl"></p>
+	                        <i class="fr rig_close">×</i>
+	                    </div>
+	                    <div class="layerRtb-scroll overflow thinScroll plr10">
+	                        <div class="analyItem">
+	                            <p class="analyItemTit tx-center">标准一</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-12 cRed">
+	                                    <span class="pr8">性质2、公司</span>
+	                                </p>
+	                                <strong class="score-strong cGreen fz16">9</strong>
+	                                <a href="javascript:" class="circlemark circlemark-lightRed">差</a>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                    <div class="fixedtipscon pt10 pb10">
+	                                        <i></i>
+	                                        <p>规则</p>
+	                                        <p>此模块展示内容为标准一里状态展示的内容一致</p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem">
+	                            <p class="analyItemTit tx-center">标准二</p>
+	                            <div class="analyItemCon">
+
+	                            </div>
+	                        </div>
+
+	                    </div>
+	                    <div class="layerRtb-bottom operate-bottom pa10">
+	                        <div class="clearfix">
+	                            <div class="col-md-6 fl operate-bottomDiv">
+	                                <div class="tx-center pb10">
+
+	                                    <p class="tx-center fz16 pt10 pb10"></p>
+	                                </div>
+	                                <div class="lh28">正常：</div>
+	                                <div class="pl10 choice-item">
+	                                    <span class="choice-span" data-text="正常跟进。">正常跟进</span>
+	                                    <span class="choice-span" data-text=" 建议外出维护一次。">外出</span>
+	                                    <span class="choice-span" data-text=" 重点信息员。">重点</span>
+
+	                                </div>
+	                                <div class="lh28">问题：</div>
+	                                <div class="pl10 choice-item">
+	                                    <span class="choice-span" data-text="三个月未攻取成功转其他人攻取；">分配</span>
+	                                    <span class="choice-span" data-text="未给客户，公关差，制定计划攻取。">公关差</span>
+	                                    <span class="choice-span" data-text="回访超时，10天内最少回访一次。">周期长</span>
+	                                    <span class="choice-span" data-text="资料未完善，回访无进展，抓紧攻取；">无进展</span>
+	                                    <span class="choice-span" data-text="无在跟踪客户，抓紧维护要客户">维护差</span>
+	                                    <span class="choice-span" data-text="完善资料确定性质是否有价值，无价值拉黑；">质量差</span>
+	                                    <span class="choice-span" data-text="一个月以上未给客户，合作断档，抓紧维护">断档</span>
+	                                    <span class="choice-span" data-text="虚假回访！">虚假回访</span>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6 fl operate-bottomDiv operate-bottomR pl10" style="min-height:200px">
+	                                <div class="tx-center pb10">
+
+	                                    <p class="tx-center fz16 pt10 pb10"></p>
+	                                </div>
+
+
+	                                <div class="lh28">不合格：</div>
+	                                <div class="pl10 choice-item">
+	                                    <span class="choice-span" data-text="">公共池</span>
+	                                    <span class="choice-span" data-text="">冷藏</span>
+	                                    <span class="choice-span" data-text="">黑名单</span>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="pt10 tx-center">
+	                            <input type="button" class="uiBtn-normal uiBtn-gray uiBtn-gray-no  operate-submit" disabled="disabled" value="提交">
+	                        </div>
+	                    </div>
+	                </div>
+	                <!--资料弹框-->
+	                <div class="layerRtb layerRtbPN datum-alert">
+	                    <div class="clearfix layerRtb-head pb10 pr10">
+	                        <p class="fl"></p>
+	                        <i class="fr rig_close">×</i>
+	                    </div>
+	                    <div class="layerRtb-scroll overflow thinScroll plr10" >
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">基本</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-5">
+	                                    <span class="cLightGray pr8">姓名</span>
+	                                    <span>赵先生</span>
+	                                </p>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">性质</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-5">
+	                                    <span class="cLightGray pr8">性质</span><span>中介</span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes active" name="性质1" value="3">
+	                                        <input type="text" class="judge-span judge-no" name="性质1：其他" >
+	                                    </span>
+	                                </p>
+	                                <p class="fl col-md-6">
+	                                    <span class="cLightGray pr8">性质</span>
+	                                    <span></span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes" name="性质2" value="3">
+	                                        <input type="text" class="judge-span judge-no nature2 active" name="性质2" value="0">
+	                                    </span>
+	                                </p>
+	                                <div class="count-numDiv nature-numDiv"><strong class="fz14 cGreen">3分</strong></div>
+	                                <a href="javascript:" class="circlemark"></a>
+	                            </div>
+	                            <div class="fixedTrangle">
+	                                <a href="javascript:" class="fixedtips"></a>
+	                                <div class="fixedtipscon pt10 pb10">
+	                                    <i></i>
+	                                    <p>规则</p>
+	                                    <p>性质1（<span class="cGreen">3分</span>）+性质2（<span class="cRed">0分</span>）=3分</p>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">职务</p>
+	                            <div class="analyItemCon Post-div">
+	                                <p class="fl col-md-5">
+	                                    <span class="cLightGray pr8">职务</span>
+	                                    <span>业务员</span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes active" name="职务" value="1">
+	                                        <input type="text" class="judge-span judge-no" name="职务" value="0">
+	                                    </span>
+	                                </p>
+	                                <div class="count-numDiv post-numDiv"><strong class="fz14 cGreen">2分</strong></div>
+	                            </div>
+
+	                        </div>
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">工作</p>
+	                            <div class="analyItemCon Work-div">
+	                                <p class="fl col-md-5">
+	                                    <span class="cLightGray pr8" title="工作年限">工作</span>
+	                                    <span>6月以内</span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes active" name="工作年限" value="1">
+	                                        <input type="text" class="judge-span judge-no" name="工作年限" value="0">
+	                                    </span>
+	                                </p>
+	                                <div class="count-numDiv work-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+	                            </div>
+
+	                        </div>
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">公司</p>
+	                            <div class="analyItemCon Company-div">
+	                                <p class="fl col-md-5">
+	                                    <span class="cLightGray pr8">公司</span>
+	                                    <span></span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes" name="公司" value="1">
+	                                        <input type="text" class="judge-span judge-no active" name="公司" value="0">
+	                                    </span>
+	                                </p>
+	                                <div class="count-numDiv"><strong class="fz14 cGreen">0分</strong></div>
+
+	                            </div>
+	                        </div>
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">楼盘</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-5">
+	                                    <span class="cLightGray pr8">楼盘</span>
+	                                    <span> 华科创业中心</span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes active" name="楼盘" value="2">
+	                                        <input type="text" class="judge-span judge-no" name="楼盘" value="0">
+	                                    </span>
+	                                </p>
+	                                <div class="count-numDiv build-numDiv"><strong class="fz14 cGreen">2分</strong></div>
+	                                <a href="javascript:" class="circlemark"></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="layerRtb-bottom plr10 borT-scroll pt10 pb5">
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit">综合</p>
+	                            <div class="analyItemCon">
+	                                    <p class="fl col-md-9 cRed"><span>问题</span><strong class="plr5">性质2、公司</strong></p>
+	                                    <p class="fl col-md-3" title="总数：差"><span class="cLightGray pr8">统计</span><strong class="fz14 cGreen">8分</strong></p>
+
+	                                <a href="javascript:" class="circlemark circlemark-yellow">中</a>
+	                            </div>
+	                            <div class="fixedTrangle">
+	                                <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                <div class="fixedtipscon pt10 pb10">
+	                                    <i></i>
+	                                    <p>规则（X：分数）</p>
+	                                    <p>性质（3分）+职务（2分）+工作（1分）+公司（0分）+楼盘（2分）=总分（8分）</p>
+	                                    <p>8分处于优良中差的<span class="cOrange">中</span>等级。则为<span class="cOrange">中</span></p>
+
+	                                </div>
+	                            </div>
+	                        </div>
+	                      <!--  <div class="tx-center pt10 pb10">
+	                            <input type="button" class="uiBtn-normal dataSure-btn uiBtn-blue" value="确定">
+	                        </div>-->
+	                    </div>
+	                </div>
+	                <!--行为弹框新-->
+	                <div class="layerRtb layerRtbPN behavior-alert">
+                        <div class="clearfix layerRtb-head uiTitle2 plr10 pb10">
+                            <i class="uiTitle-icon"></i>
+                            量管
+                            <i class="fr rig_close">×</i>
+                        </div>
+	                    <div class="layerRtb-scroll overflow thinScroll plr10">
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">当前任务</p>
+	                            <div class="analyItemCon">
+	                                <p class="col-md-2">
+	                                    <span>04.27</span>
+	                                </p>
+	                                <p class="col-md-2">
+	                                    <span class="cLightGray pr8">量房</span>
+	                                    <span>2</span>
+	                                </p>
+	                                <p class="col-md-2">
+	                                    <span class="cLightGray pr8">余</span>
+	                                    <strong class="cRed fz14">-2</strong>
+	                                </p>
+	                                <p class="col-md-2">
+	                                    <strong class="cGreen fz18">¥300</strong>
+	                                </p>
+	                                <p class="col-md-4 relative">
+	                                    <strong class="cRed fz18">297</strong>
+	                                    <span class="judge-div judge-Countdown" style="right:0;margin-top:-16px;">
+	                                        <input type="text" class="judge-span judge-yes active">
+	                                        <input type="text" class="judge-span judge-no">
+	                                    </span>
+	                                </p>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                    <div class="fixedtipscon pt10 pb10">
+	                                        <i></i>
+	                                        <p>规则</p>
+	                                        <p>1、倒计时结束前完成任务，系统自动判断对勾</p>
+	                                        <p>2、倒计时结束后根据完成情况自动判断对叉</p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem">
+	                            <p class="analyItemTit tx-center">量房</p>
+	                            <div class="analyItemCon">
+	                                <p class="col-md-2">
+	                                    <span class="cLightGray pr8">实际</span>
+	                                    <span>0</span>
+	                                </p>
+	                                <p class="col-md-2">
+	                                    <span class="cLightGray pr8">量房</span>
+	                                    <span>2</span>
+	                                </p>
+	                                <p class="col-md-3">
+	                                    <span class="cLightGray pr8">余</span>
+	                                    <strong class="cRed fz14">-2</strong>
+	                                </p>
+	                                <span class="judge-div">
+	                                    <input type="text" class="judge-span judge-yes">
+	                                    <input type="text" class="judge-span judge-no">
+	                                </span>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                    <div class="fixedtipscon pt10 pb10">
+	                                        <i></i>
+	                                        <p>规则</p>
+	                                        <p>根据“当前任务”模块结果，系统自动判断对叉</p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem">
+	                            <p class="analyItemTit tx-center">管理</p>
+	                            <div class="analyItemCon">
+
+	                                <strong class="cGreen fz14 chufa-strong">触发</strong>
+	                                <p class="col-md-8 ml80">
+	                                    <span class="cLightGray pr8">消息</span>
+	                                    <span>【瑞祥装饰】亲爱的小伙伴，您任务正在进行中！</span>
+	                                </p>
+	                                <span class="judge-div">
+	                                    <input type="text" class="judge-span judge-yes">
+	                                    <input type="text" class="judge-span judge-no">
+	                                </span>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips"></a>
+	                                    <div class="fixedtipscon pt10 pb10" style="display: none;">
+	                                        <i></i>
+	                                        <p>规则</p>
+	                                        <p>根据“量房”模块结果，系统自动判断对叉</p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="layerRtb-bottom plr10 borT-scroll pt10">
+	                        <div class="judge-bottomDiv">
+	                            <div class="analyItem relative">
+	                                <p class="analyItemTit tx-center">综合</p>
+	                                <div class="analyItemCon">
+	                                    <p class="fl col-md-9"><strong class="cGreen fz14">正常</strong></p>
+                                    </div>
+                                    <span class="circlemark circlemark-purple">待</span>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                    <div class="fixedtipscon pt10 pb10">
+	                                        <i></i>
+	                                        <p>规则</p>
+	                                        <p>1、红包计划进行中为正常，</p>
+	                                        <p>2、红包计划结束根据“管理”模块结果，系统得出“完成”或“未完成”结果</p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="layerRtb layerRtbPN custom-alert">
+	                    <div class="clearfix layerRtb-head pb10 pr10">
+	                        <p class="fl"></p>
+	                        <i class="fr rig_close">×</i>
+	                    </div>
+	                    <div class="layerRtb-scroll overflow thinScroll plr10" >
+	                        <div class="analyItem customer">
+	                            <p class="analyItemTit tx-center">数量</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-4">
+	                                    <span class="cLightGray pr8" title="客户总量">总量</span><span class="uiLink" title="客户总量">1</span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes" name="攻取" value="1" >
+	                                        <input type="text" class="judge-span judge-no active" name="攻取差" value="0" >
+	                                    </span>
+	                                </p>
+
+	                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+	                                <div class="fixedTrangle">
+	                                    <a href="javascript:" class="fixedtips"></a>
+	                                    <div class="fixedtipscon pt10 pb10">
+	                                        <i></i>
+	                                        <p>规则</p>
+	                                        <span>1分为参与判断的总量字段得分</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="analyItem intrack">
+	                            <p class="analyItemTit tx-center">质量</p>
+	                            <div class="analyItemCon">
+	                                <p class="fl col-md-4">
+	                                    <span class="cLightGray pr8" title="在跟踪客户">在跟</span><span  class="uiLink" title="在跟踪客户">0</span>
+	                                </p>
+	                                <p class="fl col-md-4">
+	                                    <span class="cLightGray pr8">客户</span>
+	                                    <span class="judge-div judge-divTwo">
+	                                        <input type="text" class="judge-span judge-yes" name="维护" value="5" >
+	                                        <input type="text" class="judge-span judge-no active" name="维护差" value="0" >
+	                                    </span>
+	                                </p>
+	                                <div class="count-numDiv"><strong class="fz14 cGreen">0分</strong></div>
+
+	                            </div>
+	                        </div>
+
+	                    </div>
+	                    <div class="layerRtb-bottom plr10 borT-scroll pt10 pb5">
+	                        <div class="analyItem relative">
+	                            <p class="analyItemTit tx-center">综合</p>
+	                            <div class="analyItemCon">
+	                                    <p class="fl col-md-9 cRed"><span class="pr8">问题</span><strong >攻取差、维护差</strong></p>
+	                                    <p class="fl col-md-3" title="总数：差"><span class="cLightGray pr8">统计</span><strong class="fz14 cGreen">1分</strong></p>
+
+	                                <a href="javascript:" class="circlemark circlemark-lightRed">差</a>
+	                            </div>
+	                            <div class="fixedTrangle">
+	                                <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+	                                <div class="fixedtipscon pt10 pb10">
+	                                    <i></i>
+	                                    <p>规则（X：分数）</p>
+	                                    <p>总量(1分)+客户（0分）=总分（1分）</p>
+	                                    <p>1分在优良中差等级中属于<span class="cRed">差</span>级别</p>
+	                                </div>
+	                            </div>
+	                        </div>
+	                       <!-- <div class="tx-center pt10 pb10">
+	                            <input type="button" class="uiBtn-normal cusSure-btn uiBtn-blue"  value="确定">
+	                        </div>-->
+	                    </div>
+	                </div>
+	                <!--疑难解答弹框-->
+	                <div class="MouseRightDiv difficult-alert" >
+	                    <div class="difficult-topNav pb10 relative">
+	                        <span class="CloseMouseDiv"></span>
+	                        <ul class="clearfix uiTab3">
+	                            <li class="uiTab3-active"><a href="javascript:">资源解答</a></li>
+	                            <li><a href="javascript:">客源解答</a></li>
+	                        </ul>
+	                    </div>
+	                    <div class="difficult-wrap">
+	                        <div class="difficult-wrapCon clearfix relative">
+	                            <div class="difficult-left overflow thinScroll">
+	                                <div class="strength-wrap">
+	                                    <!-- 话术-->
+	                                    <div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            第一通电话
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">目的：初次打电话，让合作伙伴认识你及了解公司的合作模式)公司的合作模式是：你每提供一条客户装修信息：装修使用面积不低于200平米，客户装修预算不低于10万，只要我们能正常参与此项目，即为客户量房出方 案后期能正常跟进。我公司即付你信息费，不管此单后期是否签单。如果后期签单成功，我们会按工程造价总额返给您提成。</p>
+	                                            <p class="pb10">注明：若写字楼或商铺装修 使用面积未达到公司接单标准，或客户装修预算低于10万，合作伙伴没有信息费，但签单后会给合作伙伴发放提成。设计单无提成。（初次电话注意事项 ：精神集中，语言组织干净利落，切记口头语过多，啰嗦，语气温和）</p>
+	                                        </div>
+
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            第二通电话（间隔2天）
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">目的：解决客户疑惑，加深 了解，解决细节问题。出现问题解决问题，如：有客户会给你等敷衍类问题 提点低以及合作保密性等专业问题。</p>
+	                                            <p class="pb10">注明：可以多与合作伙伴沟通，了解其 相关信息。如：合作伙伴全名、公司名称、所属商圈、合作合伙的其他手机号、邮箱、微信，以及他的客户群体、客户量。现阶段该楼盘租赁情况等。</p>
+	                                        </div>
+
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            第三通电话（间隔3天）
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">目的：要客户：如咨询客户 、带已订房的客户、即将签单的客户、以及其同事的客户。</p>
+	                                            <p class="pb10">注明：话术不是固定的，请灵活掌握。关于合作伙伴提出的疑难问题。请见常见问题！</p>
+	                                        </div>
+	                                    </div>
+	                                    <!-- 判断质量-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            中介
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">1.从业时间：3个月以上；2.房源面积：300-1500 平（300平不高于30%）；3.房源数量：30以上；4.房源类型：写字楼或商铺毛坯为主；</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            物业
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">1.从业时间：6个月以上；2.房源面积：300-1500 平（300平不高于30%）；3.入住率：不高于70%；4.房源类型：写字楼或商铺毛坯为主；</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            招商
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">1.从业时间：6个月以上；2.房源面积：300-1500 平（300平不高于30%）；3.房源类型：写字楼、综合体毛坯为主；4.入住率：不高于50%；</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            售楼
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">1.从业时间：3个月以上；2.房源面积：开间面积150平以上；3.房源类型：写字楼、综合体毛坯为主；4.交房时间：1年以内；</p>
+	                                        </div>
+	                                    </div>
+	                                    <!-- 攻关技巧-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            中介
+	                                        </h2>
+	                                        <p class="pb10 pl10">1.特征：客户量多，客户质量一般，给客户周期为3-10天（多为咨询客户，获取客户周期短）；2.年龄：22-28岁；3.在意点：信息费，提点，客户的保密性；4.攻关：公司信息费的优势以及公司完善的管理系统；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            物业
+	                                        </h2>
+	                                        <p class="pb10 pl10">1.特征：客户量少，客户质量优，周期不稳定（多为推荐客户，可指定装修公司，签单率高）；2.年龄：30-40岁；3.在意点：提点，公司资质，施工品质；4.攻关：面谈，强调公司优势，可以让经理协助攻关，高提成；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            招商
+	                                        </h2>
+	                                        <p class="pb10 pl10">1.特征：客户量多，客户质量良，给客户周期不稳定。（咨询客户多，客户用房需求明确，客户跟踪周期长，准客户成功率40%）；2.年龄：28-35岁；3.在意点：提点，公司品牌，施工品质。4.攻关：争取面谈，强调公司的品牌优势；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            售楼
+	                                        </h2>
+	                                        <p class="pb10 pl10">1.特征：客户量多，客户质量差，周期不稳定（多为投资客户，装修客户占比少）；2.年龄：22-30岁；3.在意点：保密性，提点，合作的透明度；4.攻关：面谈，强调公司优势，可以让经理协助攻关，高提成；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            其他
+	                                        </h2>
+	                                        <p class="pb10 pl10">1.特征：客户量少，客户质量良好，周期短（多为准客户，相对来说客户靠谱，客户把控力弱）；2.年龄：22-35岁；3.在意点：保密性，提点，合作的透明度；4.攻关：强调公司签单率以及公司品牌优势；</p>
+	                                    </div>
+	                                    <!--  常见问题-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            提点较低
+	                                        </h2>
+	                                        <p class="pl10 pb10">1.公司实力：全国18家分公司，7家子公司，国家二级资质，公司签单率达到50%；2.公司优势：强调一下信息费及提成的优势，此单签与不签都没有信息费，但签单后会给合作伙伴发放相应的提成。以及公司的签单率；3.互利互惠：我们跟他们的合作，不是白要客户的，建立的公平原则是他提供给我们能够参与的，符合接单标准的客户。我们付信息费五百元。签单后返提成；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            拒接电话
+	                                        </h2>
+	                                        <p class="pl10 pb10">1.换点沟通：了解其作息时间，换时间沟通。比如晚上下班后，或微信沟通等等；2.联络感情：先跟他联络感情，暂少谈合作,成为朋友信任以后，给他灌输合作之后给其带来的利益；3.产生信任：培养感情，增加信任感。可邀请合作伙伴来公司洽谈，顺便考察公司。若对方很忙，可去其公司拜访；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            拒绝合作
+	                                        </h2>
+	                                        <p class="pl10 pb10">1.换种话术：可以先不说明自己是装饰公司，暂不谈合作，以一种虚心的态度向其请教原因；2.约见沟通：带上公司的相关资料和介绍、让信息员了解公司、注重细节、全方位的了解信息员。 用心、用心、用心、（可以带些小礼品）；3.保密系统：强调一下牛经纪的优势，比如：合作伙伴随时了解客户的进展等等。无形中给自己增加竞争对手，今后在房产或装修界无法立足；</p>
+	                                    </div>
+	                                    <!--  信息员规则-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            信息员系统拉黑规则
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p> 1：信息员录入或转入七天未跟进自动拉黑</p>
+	                                            <p> 2：信息员一个月未回访自动拉黑</p>
+	                                            <p> 3：信息员半年未给客户自动拉黑</p>
+	                                            <p> 4：信息员回访超过6次，公司、职务、楼盘和工作年限未完善的自动拉黑（中介性质的信息员可不填写楼盘信息）</p>
+	                                            <p> 5：新增信息员拉黑原因标注，空号拉黑直接进黑名单，无质量或转行拉黑进入冷藏，无法合作拉黑进入公共池。</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            信息员等级升降级规则
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p> 1：尘埃 → 星辰：提供客户</p>
+	                                            <p> 2：星辰 → 星星：提交过量房</p>
+	                                            <p> 3：星星 → 月亮：发过信息费</p>
+	                                            <p> 4：月亮 → 太阳：签过单</p>
+	                                            <p> 5：太阳 → 月亮：距离上次签单时间超过30天</p>
+	                                            <p> 6：月亮 → 星星：距离上次发信息费时间超过30天</p>
+	                                            <p> 7：星星 → 星辰：距离上次量房时间超过30天</p>
+	                                            <p> 8：星辰 → 尘埃：距离上次给客户时间超过30天</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            高产经纪人
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p> 近三个月内累计量房三套以上的经纪人</p>
+	                                        </div>
+	                                    </div>
+	                                    <!--  经纪人合作断档恢复技巧-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            一：能正常沟通，但经常表示没客户（包括质量不高）；
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p class="fz14 pb5">方法：</p>
+	                                            <p class="pb5 pl20"> 1：深入了解该信息员目前负责楼盘（空房率、面积、装修情况）、客户（咨询、成交、拉黑、）具体的情况，了解清楚了之后就能知道信息员大概什么时候能有客户，我们该什么时候要客户，计划跟下次电话的目的即能清晰。</p>
+	                                            <p class="pb5 pl20"> 2：如了解以上楼盘及客户情况后判断该信息员质量一般，近期确实没客户的，建议做转介绍同事和其他单子来获取资源，并做激励，介绍过来的成功量房并达到准房标准给予介绍人介绍费或赠送其他礼品（介绍费与礼品与部门经理沟通）；</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            二：对于之前合作感到不满，不再信任，不合作；
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p class="fz14 pb5">原因：</p>
+	                                            <p class="pb5 pl20"> 1：顾问离职给了客户就没反馈，没人联系；</p>
+	                                            <p class="pb5 pl20"> 2：信息费，提成没有及时发放，没发，少发；</p>
+	                                            <p class="fz14 pb5">方法：</p>
+	                                            <p class="pb5 pl20"> 1：先了解经纪人合作断档的具体原因，再针对相应问题进行解决；</p>
+	                                            <p class="pb5 pl20"> 2：原因一：反馈真实情况并表示歉意（或表示原顾问调薪升职且特意告知我你这边比较重要，让我与你联系）并反馈先前客户情况及接下持续合作内容，推荐安装牛经纪APP及优势介绍，加微信；</p>
+	                                            <p class="pb5 pl20"> 3：原因二：联系前先弄清没发信息费及提成点原因并与经理或主管商讨回应方法，了解经纪人当前质量，告知接下来的几次量房或者签单可多给信息费提成(或赠送其他常用，耐用礼品)，打消先前合作不满及设立新形象；</p>
+	                                        </div>
+	                                    </div>
+	                                    <!--  冷藏规则-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            冷藏规则
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            1、 对于被拉黑进入公共池一年以上的信息员、被拉黑的宅写宅商信息员进行冷藏处理。
+	                                        </div>
+	                                        <div class="pl10 pb10">
+	                                            2、 对于那些空号、停机的拉进黑名单处理，这是为了清理公共池设置的。
+	                                        </div>
+	                                        <div class="pl10 pb10">
+	                                            3、 对于无质量的信息员进行清理，避免转入转出顾问再去打电话攻取浪费时间。
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="difficult-right">
+	                                <div class="difficult-rDiv">
+	                                    <h3>疑难解答</h3>
+	                                    <div class="strength-tab">
+	                                        <ul>
+	                                            <li class="current">话术</li>
+	                                            <li>判断质量</li>
+	                                            <li>攻关技巧</li>
+	                                            <li>常见问题</li>
+	                                            <li class="relative">信息员规则<img src="images/pic/new.GIF" alt="" class="new-item2"></li>
+	                                            <li>断档恢复技巧</li>
+	                                            <li class="relative">冷藏规则<img src="images/pic/new.GIF" alt="" class="new-item2"></li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="difficult-wrapCon clearfix relative dis-none">
+	                            <div class="difficult-left overflow thinScroll">
+	                                <!-- 公司实力-->
+	                                <div class="strength-wrap">
+	                                    <!-- 公司简介-->
+	                                    <div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            公司规模
+	                                        </h2>
+	                                        <p class="pb10 pl10">公司是1998年成立，99年注册的公司，总部设立北京，全国一二线城市18家分公司，是一家集设计、施工、材料、家具、智能弱电系统于一体的大型公装公司；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            公司资质
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10">双乙级：设计乙级、施工二级；</p>
+	                                            <p class="pb10"><strong>设计资质：</strong>工程设计建筑装饰工程专项乙级</p>
+	                                            <p class="pb10"><strong>施工资质：</strong>建筑装修装饰工程专业承包二级</p>
+	                                            <p class="pb10"><strong>电子智能化：</strong>电子与智能化工程专业承包二级</p>
+	                                            <p class="pb10"><strong>钢结构：</strong>钢结构工程专业承包三级</p>
+	                                            <p class="pb10"><strong>机电安装：</strong>建筑机电安装工程专业承包三级</p>
+	                                            <p><strong></strong></p>
+	                                        </div>
+	                                    </div>
+	                                    <!-- 施工质量-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            施工质量
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10"><strong>质量保证：</strong>公司有严格的施工监理平台，监督施工。确保安全和质量；</p>
+	                                            <p class="pb10"><strong>施工过程：</strong>可通过施工平台http://sg2.rxjy.com/Center/XiangMuPingFen对施工现场进行全程监控，及时发现问题和解决问题；</p>
+	                                            <p class="pb10"><strong>施工材料：</strong>由公司统一采购分配，产品实时查询对比，避免施工过程中项目经理偷换材料。并且合同材料清单、在产品平台中查询价格、详情、第三方质检报告，如有不合格，会有相应的赔偿；</p>
+	                                            <p class="pb10"><strong>施工工艺：</strong>所有完成的工艺必须实时上传，你可以查看工艺是否达标；</p>
+	                                            <p class="pb10"><strong>四方交流平台：</strong>客户、设计师、监理、集团客服进行互动交流，可提出更改问题，提高施工效率；</p>
+	                                            <p class="pb10"><strong>质保期：</strong>一年</p>
+	                                            <p class="pb10"><strong>工程监管：</strong>我们全国都是直营分公司，都是由总部一起进行监管的，我们公司有自己的施工平台，如果您这边后期没有时间去现场的话可以直接在手机APP上面了解每天的工程进展，而且公司还有全方位摄像头，不管是总部还是您都可以对这个项目的工程深入了解。</p>
+	                                        </div>
+	                                    </div>
+	                                    <!-- 设计团队-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            设计团队
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p class="pb10"><strong>师资力量：</strong>全国18家分公司共有400多名设计师团队。各有擅长不同类型的项目的专业能力，每一个项目都是由一个设计团队来服务和完成的；</p>
+	                                            <p class="pb10"><strong>人数：</strong>全国设计师团队400余人；</p>
+	                                            <p class="pb10"><strong>设计平台：</strong>温特斯设计平台，http://n.wenes.cn/</p>
+	                                            <p class="pb10"><strong>设计分院：</strong>18家设计分院，每个设计团队都有擅长不同领域的设计师；</p>
+	                                            <p class="pb10"><strong>设计流程：</strong></p>
+	                                            <p class="pb10">
+	                                                设计前，现场量房 - 需求沟通 - 上传系统 - 整理归纳
+	                                                设计中，平面布局方案 - 设计定位 - 设计院绘图 - 审核控制
+	                                            </p>
+	                                            <p class="pb10">设计后，设计集团审控 - 归档存储 - 设计跟踪</p>
+	                                            <p class="pb10"><strong></strong></p>
+	                                        </div>
+	                                    </div>
+	                                    <!--  直营分公司-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            分公司地址
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p><span class="pr10">R 6</span>北京市海淀区永定河路388号</p>
+	                                            <p><span class="pr10">北京</span>北京市海淀区复兴路38号</p>
+	                                            <p><span class="pr10">亦庄</span>大兴区景园北街2号51贵派大厦8层</p>
+	                                            <p><span class="pr10">望京</span>朝阳区望京利泽中园101号望京启明大厦B座4层</p>
+	                                            <p><span class="pr10">CBD</span>双桥华文国际传媒大厦  1005-1006</p>
+	                                            <p><span class="pr10">石家庄</span>石家庄市长安区广安大街银泰国际B座23层</p>
+	                                            <p><span class="pr10">天津</span>天津市河东区天星河畔广场14层</p>
+	                                        </div>
+	                                        <div class="pt20 pl10">
+	                                            <p><strong>华中区</strong></p>
+	                                            <p><span class="pr10">郑州</span>郑州市管城区紫荆山路与东西大街交汇处北50米兴达国贸2419</p>
+	                                            <p><span class="pr10">济南</span>济南市历城区二环东路2828号三箭孔子文化大厦五楼西厅</p>
+	                                            <p><span class="pr10">西安</span>西安市高新区高新三路财富中心二期D座10楼</p>
+	                                            <p><span class="pr10">武汉</span>武汉市解放大道686号世贸大厦56层</p>
+	                                        </div>
+	                                        <div class="pt20 pl10">
+	                                            <p><strong>华西区</strong></p>
+	                                            <p><span class="pr10">成都</span>成都市锦江区东大街芷泉段时代一号3101室</p>
+	                                            <p><span class="pr10">重庆 </span>重庆市渝北区冉家坝扬子江商务中心6-5</p>
+	                                        </div>
+	                                        <div class="pt20 pl10">
+	                                            <p><strong>华东区</strong></p>
+	                                            <p><span class="pr10">上海</span>北京东路666号科技京城东楼29层</p>
+	                                            <p><span class="pr10">杭州</span>杭州市江干区杭海路238号森禾商务广场A座23层</p>
+	                                            <p><span class="pr10">南京</span>南京市玄武区中山东路9号天时国际商贸中心13层</p>
+	                                            <p><span class="pr10">合肥</span>合肥市庐阳区北一环中段濉溪路金鼎广场A座18层</p>
+	                                            <p><span class="pr10">宁波</span>宁波市鄞州区民安东路1018号新天地商务楼1号楼2206室</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <!--公司服务-->
+	                                <div class="service-wrap">
+	                                    <!--服务流程-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            服务流程
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p><strong>咨询-上门量房-</strong></p>
+	                                            <p><strong>平面方案+概念方案-</strong></p>
+	                                            <p><strong>签订设计合同-深化设计-预算报价-</strong></p>
+	                                            <p><strong>施工合同-进入施工环节-</strong></p>
+	                                            <p><strong>验收工程-售后服务；</strong></p>
+	                                        </div>
+	                                    </div>
+	                                    <!--收费标准-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            收费标准
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p><strong>办公：</strong></p>
+	                                            <p>设计：80-150元/㎡</p>
+	                                            <p>施工：简单400-600元/㎡ 中档600-1000元/㎡ 中高端1000元/㎡以上</p>
+	                                        </div>
+	                                        <div class="pl10">
+	                                            <p><strong>餐饮/商业：</strong></p>
+	                                            <p>设计：80-300元/㎡</p>
+	                                            <p>施工：简单600-800元/㎡ 中档800-1200元/㎡ 高端1200元/㎡以上</p>
+	                                        </div>
+	                                    </div>
+	                                    <!--消防报审-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            消防申报
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p><strong>流程：</strong></p>
+	                                            <p>A、蓝图+盖章</p>
+	                                            <p>B、消防报验批</p>
+	                                            <p>C、装饰材料检验</p>
+	                                            <p>D、消电检</p>
+	                                        </div>
+	                                        <div class="pl10 pb10">
+	                                            <p><strong>报审费用：</strong>15000元——20000元之间</p>
+	                                        </div>
+	                                        <div class="pl10 pb10">
+	                                            <p><strong>报审时间：</strong>每个城市每个区域的报审时间不太一样，一般在7-10个工作日。</p>
+	                                        </div>
+	                                    </div>
+	                                    <!--付款方式-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            付款方式
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p><strong>首期款、中期款、尾款</strong></p>
+	                                            <p>1、50% 40% 10%</p>
+	                                            <p>2、60% 30% 10%</p>
+	                                            <p>3、30% 30% 30% 10%</p>
+	                                            <p class="pt20">具体情况是可以沟通的</p>
+	                                        </div>
+	                                    </div>
+	                                    <!--工期-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            工期
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p><strong>设计周期：</strong>一周左右</p>
+	                                        </div>
+	                                        <div class="pl10">
+	                                            <p><strong>施工周期：</strong></p>
+	                                            <p>A、300平左右 25—30天；</p>
+	                                            <p>B、500平左右 30—35天；</p>
+	                                            <p>C、800平左右 35—40天；</p>
+	                                            <p>D、1500平左右 40—50天；</p>
+	                                            <p class="pt20">具体还需要看咱们工程量，定制产品的周期；</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <!--疑难解答-->
+	                                <div class="FAQ-wrap">
+	                                    <!--客户话术-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            用房面积，业态，公司名字
+	                                        </h2>
+	                                        <p class="pb10 pl10">办公、餐饮、酒店还是其他，是不是连锁</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            找毛坯房还是精装房
+	                                        </h2>
+	                                        <p class="pb10 pl10">1、毛坯：后期肯定要根据咱们公司的风格 找装修公司是吧。</p>
+	                                        <p class="pb10 pl10">2、精装修的：后期咱们是想装修直接拎包入住嘛？确定没价值后放弃）</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            现在有无意向房源
+	                                        </h2>
+	                                        <p class="pb10 pl10">
+	                                            有：可以问问看的是哪里的房子，现在到哪个阶段了，大概什么时候可以确定下来
+	                                            无：问找房周期
+	                                        </p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            找房周期
+	                                        </h2>
+	                                        <p class="pb10 pl10">这个地方找了多长时间了，之前去看过哪里的房子，是哪方面不太合适</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            用房计划
+	                                        </h2>
+	                                        <p class="pb10 pl10">有没有计划打算什么时候开始用，客户说打算年后就用，那肯定现在很着急找房子； 客户说不着急，不确定什么时候用，那就根据他的找房周期和之前看过的房子判断客户质量</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            明确后期能不能装修
+	                                        </h2>
+	                                        <p class="pb10 pl10">1、加盟连锁项目：刚才听您说咱们公司也是连锁的，想问一下后期施工这方面有合作的装修队伍吗，我们公司前期帮您免费找房源，后期也是想参与一下您的装修，给您免费量房，做平面方案出报价的。</p>
+	                                        <p class="pb10 pl10">2、个人的项目：是这样的X总，我们公司也是集团化的公司，前期可以帮您免费找房源，后期我们也主要想参与一下装修，给您免费量个房，做个平面方案和报价，跟您类似的项目我们做过很多；</p>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            判断客户确实有跟进
+	                                        </h2>
+	                                        <p class="pb10 pl10">可以加微信，发公司之前做过的案例，并在每次沟通中了解更多内容（如他是负责人还是老板，后期装修谁主要负责，想做什么风格的，对装修有什么想法）</p>
+	                                    </div>
+	                                    <!--跟踪客户注意事项-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            跟踪客户注意事项
+	                                        </h2>
+	                                        <p class="pb10 pl10">1、项目类型（写字楼还是商业用房）</p>
+	                                        <p class="pb10 pl10">2、需要的面积和方位？（如：大概面积1000平左右，想在中关村找）</p>
+	                                        <p class="pb10 pl10">3、用房时间？（如：计划2018年3月初进场办公）</p>
+	                                        <p class="pb10 pl10">4、意向房子的价格？（如：预算5元/㎡/天）</p>
+	                                        <p class="pb10 pl10">5、单位的性质及名称（如：公司从事金融投资行业，公司的全称）</p>
+	                                        <p class="pb10 pl10">6、现用办公室的租期？（现在客户的办公地址什么时候到期）</p>
+	                                        <p class="pb10 pl10">7、后期装修的负责人？（是否后期负责此项目装修的专门负责人，包括碰方案、签合同）</p>
+	                                        <p class="pb10 pl10">8、公司办公地址及办公电话？（客户现在的办公地址，及能联系到项目负责人的电话号码）</p>
+	                                        <p class="pb10 pl10">9、买房还是租房？（客户订房是购买的还是租用，如果是租用，了解一下租了多久）</p>
+	                                        <p class="pb10 pl10">10、商业项目品牌及是否连锁？（看是否是开连锁店的，如果是了解是否有自己固定的装修团队，和施工队）</p>
+	                                        <p class="pb10 pl10 cRed">注：通过合作伙伴的沟通，尽可能多了解一些客户的进展情况。周末及节假日可多给客户发一些祝福短信，以加深客户对我们的印象。</p>
+	                                    </div>
+	                                    <!--拉黑规则-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            拉黑规则
+	                                        </h2>
+	                                        <p class="pb10 pl10">系统拉黑：  </p>
+	                                        <p class="pb10 pl10">1、回访超期48小时 当天晚18点统一拉黑 。</p>
+	                                        <p class="pb10 pl10">2、录入超过三天不回访（楼盘客户填写楼盘名称和交房时间除外）。</p>
+	                                    </div>
+	                                </div>
+	                                <div class="negotiate-wrap">
+	                                    <!--回访周期要求-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            回访周期要求
+	                                        </h2>
+	                                        <div class="pl10">
+	                                            <p><strong class="cRed">每天写回访</strong>（若当天项目没进展就写“无跟进”）</p>
+	                                        </div>
+	                                    </div>
+	                                    <!--回访跟进内容要求-->
+	                                    <div class="hide">
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            买单后第一条回访
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p>量房情况，甲方负责人情况，目前参与公司有哪些，信息员是否可以协助配合我方，设计师与甲方沟通情况，预计第一次方案时间。阐述清晰，便于后期商务经理、主案经理可以更好的跟进此项目时清晰重点。</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            方案阶段
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p>①方案和效果图是否满意，碰了几轮</p>
+	                                            <p>②客户对设计师的评价（专业性、沟通能力、跟单能力、有无迟到、态度是否积极）</p>
+	                                            <p>③出方案、效果时设计师用时多久</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            预算阶段
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p>①了解客户心里预算对报价进行调整（回扣、施工、设计、消防、家具、弱电）</p>
+	                                            <p>②目前有几家参与、公司名称、分别报价多少</p>
+	                                            <p>③设计师报价用时多久</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            合同阶段
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p>折扣、合同条款、付款方式、客户自身情况</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            建议跟进回访模板——方案、预算、合同阶段
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p>A：我们做了什么、用时多久、第几次碰（方案、效果图、施工图、报价等）</p>
+	                                            <p>B：客户反馈</p>
+	                                            <p>C：接下来如何跟进</p>
+	                                        </div>
+	                                        <h2 class="uiTitle2 mb10">
+	                                            <i class="uiTitle-icon"></i>
+	                                            意义
+	                                        </h2>
+	                                        <div class="pl10 pb10">
+	                                            <p>1、简单明了的展示此单的详细信息，了解自己的谈单进展 进行是否顺利，每个动作的时间节点、完成度、完成效果、跟单思路清晰</p>
+	                                            <p>2、及时跟进项目信息，商务经理可根据顾问的回访内容审批指导，便于及时调整跟单方式方法</p>
+	                                            <p>3、协助和问题的应用，可以直观的看到每个阶段用到的协助和问题（已解决/待解决），经理才能针对性帮助解决。</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="difficult-right">
+	                                <div class="difficult-rDiv pb10">
+	                                    <h3>公司实力</h3>
+	                                    <div class="strength-tab">
+	                                        <ul>
+	                                            <li class="current">公司简介</li>
+	                                            <li>施工质量</li>
+	                                            <li>设计团队</li>
+	                                            <li>直营分公司</li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                                <div class="difficult-rDiv pb10">
+	                                    <h3>公司服务</h3>
+	                                    <div class="service-tab">
+	                                        <ul>
+	                                            <li>服务流程</li>
+	                                            <li>收费标准</li>
+	                                            <li>消防报审</li>
+	                                            <li>付款方式</li>
+	                                            <li>工期</li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                                <div class="difficult-rDiv pb10">
+	                                    <h3>疑难解答</h3>
+	                                    <div class="FAQ-tab">
+	                                        <ul>
+	                                            <li class="relative">客户话术</li>
+	                                            <li class="relative">跟踪客户</li>
+	                                            <li class="relative">拉黑规则</li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                                <div class="difficult-rDiv">
+	                                    <h3>谈单跟进</h3>
+	                                    <div class="negotiate-tab">
+	                                        <ul>
+	                                            <li class="relative">回访周期<img src="images/pic/new.GIF" alt="" class="new-item2"></li>
+	                                            <li class="relative">回访内容<img src="images/pic/new.GIF" alt="" class="new-item2"></li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--内容区 结束-->
+	    </div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/rxuedv2.0.min.js"></script>
+	<script type="text/javascript" src="js/frame.min.js"></script>
+	<script>
+	    $(function() {
+	        //移入、移出问号
+	        $(".fixedTrangle").mouseenter(function () {
+	            $(this).find(".fixedtipscon").show();
+	        }).mouseleave(function () {
+	            $(this).find(".fixedtipscon").hide();
+	        })
+
+	        //角色点击
+	        $(".daily_title li").on("click", function () {
+	            $(this).addClass("title_cur").siblings("li").removeClass("title_cur");
+	        })
+	        //点击团号搜索
+	        $(".serial_number").click(function() {
+	            $(".dailyftSearch1").show();
+	        });
+	        $(".uiText-searchIcon").click(function() {
+	            $(this).parents(".dailyftSearch1").hide();
+	        });
+
+	        /*百科大全上面切换*/
+	        $(".difficult-topNav li").on("click", function () {
+	            $(this).addClass("uiTab3-active").siblings("li").removeClass("uiTab3-active");
+	            $(".difficult-wrap .difficult-wrapCon").eq($(this).index()).show().siblings().hide();
+	        })
+
+	        /*百科大全右侧高度*/
+	        $(".difficult-wrap").height($("body").height() - $(".difficult-alert .difficult-topNav").outerHeight(true) - $("#main_header").outerHeight(true) - 30);
+	        //$(".difficult-rDiv").height(($("body").height() - $(".difficult-alert .difficult-topNav").outerHeight(true) - $("#main_header").outerHeight(true) - 30) / 2);
+	        /*百科大全左侧高度*/
+	        $(".difficult-left").height($("body").height() - $(".difficult-alert .difficult-topNav").outerHeight(true) - $("#main_header").outerHeight(true) - 72);
+
+
+	        //鼠标移入td事件
+	        $(".pointertable td").mouseenter(function(){
+	            var infor = $(this).offset().top-120;
+	            var td_left = $(this).offset().left-60;
+	            $(".information-box").show();
+	            $(".information-box").css({"top":infor,"left":td_left});
+	            var info_bottom = $("body").outerHeight(true)-$(".information-box").offset().top;
+	            // console.log(info_bottom)
+
+	            if($(".information-box").offset().left>160){
+
+	                $(".information-box").css({"top":infor,"left":"100px"});
+
+	            }
+	            else if(info_bottom<152){
+
+	                $(".information-box").css({"top":$("body").outerHeight(true)-277,"left":td_left});
+	            }
+
+	            if(info_bottom<152){
+	                $(".information-box").css({"top":$("body").outerHeight(true)-277,"left":td_left});
+	                $(".information-box").css({"left":"100px"});
+	            }
+	        }).mouseleave(function(){
+	            $(".information-box").hide();
+	        })
+	        $(".information-box").mouseenter(function(){
+	            $(".information-box").show();
+	        });
+
+	        //点击日期搜索
+	        $(".serial_number_data").click(function() {
+	            stopEventBubble();
+	            $(".dailyftSearch3").show();
+	        });
+	        $(".dailyftSearch3 .time-search").click(function(){
+	            $(".dailyftSearch3").hide();
+	        });
+	        $(".dailyftSearch3").click(function() {
+	            stopEventBubble();
+	        });
+	        $("body").click(function() {
+	            $(".dailyftSearch3").hide();
+	        });
+
+	        $(".setup_nav").click();
+
+	        /*点击左侧表格点击选中*/
+	        $(".scroll-content table tr").on("click",function(){
+	            $(this).addClass("tractive").siblings().removeClass("tractive");
+	        });
+
+	        //左侧JS
+            rxued.table.LChangeapart($("#tab1 tr"), "#fff", "#eee");
+            rxued.table.hoverChage($("#tab1 tr"), "#d1ecfe");
+	        //rxued.init.countH($(".scroll-content"), "15", function() {
+	        //    $(".scroll-content").slimScroll({
+	        //        height: $(".scroll-content").eq(0).height(),
+	        //        borderRadius: "0px"
+	        //    });
+	        //});
+            $(".scroll-content").height($("body").height() - $("#main_header").height() - $(".mian_uiTab").height() - $(".daily_title").height() - $(".dailyftSearch3").height() - $(".tj_bottom").height() - 23);
+            $(".scroll-content").slimScroll({
+                height: $(".scroll-content").eq(0).height(),
+                borderRadius: "0px"
+            });
+	        $(window).resize(function() {
+	            rxued.init.countH($(".scroll-content"), "15", function() {
+	                $(".scroll-content").slimScroll({
+	                    height: $(".scroll-content").eq(0).height(),
+	                    borderRadius: "0px"
+	                });
+	                $(".scroll-content").parents(".slimScrollDiv").height($(".scroll-content").eq(0).height())
+	            });
+	        });
+
+	        //中间JS
+            rxued.table.LChangeapart($(".tc-table tr"), "#eee", "#fff");
+            rxued.table.hoverChage($(".tc-table tr"), "#d1ecfe");
+	        rxued.areaSwitch.Tab($('.j_uiTab9'), 'uiTab9-active', $('.uiTab9Con'), 'click');
+	        var theight = $("body").height() - $("#topnav").height() - $(".j_uiTab9").outerHeight() - 11;
+	        $("#j-tc-center-content").height(theight).slimScroll({
+	            height: theight,
+	            borderRadius: "0px"
+	        });
+	        $(window).resize(function() {
+	            var theight = $("body").height() - $("#topnav").height() - $(".j_uiTab9").outerHeight() - 11;
+	            $("#j-tc-center-content").height(theight).slimScroll({
+	                height: theight,
+	                borderRadius: "0px"
+	            });
+	            $("#j-tc-center-content").parents(".slimScrollDiv").eq(0).height(theight)
+            });
+            $(".uiTab9Con-height").height($("#j-tc-center-content").outerHeight() - $(".uiTab9Con-Handle").outerHeight() - 15);//二段处理计算
+            $(".uiTab9Con-height").slimScroll({
+                height: $(".uiTab9Con-height").height($("#j-tc-center-content").outerHeight() - $(".uiTab9Con-Handle").outerHeight() - 15),
+                borderRadius: "0px"
+            });
+            //点击浅蓝色框自己变蓝其它变浅蓝
+            $(".anItemBor").click(function () {
+                $(".uiTab9Con-Handle").removeClass("anItemBor-active");
+                $(this).addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+                $(".layerRtb").stop().animate({
+                    left: "-100%"
+                });
+                $(".layerRtb").hide();
+            });
+
+
+	        //右侧JS
+	        var rightHeight = $("body").height() - $("#topnav").outerHeight() - $(".j-tc-righttop-tab").outerHeight() - $(".tc-right-bottom").outerHeight() - 10;
+	        $(".tc-right-top").height(rightHeight);
+	        // $("#j-visit").height(rightHeight).slimScroll({ height: rightHeight, borderRadius: "0px" ,start:"bottom"});
+	        $(".tc-right-top").height(rightHeight);
+	        $(".visitbox").css({
+	            height: rightHeight,
+	            overflowY: "auto"
+	        });
+	        $(".visitbox").scrollTop($("#j-visit")[0].scrollHeight);
+
+	        var layerEvalHei=$("body").height() - $("#topnav").outerHeight()-$(".layerRtb-head").outerHeight()-$(".layerRtb-foot").outerHeight()-67;
+
+	        //计算评价标签列表高度
+	        $(".layerRtbEval-scroll").slimScroll({
+	            height: layerEvalHei,
+	            borderRadius: "0px"
+	        });
+
+	        $(window).resize(function() {
+	            var rightHeight = $("body").height() - $("#topnav").outerHeight() - $(".j-tc-righttop-tab").outerHeight() - $(".tc-right-bottom").outerHeight() - 10;
+	            // $(".tc-right-top").height(rightHeight);
+	            // $("#j-visit").height(rightHeight).slimScroll({ height: rightHeight, borderRadius: "0px" ,start:"bottom"});
+	            // $("#j-visit").parents(".slimScrollDiv").eq(0).height(rightHeight)
+	            $(".tc-right-top").height(rightHeight);
+	            $(".visitbox").css({
+	                height: rightHeight,
+	                overflowY: "auto"
+	            });
+	            $(".visitbox").scrollTop($("#j-visit")[0].scrollHeight);
+
+	        });
+	        // $("#j-visit").slimScroll({ height: theight, borderRadius: "0px" });
+	        //计算待办弹窗高度
+	        $(".tc-taskDiv").height(rightHeight - 22);
+	        $(".tc-taskDiv").width($(".tc-right-top").width() - 102);
+
+	        $(".topdaily .topdailybtn").click(function() {
+
+	            $(this).parents(".topdaily").find(".topdailybtn").removeClass("active");
+	            $(this).addClass("active");
+	            $(".dailyrgt-divZi").hide();
+	            $(".visi-text-content").hide();
+	            $(".dailyrgt-botradio").show();
+	        });
+
+
+
+	        $(".hf-submit").click(function() {
+	            $(".topdaily").find(".topdailybtn").removeClass("active");
+	            $(".dailyrgt-divZi").show();
+	            $(".visi-text-content").hide();
+	            $(".dailyrgt-botradio").hide();
+	        });
+
+	        //点击待办
+	        $(".needdealt li").click(function() {
+	            $(".tc-taskDiv").show();
+	            $(".tc-taskDiv").animate({
+	                left: '81px',
+	                opacity: 1
+	            });
+	        });
+
+	        $(".rig_close").click(function() {
+	            $(this).parents(".tc-taskDiv").animate({
+	                left: '-100%',
+	                opacity: 0
+	            }, function() {
+	                $(this).hide();
+	            });
+	        });
+
+	        //移入、移出问号
+	        $(".fixedTrangle").mouseenter(function() {
+	            $(this).find(".fixedtipscon").show()
+	        }).mouseleave(function() {
+	            $(this).find(".fixedtipscon").hide();
+	        });
+	        //点击展和收
+	        $(".shrink-span").on("click", function () {
+	            if ($(this).text() == "展") {
+	                $(this).parent().next(".shrink-con").show();
+	                $(this).text("收");
+	            }
+	            else {
+	                $(this).parent().next(".shrink-con").hide();
+	                $(this).text("展");
+	            }
+	            allH();
+	        })
+	        /* 计算弹框高度*/
+	        $(".layerRtb").height($("body").height()-$("#topnav").outerHeight(true)-10)
+
+
+	        /*点击信量显示弹框*/
+	        $(".xinliang-clickDiv").on("click",function(){
+	            stopEventBubble();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".xinLiang-alert").animate({
+	                left: '-100%',
+	            }, function() {
+	                $(this).hide();
+	            });
+	            $(".xinLiang-alert").show();
+	            $(".xinLiang-alert").stop().animate({
+	                left:"0px"
+	            });
+	            layerH();
+	        })
+	        /*点击信质显示弹框*/
+	        $(".xinzhi-clickDiv").on("click",function(){
+	            stopEventBubble();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".xinzhi-alert").animate({
+	                left: '-100%',
+	            }, function() {
+	                $(this).hide();
+	            });
+	            $(".xinzhi-alert").show();
+	            $(".xinzhi-alert").stop().animate({
+	                left:"0px"
+	            });
+	            layerH();
+	        })
+	        //点击回访量显示弹框
+	        $(".huiLiang-clickDiv").on("click",function(){
+	            stopEventBubble();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".huiLiang-alert").animate({
+	                left: '-100%',
+	            }, function() {
+	                $(this).hide();
+	            });
+	            $(".huiLiang-alert").show();
+	            $(".huiLiang-alert").stop().animate({
+	                left:"0px"
+	            });
+	            layerH();
+	        })
+	        //点击回访质量显示弹框
+	        $(".adviserMes-clickDiv").on("click",function(){
+	            stopEventBubble();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".adviserMes-alert").animate({
+	                left: '-100%',
+	            }, function() {
+	                $(this).hide();
+	            });
+	            $(".adviserMes-alert").show();
+	            $(".adviserMes-alert").stop().animate({
+	                left:"0px"
+	            });
+	            layerH();
+	        })
+	        //点击确定按钮出问题
+	        $(".liangSure-btn").on("click",function () {
+	            $(".liang-question").show();
+	        })
+	        $(".zhiSure-btn").on("click",function () {
+	            $(".zhi-question").show();
+	        })
+	        //点击对号和差
+	        $(".judge-span").on("click",function(){
+	            $(this).addClass("active").siblings().removeClass("active");
+	            if($(this).hasClass("judge-yes")){
+	                $(this).parents(".analyItemCon").find(".num-strong").text("6分")
+	            }
+	            else{
+	                $(this).parents(".analyItemCon").find(".num-strong").text("0分")
+	            }
+	            $(".zhiSure-btn").addClass("uiBtn-blue").removeClass("uiBtn-gray uiBtn-gray-no");
+	            $(".zhiSure-btn").prop("disabled",false);
+	            $(".liangSure-btn").addClass("uiBtn-blue").removeClass("uiBtn-gray uiBtn-gray-no");
+	            $(".liangSure-btn").prop("disabled",false);
+	        })
+	        //点击处理显示弹框
+	        $(".operate-clickDiv").on("click", function (even) {
+	            even.stopPropagation();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".operate-alert").animate({
+	                left: '-105%',
+	            }, function () {
+	                //$(this).hide();
+	            });
+	            $(".operate-alert").show();
+	            $(".operate-alert").stop().animate({
+	                left: "0px"
+	            }, function () {
+	                //$(this).hide();
+	            });
+	            layerH();
+	        })
+	        //点击问题点
+	        $(".choice-span").on("click", function () {
+	            $(".choice-span").removeClass("current");
+	            $(this).addClass("current");
+	            $(".operate-submit").addClass("uiBtn-blue").removeClass("uiBtn-gray uiBtn-gray-no");
+	            $(".operate-submit").prop("disabled", false)
+	        })
+	        //点击资料显示弹框
+	        $(".datum-clickDiv").on("click", function () {
+	            stopEventBubble();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".datum-alert").animate({
+	                left: '-105%',
+	            }, function () {
+	                //$(this).hide();
+
+	            });
+	            $(".datum-alert").show();
+	            $(".datum-alert").stop().animate({
+	                left: "0px"
+	            });
+	            layerH();
+	        })
+	        //点击行为显示弹框
+	        $(".behavior-clickDiv").on("click", function (even) {
+	            even.stopPropagation();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".behavior-alert").animate({
+	                left: '-105%',
+	            }, function () {
+	                //$(this).hide();
+	            });
+	            $(".behavior-alert").show();
+	            $(".behavior-alert").stop().animate({
+	                left: "0px"
+	            }, "fast", function () {
+	                //$(this).hide();
+
+	            });
+	            layerH();
+	        })
+	        //点击标签选中与取消
+	        $(".title-choice").on("click", function () {
+	            if ($(this).hasClass("current")) {
+	                $(this).removeClass("current");
+	            }
+	            else {
+	                $(this).addClass("current");
+	            }
+	        })
+	        //点击见面显示弹框
+	        $(".goOut-clickDiv").on("click", function (even) {
+	            even.stopPropagation();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".goOut-alert").animate({
+	                left: '-105%',
+	            }, function () {
+	                //$(this).hide();
+	            });
+	            $(".goOut-alert").show();
+	            $(".goOut-alert").stop().animate({
+	                left: "0px"
+	            }, function () {
+	                //$(this).hide();
+	            });
+
+	            layerH();
+	        })
+
+	        /*点击疑难解答显示弹框*/
+	        $(".difficult-btn").on("click", function () {
+	            stopEventBubble();//阻止事件冒泡
+	            $(".difficult-alert").animate({ "left": "0" })
+	        })
+	        //点击空白处隐藏疑难解答弹框
+	        $("body").on("click", function () {
+	            $(".difficult-alert").animate({ "left": "100%" })
+	        })
+	        $(".difficult-alert").on("click", function () {
+	            stopEventBubble();//阻止事件冒泡
+	        })
+	        /*点击疑难解答的关闭隐藏弹框*/
+	        $(".difficult-alert .CloseMouseDiv").on("click", function () {
+	            $(".difficult-alert").animate({ "left": "100%" })
+	        })
+
+	        /*计算疑难解答高度*/
+	        /*疑难解答右侧高度*/
+	        /*疑难解答右侧点击切换*/
+	        $(".strength-tab li").on("click", function () {
+	            $(".difficult-rDiv li").removeClass("current");
+	            $(this).addClass("current").siblings().removeClass("current");
+	            $(".strength-wrap").show().siblings().hide();
+	            $(".strength-wrap>div").eq($(this).index()).show().siblings().hide();
+	        })
+	        /*公司实力*/
+	        $(".strength-tab li").on("click", function () {
+	            $(this).parents(".difficult-rDiv").find("li").removeClass("current");
+	            $(this).addClass("current").siblings().removeClass("current");
+	            $(this).parents(".difficult-wrapCon").find(".strength-wrap").show().siblings().hide();
+	            $(this).parents(".difficult-wrapCon").find(".strength-wrap>div").eq($(this).index()).show().siblings().hide();
+	        })
+	        /*公司服务*/
+	        $(".service-tab li").on("click", function () {
+	            $(this).parents(".difficult-rDiv").find("li").removeClass("current");
+	            $(this).addClass("current").siblings().removeClass("current");
+	            $(this).parents(".difficult-wrapCon").find(".service-wrap").show().siblings().hide();
+	            $(this).parents(".difficult-wrapCon").find(".service-wrap>div").eq($(this).index()).show().siblings().hide();
+	        })
+	        //客户话术
+	        $(".FAQ-tab li").on("click", function () {
+	            $(this).parents(".difficult-rDiv").find("li").removeClass("current");
+	            $(this).addClass("current").siblings().removeClass("current");
+	            $(this).parents(".difficult-wrapCon").find(".FAQ-wrap").show().siblings().hide();
+	            $(this).parents(".difficult-wrapCon").find(".FAQ-wrap>div").eq($(this).index()).show().siblings().hide();
+	        })
+	        //谈单跟进
+	        $(".negotiate-tab li").on("click", function () {
+	            $(this).parents(".difficult-rDiv").find("li").removeClass("current");
+	            $(this).addClass("current").siblings().removeClass("current");
+	            $(this).parents(".difficult-wrapCon").find(".negotiate-wrap").show().siblings().hide();
+	            $(this).parents(".difficult-wrapCon").find(".negotiate-wrap>div").eq($(this).index()).show().siblings().hide();
+	        })
+
+
+	        //点击客户显示弹框
+	        $(".custom-clickDiv").on("click", function (even) {
+	            even.stopPropagation();
+	            $(this).parents(".analyItem").addClass("anItemBor-active").siblings().removeClass("anItemBor-active");
+	            $(".layerRtb").not(".custom-alert").animate({
+	                left: '-105%',
+	            }, function () {
+	                //$(this).hide();
+	            });
+	            $(".custom-alert").show();
+	            $(".custom-alert").stop().animate({
+	                left: "0px"
+	            });
+	            layerH();
+	        })
+	        //点击标签关闭按钮
+	        $(".layerRtb .rig_close").click(function() {
+	            $(this).parents(".layerRtb").animate({
+	                left: '-100%',
+	            }, function() {
+	                $(this).hide();
+	                $(".anItemBor").removeClass("anItemBor-active");
+	            });
+	        });
+	        $(".layerRtb").on("click",function(){
+	            stopEventBubble();
+	        })
+	        $("body").on("click",function(){
+	            $(".layerRtb").animate({
+	                left: '-100%',
+	            }, function() {
+	                $(this).hide();
+	                $(".anItemBor").removeClass("anItemBor-active");
+	            });
+	        })
+	        //点击底部的回访按钮
+	        $(".topdaily .topdailybtn").click(function () {
+	            var chk_value = [];
+	            $('.dailyrgt-botradio input[type="radio"]:checked').each(function () {
+	                chk_value.push($(this).val());
+	            });
+	            if (chk_value.length > 0) {
+	                $(".dailyrgt-botradio").hide();
+	                $(".topdaily").hide();
+	                $(".topdaily2").show();
+	                $(".visi-text-content1").show();
+	                //计算回访输入框高度
+	                $(".hf-textarea").height(245 - $(".topdaily2").outerHeight(true) - 75);
+	            }
+	        });
+	        $(".dailyrgt-botradio input").click(function () {
+	            var chk_value = [];
+	            $('.topdaily  a.active').each(function () {
+	                chk_value.push($(this).attr("data-value"));
+	            });
+	            if (chk_value.length > 0) {
+	                $(".dailyrgt-botradio").hide();
+	                $(".topdaily").hide();
+	                $(".topdaily2").show();
+	                $(".visi-text-content1").show();
+	                //计算回访输入框高度
+	                $(".hf-textarea").height(245 - $(".topdaily2").outerHeight(true) - 75);
+	            }
+	        });
+	    })
+	    //弹框中间高度计算
+	    function layerH(){
+	        $(".layerRtb-scroll").each(function(){
+	            $(this).height($("body").height()-$("#topnav").outerHeight(true)-$(this).prev(".layerRtb-head").outerHeight(true)-$(this).next(".layerRtb-bottom").outerHeight(true)-15)
+	        })
+	        //计算弹框中回访内容高度
+	        $(".visit-judgeCon").each(function () {
+	            $(this).css("height", $(this).parents(".layerRtb-scroll").height() - $(this).prev(".judge-topDiv").outerHeight(true) - $(this).next(".judge-bottomDiv").outerHeight(true) - 20)
+	        })
+	    }
+
+
+	</script>
+</body>
+</html>

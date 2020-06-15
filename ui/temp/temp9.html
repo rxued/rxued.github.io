@@ -1,0 +1,1570 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>标准模板</title>
+    <link rel="stylesheet" href="css/rxui1.0.2.min.css" />
+    <link rel="stylesheet" href="css/frame.min.css" />
+    <!--三栏布局样式表 -->
+    <link rel="stylesheet" href="css/page-threecolumn.css" />
+    <link rel="stylesheet" href="css/commonNew.css" type="text/css"/>
+    <link rel="stylesheet" href="css/page-base.css" type="text/css"/>
+</head>
+
+<body class="logo-c000000 bar-cffffff nav-black nav-vertical" data-class="nav-vertical">
+<div id="main_header" class="header-fixed j_outerHeight">
+    <h1 id="logo" class="j_leftnav"><a href="javascript:;"><i></i><span>瑞祥UI</span></a></h1>
+    <!--顶部导航 开始-->
+    <div id="topnav" class="clearfix">
+        <ul class="fl">
+            <li>
+                <a href="javascript:;" data-rippleria class="setup_nav setupbtn rippleria-dark">
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="exit-div"><a href="javascript:;"><i></i><span>退出</span></a></div> -->
+        <div class="user-div"><a href="javascript:;"><i></i><span class="mr10">地区</span><span class="mr5">用户名</span>-<span class="ml5">01011000</span></a></div>
+        <div class="eventDiv fr"><i class="fl"></i><span class="fl ml5">通知</span><span class="fl ml5">0</span></div>
+    </div>
+    <!--顶部导航 结束-->
+</div>
+<div id="main_box">
+    <!--主导航 开始-->
+    <div id="nav" class="j_leftnav nav-fixed">
+        <div class="nav-wrapper">
+            <div class="nav-wrapper-content">
+                <ul class="nav-ul clearfix">
+                    <li class="active">
+                        <a href="javascript:;" data-rippleria class="rippleria-dark"><i class="nav-icon">示</i><strong>示例页面</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--主导航 结束-->
+    <!--内容区 开始-->
+    <div id="main_content">
+        <div class="wrapper clearfix pt10 pl10 pr10 relative">
+            <div class="tc-left pr10 fl">
+                <div class="mb5 j_outerHeight">
+                    <ul class="clearfix uiTab1">
+                        <li class="col-md-4 uiTab1-active"><a href="javascript:">资</a></li>
+                    </ul>
+                </div>
+                <div class="daily_title j_outerHeight">
+                    <ul class="clearfix">
+                        <li class="title_cur">信</li>
+                        <li>经</li>
+                        <li>库</li>
+                    </ul>
+                </div>
+                <div class="contentbox">
+                    <!-- 搜索 -->
+                    <div class="dailyftSearch dailyftSearch1 clearfix hide">
+                        <div class="fl uiHas-textIcon">
+                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" >
+                            <i class="uiText-searchIcon bgIcon"></i>
+                        </div>
+                    </div>
+                    <!-- 日期筛选 -->
+                    <div class="dailyftSearch hide dailyftSearch2">
+                        <div class="uiHas-textIcon clearfix">
+                            <input type="text" class="width100 fl ml10" placeholder="开始时间">
+                            <span class="plr5 fl lh28">至</span>
+                            <input type="text" class="width100 fl endTime" placeholder="结束时间">
+                        </div>
+                    </div>
+                    <!-- 搜索加选择 -->
+                    <div class="dailyftSearch dailyftSearch3 hide">
+                        <div class="uiHas-textIcon clearfix">
+                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" >
+                            <i class="uiText-searchIcon bgIcon"></i>
+                        </div>
+                        <div class="clearfix mt5 pl5">
+                            <select class="fl mr2 width60">
+                                <option>一级</option>
+                            </select>
+                            <select class="fl mr2 width60">
+                                <option>二级</option>
+                            </select>
+                            <select class="fl mr2 width60">
+                                <option>名称</option>
+                            </select>
+                            <select class="fl width60">
+                                <option>规格</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class=" uiTable j_outerHeight table-np">
+                        <thead>
+                        <tr>
+                            <th width="19%">地区</th>
+                            <th width="20%">
+                                <select class="theadselect">
+                                    <option>业务员</option>
+                                    <option>张梦园</option>
+                                    <option>王娟</option>
+                                </select>
+                            </th>
+                            <th width="18%">
+                                <select class="theadselect">
+                                    <option value="0">管</option>
+                                    <option value="1" title="待处理">待</option>
+                                    <option value="2" title="已处理">正</option>
+                                </select>
+                            </th>
+                            <th width="18%">
+                                <select class="theadselect">
+                                    <option value="0">业</option>
+                                    <option value="1" title="">未</option>
+                                    <option value="正常跟进">正常</option>
+                                    <option value="重点">重点</option>
+                                    <option value="外出">外出</option>
+                                    <option value="公关差">公关差</option>
+                                    <option value="周期长">周期长</option>
+                                    <option value="无进展">无进展</option>
+                                    <option value="维护差">维护差</option>
+                                    <option value="质量差">质量差</option>
+                                    <option value="断档">断档</option>
+                                    <option value="虚假回访">虚假</option>
+                                </select>
+                            </th>
+                            <th>集访<span class="serial_number_data"><i class="trCalendar"></i></span></th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="scroll-content">
+                        <table class="uiTable pointertable table-np" id="tab1">
+                            <tbody>
+                            <tr class="tractive">
+                                <td width="19%">河南</td>
+                                <td width="20%">潘小花</td>
+                                <td width="18%"><span class="cPurple">待</span></td>
+                                <td width="18%"><span class="cRed">未</span></td>
+                                <td><span class="cRed">--</span></td>
+                            </tr>
+                            <tr>
+                                <td>唐山</td>
+                                <td>王双双</td>
+                                <td><span class="cPurple">待</span></td>
+                                <td><span class="cRed">未</span></td>
+                                <td><span class="cRed">--</span></td>
+                            </tr>
+                            <tr>
+                                <td>武汉</td>
+                                <td>曹云</td>
+                                <td><span class="cGreen">正</span></td>
+                                <td><span class="cGreen">重点</span></td>
+                                <td><span class="cRed">--</span></td>
+                            </tr>
+                            <tr>
+                                <td>武汉</td>
+                                <td>黄慧芳</td>
+                                <td><span class="cGreen">正</span></td>
+                                <td><span class="cGreen">重点</span></td>
+                                <td><span class="cRed">--</span></td>
+                            </tr>
+                            <tr>
+                                <td>郑州</td>
+                                <td>预算</td>
+                                <td><span class="cGreen">正</span></td>
+                                <td><span class="cRed">公关</span></td>
+                                <td><span class="cRed">--</span></td>
+                            </tr>
+                            <tr>
+                                <td>南京</td>
+                                <td>预算</td>
+                                <td><span class="cGreen">正</span></td>
+                                <td><span class="cRed">周期</span></td>
+                                <td><span class="cRed">--</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="j_outerHeight clearfix tj_bottom">
+                        <p class="col-md-3" title="全部">6</p>
+                        <p class="col-md-3 cGreen" title="正常">6</p>
+                        <p class="col-md-3 cOrange" title="异常">0</p>
+                        <p class="col-md-3 cRed" title="问题">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tc-center fl">
+                <div class="clearfix">
+                    <ul class="clearfix uiTab9 j_uiTab9">
+                        <li class="uiTab9-active">状态</li>
+                        <li>资料</li>
+                        <li>行为</li>
+                        <li>客户</li>
+                        <li>结果</li>
+                    </ul>
+                </div>
+
+                <div id="j-tc-center-content" >
+                    <!-- 状态-->
+                    <div class="uiTab9Con">
+                        <div class="uiTabTop pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">状态</p>
+                                <div class="analyItemCon">
+                                    <span class="circlemark circlemark-lightRed">差</span>
+                                    <span class="circlemark2 circlemark-purple">待</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uiTabCenter pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">资料</p>
+                                <div class="analyItemCon">
+                                    <span class="circlemark circlemark-lightRed">差</span>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">行为</p>
+                                <div class="analyItemCon">
+                                    <div class="circlemark_box">
+                                        <span class="circlemark circlemark-purple">待</span>
+                                        <span class="circlemark2 circlemark-lightRed">未</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">客户</p>
+                                <div class="analyItemCon">
+                                    <div class="circlemark_box">
+                                        <span class="circlemark circlemark-purple">待</span>
+                                        <span class="circlemark2 circlemark-lightRed">未</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">结果</p>
+                                <div class="analyItemCon">
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8">等级</span><span>星星</span>
+                                    </p>
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8" title="最近一次量房时间">量房</span><span>2018-03-26</span>
+                                    </p>
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8" title="最近一次签单时间">签单</span><span></span>
+                                    </p>
+                                    <p class="fl col-md-4 relative">
+                                        <span class="cLightGray pr8">量房</span><span>1</span>
+                                    </p>
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8">推费</span><span>500元</span>
+                                    </p>
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8">宣费</span><span>0元</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor handle-clickDiv">
+                                <p class="analyItemTit tx-center">处理</p>
+                                <div class="analyItemCon">
+                                    <span class="circlemark circlemark-purple">待</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--资料-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon clearfix">
+
+                                <span class="circlemark circlemark-lightRed">差</span>
+                            </div>
+                        </div>
+                        <div class="analyItem anItemBor project-clickDiv">
+                            <p class="analyItemTit tx-center">资料</p>
+                            <div class="analyItemCon datum-clickDiv">
+                                <p class="fl col-md-4"><span class="cLightGray pr8">姓名</span><span>占义泽</span></p>
+                                <p class="fl col-md-8"><span class="cLightGray pr8">公司</span><span>商超</span></p>
+                                <p class="fl col-md-4"><span class="cLightGray pr8">性质</span><span>其他</span></p>
+                                <p class="fl col-md-8"><span class="cLightGray pr8">性质</span><span></span></p>
+                                <span class="circlemark circlemark-lightRed">差</span>
+                                <strong class="score-strong cGreen fz16">3</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--行为-->
+                    <div class="uiTab9Con dis-none">
+                        <div class="uiTabTop pr10">
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">状态</p>
+                                <div class="analyItemCon">
+                                    <span class="circlemark circlemark-lightRed">未</span>
+                                    <span class="circlemark2 circlemark-purple">待</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uiTabCenter pr10">
+                            <div class="analyItem anItemBor visit-clickDiv">
+                                <p class="analyItemTit tx-center">回访</p>
+                                <div class="analyItemCon">
+                                    <p class="fl col-md-4"><span class="cLightGray pr8">录入</span><span>49天</span></p>
+                                    <p class="fl col-md-4"><span class="cLightGray pr8">回访</span><span>6次</span></p>
+                                    <div class="circlemark_box">
+                                        <span class="circlemark circlemark-purple">待</span>
+                                        <span class="circlemark2 circlemark-lightRed">未</span>
+                                    </div>
+                                    <strong class="score-strong cGreen fz16">0</strong>
+                                </div>
+                            </div>
+                            <div class="analyItem anItemBor goOut-clickDiv">
+                                <p class="analyItemTit tx-center">见面</p>
+                                <div class="analyItemCon">
+                                    <p class="fl col-md-4">
+                                        <span class="cLightGray pr8">外出</span><span>0次</span>
+                                    </p>
+                                    <div class="circlemark_box">
+                                        <span class="circlemark circlemark-purple">待</span>
+                                        <span class="circlemark2 circlemark-lightRed">未</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analyItem">
+                                <p class="analyItemTit tx-center">推广</p>
+                                <div class="analyItemCon">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--客户-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon clearfix">
+                                <span class="circlemark circlemark-lightRed">未</span>
+                                <span class="circlemark2 circlemark-purple">待</span>
+                            </div>
+                        </div>
+                        <div class="analyItem anItemBor customer-clickDiv">
+                            <p class="analyItemTit tx-center">客户</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-3">
+                                    <span class="cLightGray pr8" title="信息员共计给的客户（不包括放弃）/放弃客户数">总量</span>
+                                    <span title="信息员共计给的客户（不包括放弃）/放弃客户数">0/0</span>
+                                </p>
+                                <p class="fl col-md-3">
+                                    <span class="cLightGray pr8" title="在跟踪的客户数量">跟踪</span>
+                                    <span title="在跟踪的客户数量">0</span>
+                                </p>
+                                <p class="fl col-md-3">
+                                    <span class="cLightGray pr8" title="最近一次给客户时间">客户</span>
+                                    <span title="最近一次给客户时间">0</span>
+                                </p>
+                                <div class="circlemark_box">
+                                    <span class="circlemark circlemark-purple">待</span>
+                                    <span class="circlemark2 circlemark-lightRed">未</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 结果-->
+                    <div class="uiTab9Con dis-none pr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">状态</p>
+                            <div class="analyItemCon clearfix">
+
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">量房</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-4">
+                                    <span class="cLightGray pr8">量房</span><span>0</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">钱包</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-4">
+                                    <span class="cLightGray pr8">钱包</span><span>0元</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tc-right">
+                <div class="tc-righttop-tab j-tc-righttop-tab">
+                    <ul class="RTtab clearfix">
+                        <li class="RTtab-active2 visitTab-btn">
+                            <a href="JavaScript:;">顾问回访</a>
+                        </li>
+                        <li class="RTtab-active list-btn fr">
+                            <a href="JavaScript:;">列表</a>
+                        </li>
+                       <!-- <li class="RTtab-disabled fr">
+                            <a href="JavaScript:;">列表</a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="tc-right-top clearfix">
+                    <div class="fl needdealt">
+                        <ul>
+                            <li class="bgRed">待办一</li>
+                            <li class="bgOrange">待办二</li>
+                            <li class="bgGreen">待办三</li>
+                        </ul>
+                    </div>
+                    <!-- 待办弹窗S -->
+                    <div class="tc-taskDiv">
+                        <div class="clearfix">
+                            <p class="fl">• 标题长度自行调整...</p>
+                            <i class="fr rig_close">×</i>
+                        </div>
+                    </div>
+                    <!-- 待办弹窗E -->
+                    <div class="visitbox thinScroll">
+                        <div class="visit" id="j-visit">
+                            <div class="visi-list tx-left">
+                                <div class="visi-listtop">
+                                    <span class="visi-name">营</span>
+                                    <span class="visi-date">07-19 14:55</span>
+                                </div>
+                                <p class="visi-listtxt">
+                                    主案设计师系统静态页面已经制作完毕，已经交付开发。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+                            <div class="visi-list tx-right">
+                                <div class="visi-listtop">
+                                    <span class="visi-date mr5">07-19 15:55</span><span class="visi-name">团</span>
+                                </div>
+                                <p class="visi-listtxt cBlue">
+                                    今日新增任务：3个，均有必须近期前端制作；
+                                    <br>在执行任务：5个，均为正常状态；
+                                    <br>完成任务:2个,其中有个新人未提交验收，明天教一下系统怎么使用，另外一个验收合格。
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="tc-right-bottom pa10 relative">
+                    <div class="tc-right-bottom-left relative">
+                        <ul class="topdaily">
+                            <li>
+                                <a class="topdailybtn" href="javascript:">正常</a>
+                            </li>
+                            <li>
+                                <a class="topdailybtn" href="javascript:">异常</a>
+                            </li>
+                            <li>
+                                <a class="topdailybtn" href="javascript:">问题</a>
+                            </li>
+                        </ul>
+                        <div class="dailyrgt-botradio hide">
+                            <div class="mb10">
+                                <label class="uiRadio12 cGreen">
+                                    <input value="1" type="radio" name="a" class="uiRadio12-input">正常</label>
+                                <label class="uiRadio12 cOrange">
+                                    <input value="2" type="radio" name="a" class="uiRadio12-input">异常</label>
+                                <label class="uiRadio12 cRed">
+                                    <input value="3" type="radio" name="a" class="uiRadio12-input">问题</label>
+                            </div>
+                        </div>
+                        <div class="dailyrgt-divZi">
+                            <p class="tx-center">先解决业务问题，才有资格说管理。前两个因素完成之后，再反馈系统问题。</p>
+                        </div>
+                        <div class="visi-text-content hide">
+                            <textarea placeholder="请输入回访内容" class="hf-textarea mb10"></textarea>
+                            <input class="hf-submit" type="submit" value="提交" />
+                        </div>
+                        <!--新增外出弹框-->
+                        <div class="addout-alert pl10 pr20">
+                            <h2 class="uiTitle2">
+                                <i class="uiTitle-icon"></i>
+                                新增外出
+                            </h2>
+                            <div class="pb10 clearfix pt10">
+                                <select class="fl width100 out-select" onchange="ChangeType()">
+                                    <option value="0">类型</option>
+                                    <option value="1">信息员</option>
+                                    <option value="2">客户</option>
+                                    <option value="3">楼盘</option>
+                                    <option value="4">项目</option>
+                                </select>
+                                <div class="addout-right">
+                                    <input type="text" value="" placeholder="编号" class="form-control addout-number">
+                                    <input type="text" value="" placeholder="楼盘名称" class="addout-buildname form-control dis-none" >
+                                </div>
+                            </div>
+                            <div class="pb10">
+                                <input type="text" placeholder="见面地点" class="out-addresss">
+                            </div>
+                            <div class="pb10">
+                                <textarea placeholder="外出原因"  class="out-reason"></textarea>
+                            </div>
+                            <div class="tx-center">
+                                <input type="button" value="提交"  class="uiBtn-normal uiBtn-blue"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EventpenaltyDiv">
+                        <a href="javascrpit:;" class="EventpenaltyBtn addout-btn">新增外出</a>
+                    </div>
+                </div>
+                <!--处理弹框-->
+                <div class="layerRtb layerRtbPN handle-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            处理
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem ">
+                            <p class="analyItemTit tx-center">资料</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-11">
+
+                                </p>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">行为</p>
+                            <div class="analyItemCon">
+                                <p class="fr col-md-2 ">录入<span class="fz12">16天</span></p>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">客户</p>
+                            <div class="analyItemCon">
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">拉黑记录</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综合</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-12">
+                                    <span  class="cRed">质量差</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-md-6 handle-left pb10">
+                                <div class="lh28">正常：</div>
+                                <div class="pl10">
+                                    <ul class="clearfix handle-ul">
+                                        <li>正常跟进</li>
+                                        <li>外出</li>
+                                        <li>重点</li>
+                                    </ul>
+                                </div>
+                                <div class="lh28">问题：</div>
+                                <div class="pl10">
+                                    <ul class="clearfix handle-ul">
+                                        <li>分配</li>
+                                        <li>公关差</li>
+                                        <li>周期长</li>
+                                        <li>无进展</li>
+                                        <li>维护差</li>
+                                        <li>质量差</li>
+                                        <li>断档</li>
+                                        <li>虚假回访</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl10">
+                                <div class="lh28">不合格：</div>
+                                <div class="pl10">
+                                    <ul class="clearfix handle-ul">
+                                        <li>公共池</li>
+                                        <li>冷藏</li>
+                                        <li>黑名单</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tx-center pt10 pb10">
+                            <input type="button" class="uiBtn-normal uiBtn-blue" value="提交">
+                        </div>
+                    </div>
+                </div>
+                <!--资料弹框-->
+                <div class="layerRtb layerRtbPN  project-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            资料
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem anItemBor ziLiao_clickDiv">
+                            <p class="analyItemTit tx-center">资料</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">姓名</span><span>赵先生</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">资料</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">性质</span><span>其他</span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes " name="性质1" value="3">
+                                        <input type="text" class="judge-span judge-no active" name="性质1：其他" value="0">
+                                    </span>
+                                </p>
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">性质</span><span></span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes " name="性质1" value="3">
+                                        <input type="text" class="judge-span judge-no active" name="性质1：其他" value="0">
+                                    </span>
+                                </p>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">职务</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">职务</span><span></span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes " name="职务" value="3">
+                                        <input type="text" class="judge-span judge-no active" name="职务：" value="0">
+                                    </span>
+                                </p>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">工作</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">工作</span><span></span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes " name="工作" value="3">
+                                        <input type="text" class="judge-span judge-no active" name="工作：" value="0">
+                                    </span>
+                                </p>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">公司</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">公司</span><span>商超</span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes active" name="公司" value="3">
+                                        <input type="text" class="judge-span judge-no " name="工作：商超" value="0">
+                                    </span>
+                                </p>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">1分</strong></div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">楼盘</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8">楼盘</span><span></span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes " name="楼盘" value="3">
+                                        <input type="text" class="judge-span judge-no active" name="楼盘：" value="0">
+                                    </span>
+                                </p>
+                                <div class="count-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综合</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-9 cRed">
+                                    <span class="cLightGray pr8 cRed">问题</span><strong class="plr5 cRed">性质1：其他、性质2：、职务、工作年限、楼盘</strong>
+                                </p>
+                                <p class="fl col-md-3" title="总数：差"><span class="cLightGray pr8">统计</span><strong class="fz14 cGreen">3分</strong></p>
+                            </div>
+                        </div>
+                        <div class="tx-center pt10 pb10">
+                            <input type="button" class="uiBtn-normal dataSure-btn uiBtn-blue" value="确定">
+                        </div>
+                    </div>
+                </div>
+                <!--回访弹框-->
+                <div class="layerRtb layerRtbPN visit-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            回访
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">信息</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-3"><span class="cLightGray pr8">姓名</span><span>赵先生</span></p>
+                                <p class="fl col-md-3"><span class="cLightGray pr8">等级</span><span>尘埃</span></p>
+                                <p class="fl col-md-6"><span class="cLightGray pr8">性质</span><span>-</span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">周期</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-3"><span class="cLightGray pr8">录入</span><span>1天</span></p>
+                                <p class="fl col-md-8"><span class="cLightGray pr8" title="最近回访周期">周期</span><span title="最近回访周期">0天</span>
+                                </p>
+                                <span class="judge-div judge-divThree">
+                                            <input type="text" class="judge-span judge-yes active" value="4" name="周期正常">
+                                            <input type="text" class="judge-span judge-no" name="周期：回访周期长" value="0">
+                                        </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">4分</strong></div>
+                                <div class="fixedtipWrap">
+                                    <a href="javascript:" class="fixedtips" data-fixedflag="0"></a>
+                                    <div class="fixedtipscon pt10 pb10" style="display: none;">
+                                        <i></i>
+                                        <p>规则</p>
+                                        <span class="cGreen">7天以下:3分</span>
+                                        <br>
+                                        <span class="cGreen">8-10天:2分</span>
+                                        <br>
+                                        <span class="cRed">11天以上:1分</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">内容</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-6">
+                                    <span class="cLightGray pr8">共计</span>
+                                    <span>24</span>
+                                </p>
+                                <p class="fl col-md-6">
+                                    <span class="cLightGray pr8">有效</span>
+                                    <strong class="cGreen">20</strong>
+                                </p>
+                                <span class="judge-div judge-divThree">
+                                            <input type="text" class="judge-span judge-yes active" value="3" name="回访正常">
+                                            <input type="text" class="judge-span judge-no" name="回访无进展" value="1">
+                                        </span>
+                                <div class="count-numDiv"><strong class="fz14 cGreen">3分</strong></div>
+                                <div class="fixedtipWrap">
+                                    <a href="javascript:" class="fixedtips"></a>
+                                    <div class="fixedtipscon pt10 pb10" style="display: none;">
+                                        <i></i>
+                                        <p>规则</p>
+                                        <span class="cGreen">有效50%以上:3分</span>
+                                        <br>
+                                        <span class="cGreen">有效30%-49%:2分</span>
+                                        <br>
+                                        <span class="cRed">有效29%以下:1分</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">回访内容</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-6">
+                                    <span class="cLightGray pr8">时间</span>
+                                    <span>2018-01-05 11:33</span>
+                                </p>
+                                <p class="fl col-md-6">
+                                    <span class="cLightGray pr8">形式</span>
+                                    <span>电话回访</span>
+                                </p>
+                                <p class="fl col-md-11">
+                                    <span class="cLightGray pr8">内容</span>
+                                    <span>1.电话暂时没有人接听，换个时间再联系联系。</span>
+                                </p>
+                                <strong class="fz14 cRed stage-strong">无效</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综合</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-9 cRed"><span class="cLightGray pr8 cRed">问题</span><strong class="plr5 cRed">内容：虚假回访</strong></p>
+                                <p class="fl col-md-3" title="总数：差"><span class="cLightGray pr8">统计</span><strong class="fz14 cGreen">10分</strong></p>
+                            </div>
+                        </div>
+                        <div class="tx-center pb10 pt10">
+                            <input type="button" class="uiBtn-normal uiBtn-blue" value="确定">
+                        </div>
+                    </div>
+                </div>
+                <!--见面弹框-->
+                <div class="layerRtb layerRtbPN goOut-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            见面
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">信息</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-6"><span class="cLightGray pr8">姓名</span><span>黄艳</span></p>
+                                <p class="fl col-md-6"><span class="cLightGray pr8">性质</span><span>招商-专商：专业商业租售</span></p>
+                                <p class="fl col-md-6"><span class="cLightGray pr8">职位</span><span></span></p>
+                                <p class="fl col-md-6"><span class="cLightGray pr8">等级</span><span>尘埃</span></p>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">外出</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-3"><span class="cLightGray pr8">外出</span><span>0</span></p>
+                                <p class="fl col-md-3"><span class="cLightGray pr8">有效</span><strong class="cGreen">0</strong></p>
+                                <p class="fl col-md-3"><span class="cLightGray pr8">无效</span><span>0</span></p>
+                                <p class="fl col-md-12">
+                                    <input class="title-choice current" value="正常" name="" type="button">
+                                    <input class="title-choice" value="外出无效" name="外出无效" type="button">
+                                    <input class="title-choice" value="外出过多" name="外出过多" type="button">
+                                    <input class="title-choice" value="经理问题" name="经理问题" type="button">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综合</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                        <div class="tx-center pb10 pt10">
+                            <input type="button" class="uiBtn-normal uiBtn-blue" value="确定">
+                        </div>
+                    </div>
+                </div>
+                <!--客户弹框-->
+                <div class="layerRtb layerRtbPN customer-alert">
+                    <div class="layerRtb-head clearfix plr10 pb10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            客户
+                        </h2>
+                        <i class="fr rig_close">×</i>
+                    </div>
+                    <div class="layerRtb-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">数量</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-4">
+                                    <span class="cLightGray pr8" title="客户总量">总量</span>
+                                    <span class="uiLink" title="客户总量">0</span>
+                                    <span class="judge-div judge-divTwo">
+                                        <input type="text" class="judge-span judge-yes" name="攻取" value="3">
+                                        <input type="text" class="judge-span judge-no" name="攻取差" value="0">
+                                    </span>
+                                </p>
+
+                                <div class="count-numDiv customer-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                                <div class="fixedtipWrap">
+                                    <a href="javascript:" class="fixedtips"></a>
+                                    <div class="fixedtipscon pt10 pb10">
+                                        <i></i>
+                                        <p>规则</p>
+                                        <span class="cGreen">无客户:0分</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">质量</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-4">
+                                    <span class="cLightGray pr8" title="在跟踪客户">在跟</span>
+                                    <span title="在跟踪客户" class="uiLink">10</span>
+                                </p>
+                                <p class="fl col-md-5">
+                                    <span class="cLightGray pr8" title="最后客户时间">客户</span>
+                                    <span title="最后客户时间">2018-04-10</span>
+                                    <span class="judge-div judge-divTwo">
+                                            <input type="text" class="judge-span judge-yes" name="客户" value="3">
+                                            <input type="text" class="judge-span judge-no" name="维护差" value="1">
+                                        </span>
+                                </p>
+                                <div class="count-numDiv intrack-numDiv"><strong class="fz14 cRed">0分</strong></div>
+                                <div class="fixedtipWrap">
+                                    <a href="javascript:" class="fixedtips"></a>
+                                    <div class="fixedtipscon pt10 pb10">
+                                        <i></i>
+                                        <p>规则</p>
+                                        <span class="cGreen">20天以内:3分</span>
+                                        <br>
+                                        <span class="cOrange">21-30天：2分</span>
+                                        <br>
+                                        <span class="cRed">31天以上：1分</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-footer layerRtb-borT clearfix plr10 pt10 pb1">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">综合</p>
+                            <div class="analyItemCon">
+                                <p class="fl col-md-9 cRed"><span class="cLightGray pr8 cRed">问题</span><strong class="plr5 cRed">攻取差、维护差</strong></p>
+                                <p class="fl col-md-3" title="总数：差"><span class="cLightGray pr8">统计</span><strong class="fz14 cGreen">0分</strong></p>
+                            </div>
+                        </div>
+                        <div class="tx-center pb10 pt10">
+                            <input type="button" class="uiBtn-normal uiBtn-blue" value="确定">
+                        </div>
+                    </div>
+                </div>
+                <!--四栏弹框-->
+                <div class="layerRtb-right ziLiao-alert">
+                    <div class="clearfix layerRtb-right-head pb10 plr10">
+                        <h2 class="uiTitle2 fl">
+                            <i class="uiTitle-icon"></i>
+                            四栏弹框
+                        </h2>
+                        <i class="fr rig_close"></i>
+                    </div>
+                    <div class="layerRtb-right-scroll plr10">
+                        <div class="analyItem">
+                            <p class="analyItemTit tx-center">详情</p>
+                            <div class="analyItemCon">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layerRtb-right-footer">
+
+                    </div>
+                </div>
+            </div>
+            <!--右侧列表弹框-->
+            <div class="layerRtb-big pa10">
+                <div class="tab-div clearfix pb10 relative">
+                    <ul class="uiTab3 fl">
+                        <li class="uiTab3-active"><a href="javascript:">统计</a></li>
+                        <li><a href="javascript:">分析</a></li>
+                    </ul>
+                    <div class="fr ">
+                        <input type="button" class="uiBtn-normal uiBtn-blue fl selectTime-btn mr5" value="周期">
+                        <div class="select-timeDiv fl dis-none mr5">
+                            <div class="uiHas-textIcon width120 fl mr5">
+                                <input type="text" class="form-control width120" placeholder="开始时间"/>
+                                <i class=" bgIcon uiText-timeIcon"></i>
+                            </div>
+                            <div class="uiHas-textIcon width120 fl mr5">
+                                <input type="text" class="form-control width120" placeholder="结束时间"/>
+                                <i class=" bgIcon uiText-timeIcon"></i>
+                            </div>
+                            <input type="button" class="uiBtn-normal uiBtn-blue fl search-btn" value="查询">
+                        </div>
+                        <input type="button" class="uiBtn-normal uiBtn-blue fl mr5 today-btn" value="今日">
+                        <input type="button" class="uiBtn-normal uiBtn-blue fl mr5 week-btn" value="本周"> <!--selectTime-btn-->
+
+                        <div class="uiHas-textIcon width120 fl mr5 month-div">
+                            <input type="text" class="form-control width120" placeholder="月份">
+                            <i class="bgIcon uiText-timeIcon"></i>
+                        </div>
+                        <!--<div class="fl time-selectDiv mr10">-->
+                            <!--<p class="p-checked p_checked_Active" data-value="1">周期</p>-->
+                            <!--<p class="p-checked" data-value="2">日期</p>-->
+                        <!--</div>-->
+                        <!--<select class="selectCycle fl mr5">-->
+                            <!--<option>本月</option>-->
+                            <!--<option>今天</option>-->
+                            <!--<option>昨天</option>-->
+                            <!--<option>本周</option>-->
+                            <!--<option>上周</option>-->
+                            <!--<option>上月</option>-->
+                        <!--</select>-->
+                        <div class="fl startEndTimeDiv dis-none">
+                            <div class="uiHas-textIcon width120 fl mr5">
+                                <input type="text" class="form-control width120"/>
+                                <i class=" bgIcon uiText-timeIcon"></i>
+                            </div>
+                            <label class="fl mr5 lh28">-</label>
+                            <div class="uiHas-textIcon width120 fl mr5">
+                                <input type="text" class="form-control width120">
+                                <i class="bgIcon uiText-timeIcon"></i>
+                            </div>
+                        </div>
+                        <!--<input type="button" class="uiBtn-normal uiBtn-blue fl mr5 search-btn" value="搜索">-->
+                        <input type="button" class="uiBtn-normal uiBtn-orange fl layerRtb-return" value="返回"/>
+                    </div>
+                </div>
+
+                <div class="topTable-div relative">
+                    <div class="dailyftSearch dailyftSearch1 clearfix hide">
+                        <div class="fl uiHas-textIcon">
+                            <input type="text" class="col-md-12" placeholder="项目编号/工程名称" id="contract_no">
+                            <i class="uiText-searchIcon bgIcon"></i>
+                        </div>
+                    </div>
+                    <table class="uiTable">
+                        <thead>
+                        <tr>
+                            <th width="6%">编号</th>
+                            <th width="8%">
+                                <span class="serial_number">
+                                    客户姓名
+                                    <i class="bgIcon "></i>
+                                </span>
+                            </th>
+                            <th width="8%">客户电话</th>
+                            <th width="13%">业务</th>
+                            <th width="10%">金额</th>
+                            <th width="10%">
+                                <div class="thSortBox2 clearfix">
+                                    <span class="fl">预约时间</span>
+                                    <div class="thSort">
+                                        <a href="javascript:;" class="thSortA thSortAt">
+                                            <i class="thSortI thSort-up"></i>
+                                        </a>
+                                        <a href="javascript:;" class="thSortA thSortAb current">
+                                            <i class="thSortI thSort-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th width="8%">
+                                <select class="theadselect">
+                                    <option>地区</option>
+                                    <option>北京</option>
+                                    <option>南京</option>
+                                    <option>合肥</option>
+                                    <option>武汉</option>
+                                </select>
+                            </th>
+                            <th width="6%">
+                                <div class="thSortBox2 clearfix">
+                                    <span class="fl">面积</span>
+                                    <div class="thSort">
+                                        <a href="javascript:;" class="thSortA thSortAt">
+                                            <i class="thSortI thSort-up"></i>
+                                        </a>
+                                        <a href="javascript:;" class="thSortA thSortAb">
+                                            <i class="thSortI thSort-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th width="10%">
+                                <select class="theadselect">
+                                    <option value="">客户申请类型</option>
+                                    <option value="1">底部栏</option>
+                                    <option value="2">右侧栏</option>
+                                    <option value="3">红包</option>
+                                    <option value="4">设计师列表</option>
+                                    <option value="5">设计师详情</option>
+                                    <option value="6">业务商城</option>
+                                    <option value="7">手机站</option>
+                                </select>
+                            </th>
+                            <th>备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>合计</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>6500</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="centerTable-div">
+                    <table class="uiTable">
+                        <tbody>
+                        <tr>
+                            <td width="6%">1</td>
+                            <td width="8%">111</td>
+                            <td width="8%">15566778899</td>
+                            <td width="13%" title="其他-手术室">其他-手术室</td>
+                            <td width="10%">1500</td>
+                            <td width="10%">2018-08-06</td>
+                            <td width="8%">北京</td>
+                            <td width="6%">170.00㎡</td>
+                            <td width="10%">商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>qq</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>600</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>160.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td><td width="8%">北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 </td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06 13:41</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>lxc</td>
+                            <td>13344556677</td>
+                            <td title="其他-实验室">其他-实验室</td>
+                            <td>2000</td>
+                            <td>2018-08-06</td>
+                            <td>北京</td>
+                            <td>155.00㎡</td>
+                            <td>商城</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--内容区 结束-->
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/rxuedv2.0.min.js"></script>
+<script type="text/javascript" src="js/frame.min.js"></script>
+<!-- 三段式公用js-->
+<script type="text/javascript" src="js/page-threecolumn.js"></script>
+<script>
+    $(function () {
+        //点击处理显示弹框
+        threeLayerShow(".handle-clickDiv",".handle-alert");
+        //点击信息员显示弹框
+        threeLayerShow(".project-clickDiv",".project-alert");
+        //显示四段弹框
+        fourLayerShow(".xiangmu-clickDiv",".xiangmu-alert");
+        //点击信息员显示弹框
+        threeLayerShow(".visit-clickDiv",".visit-alert");
+        threeLayerShow(".goOut-clickDiv",".goOut-alert");
+        threeLayerShow(".customer-clickDiv",".customer-alert");
+        fourLayerShow(".ziLiao_clickDiv",".ziLiao-alert")
+
+        //点击对号和差
+        $(".judge-span").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+
+        //点击周显示时间筛选
+        $(".selectTime-btn").on("click", function () {
+            $(".select-timeDiv").show();
+            $(this).hide();
+            $(".today-btn").hide();
+            $(".week-btn").hide();
+            $(".month-div").hide();
+        })
+        //点击搜索隐藏时间段筛选
+        $(".search-btn").on("click", function () {
+            $(".select-timeDiv").hide();
+            $(".today-btn").show();
+            $(".week-btn").show();
+            $(".month-div").show();
+            $(".selectTime-btn").show();
+        })
+        $(".visitTab-btn").on("click",function () {
+            if ($(this).hasClass("RTtab-active2")) {
+                $(this).removeClass("RTtab-active2");
+                $(this).addClass("RTtab-active3");
+                $(this).text("设计回访");
+            }
+            else {
+                $(this).addClass("RTtab-active2");
+                $(this).removeClass("RTtab-active3");
+                $(this).text("顾问回访");
+
+            }
+        })
+
+        //点击新增外出弹框阻止事件冒泡
+        $(".addout-alert").on("click", function () {
+            stopEventBubble();//阻止事件冒泡
+        })
+        //点击空白处隐藏新增任务弹框
+        $("body").on("click", function () {
+            $(".addout-alert").stop().animate({ "left": "150%" }, 500);
+        })
+        //点击新增外出显示弹框
+        $(".addout-btn").click(function () {
+            stopEventBubble();//阻止事件冒泡
+            $(".addout-alert").stop().animate({ "left": "0" }, 500);
+        });
+    })
+    //新增外出下拉框改变事件
+    //改变外出类型
+    function ChangeType() {
+        var type = $(".out-select").val();
+        if (type == 3) {
+            $(".addout-number").hide();
+            $(".addout-buildname").show();
+        }
+        else {
+            $(".addout-number").show();
+            $(".addout-buildname").hide();
+        }
+    }
+
+
+</script>
+
+</body>
+
+</html>
